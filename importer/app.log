@@ -1,0 +1,329 @@
+2017-09-14 10:23:04.190  INFO 11634 --- [main] core.september.versiondown.Application   : Starting Application on ef1bc61ba64c with PID 11634 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-14 10:23:04.194  INFO 11634 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-14 10:23:04.267  INFO 11634 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1372ed45: startup date [Thu Sep 14 10:23:04 UTC 2017]; root of context hierarchy
+2017-09-14 10:23:05.555  INFO 11634 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-14 10:23:05.572  INFO 11634 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-14 10:23:05.628  INFO 11634 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-14 10:23:05.630  INFO 11634 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-14 10:23:05.632  INFO 11634 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-14 10:23:05.736  INFO 11634 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-14 10:23:05.854  INFO 11634 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-14 10:23:06.337  INFO 11634 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-09-14 10:23:06.356 ERROR 11634 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table author_ver drop foreign key FK4cmrtepn40bqtcnhir5ajyx03
+2017-09-14 10:23:06.356 ERROR 11634 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'versioni.author_ver' doesn't exist
+2017-09-14 10:23:06.357 ERROR 11634 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table author_ver drop foreign key FK1wx8v2y1v7jnftcnr5x6cjuuo
+2017-09-14 10:23:06.357 ERROR 11634 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'versioni.author_ver' doesn't exist
+2017-09-14 10:23:06.358 ERROR 11634 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table ver_trans drop foreign key FKn7xs7hp1x5qgf3pdykk08p8ca
+2017-09-14 10:23:06.358 ERROR 11634 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'versioni.ver_trans' doesn't exist
+2017-09-14 10:23:06.359 ERROR 11634 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table ver_trans drop foreign key FKqoicxbq2puejvp13328tpqhv3
+2017-09-14 10:23:06.359 ERROR 11634 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'versioni.ver_trans' doesn't exist
+2017-09-14 10:23:06.415  INFO 11634 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-09-14 10:23:06.472  INFO 11634 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-14 10:23:06.991  INFO 11634 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-14 10:23:09.946  INFO 11634 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-14 10:32:57.069  INFO 11634 --- [main] core.september.versiondown.Application   : Started Application in 593.178 seconds (JVM running for 593.503)
+2017-09-14 10:32:57.072  INFO 11634 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1372ed45: startup date [Thu Sep 14 10:23:04 UTC 2017]; root of context hierarchy
+2017-09-14 10:32:57.074  INFO 11634 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-14 10:32:57.075  INFO 11634 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:14:13.065  INFO 1378 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 1378 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 10:14:13.071  INFO 1378 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 10:14:13.131  INFO 1378 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@693fe6c9: startup date [Fri Sep 15 10:14:13 UTC 2017]; root of context hierarchy
+2017-09-15 10:14:14.560  INFO 1378 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:14:14.582  INFO 1378 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 10:14:14.718  INFO 1378 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 10:14:14.720  INFO 1378 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 10:14:14.722  INFO 1378 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 10:14:14.772  INFO 1378 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 10:14:14.922  INFO 1378 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 10:14:15.498  INFO 1378 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-09-15 10:14:15.578  INFO 1378 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-09-15 10:14:15.638  INFO 1378 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:14:16.334  INFO 1378 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 10:14:16.379  INFO 1378 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 10:14:16.551  INFO 1378 --- [main] core.september.versiondown.Application   : Started Application in 3.795 seconds (JVM running for 4.294)
+2017-09-15 10:14:16.553  INFO 1378 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@693fe6c9: startup date [Fri Sep 15 10:14:13 UTC 2017]; root of context hierarchy
+2017-09-15 10:14:16.554  INFO 1378 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-15 10:14:16.555  INFO 1378 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:14:33.314  INFO 1427 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 1427 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 10:14:33.326  INFO 1427 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 10:14:33.380  INFO 1427 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@693fe6c9: startup date [Fri Sep 15 10:14:33 UTC 2017]; root of context hierarchy
+2017-09-15 10:14:34.699  INFO 1427 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:14:34.719  INFO 1427 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 10:14:34.834  INFO 1427 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 10:14:34.836  INFO 1427 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 10:14:34.838  INFO 1427 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 10:14:34.888  INFO 1427 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 10:14:35.054  INFO 1427 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 10:14:35.656  INFO 1427 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-09-15 10:14:35.767  INFO 1427 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-09-15 10:14:35.829  INFO 1427 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:14:36.493  INFO 1427 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 10:14:48.019  INFO 1427 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 10:14:48.175  INFO 1427 --- [main] core.september.versiondown.Application   : Started Application in 15.171 seconds (JVM running for 15.56)
+2017-09-15 10:14:48.185  INFO 1427 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@693fe6c9: startup date [Fri Sep 15 10:14:33 UTC 2017]; root of context hierarchy
+2017-09-15 10:14:48.187  INFO 1427 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-15 10:14:48.188  INFO 1427 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:19:21.102  INFO 1487 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 1487 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 10:19:21.108  INFO 1487 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 10:19:21.189  INFO 1487 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@693fe6c9: startup date [Fri Sep 15 10:19:21 UTC 2017]; root of context hierarchy
+2017-09-15 10:19:22.557  INFO 1487 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:19:22.574  INFO 1487 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 10:19:22.695  INFO 1487 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 10:19:22.696  INFO 1487 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 10:19:22.698  INFO 1487 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 10:19:22.743  INFO 1487 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 10:19:22.863  INFO 1487 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 10:19:23.471  INFO 1487 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:19:24.080  INFO 1487 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 10:19:28.652  INFO 1487 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 10:19:50.144  INFO 1487 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-09-15 10:19:50.184 ERROR 1487 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.NoClassDefFoundError: org/json/JSONObject
+	at core.september.versiondown.imagedownloader.ImageDownloader.retrieveSingleImage(ImageDownloader.java:63) ~[classes/:na]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374) ~[na:1.8.0_131]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[na:1.8.0_131]
+	at core.september.versiondown.imagedownloader.ImageDownloader.rerieveImages(ImageDownloader.java:81) ~[classes/:na]
+	at core.september.versiondown.Application.retrieveImages(Application.java:38) [classes/:na]
+	at core.september.versiondown.Application.run(Application.java:34) [classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:732) [spring-boot-1.5.5.RELEASE.jar:1.5.5.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:716) [spring-boot-1.5.5.RELEASE.jar:1.5.5.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:703) [spring-boot-1.5.5.RELEASE.jar:1.5.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:304) [spring-boot-1.5.5.RELEASE.jar:1.5.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.5.RELEASE.jar:1.5.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.5.RELEASE.jar:1.5.5.RELEASE]
+	at core.september.versiondown.Application.main(Application.java:113) [classes/:na]
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	... 13 common frames omitted
+
+2017-09-15 10:19:50.187  INFO 1487 --- [main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@693fe6c9: startup date [Fri Sep 15 10:19:21 UTC 2017]; root of context hierarchy
+2017-09-15 10:19:50.196  INFO 1487 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-15 10:19:50.202  INFO 1487 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:21:38.948  INFO 1612 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 1612 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 10:21:38.952  INFO 1612 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 10:21:39.020  INFO 1612 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31e5415e: startup date [Fri Sep 15 10:21:39 UTC 2017]; root of context hierarchy
+2017-09-15 10:21:40.445  INFO 1612 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:21:40.468  INFO 1612 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 10:21:40.614  INFO 1612 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 10:21:40.615  INFO 1612 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 10:21:40.617  INFO 1612 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 10:21:40.674  INFO 1612 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 10:21:40.840  INFO 1612 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 10:21:41.521  INFO 1612 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:21:42.204  INFO 1612 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 10:21:48.453  INFO 1612 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 10:36:55.074  INFO 1753 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 1753 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 10:36:55.079  INFO 1753 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 10:36:55.137  INFO 1753 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31e5415e: startup date [Fri Sep 15 10:36:55 UTC 2017]; root of context hierarchy
+2017-09-15 10:36:56.689  INFO 1753 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:36:56.705  INFO 1753 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 10:36:56.824  INFO 1753 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 10:36:56.826  INFO 1753 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 10:36:56.828  INFO 1753 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 10:36:56.875  INFO 1753 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 10:36:56.995  INFO 1753 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 10:36:57.620  INFO 1753 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 10:36:58.401  INFO 1753 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 10:37:12.182  INFO 1753 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:11:23.745  INFO 1988 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 1988 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 11:11:23.750  INFO 1988 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 11:11:23.809  INFO 1988 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31e5415e: startup date [Fri Sep 15 11:11:23 UTC 2017]; root of context hierarchy
+2017-09-15 11:11:25.190  INFO 1988 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:11:25.205  INFO 1988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 11:11:25.320  INFO 1988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 11:11:25.321  INFO 1988 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 11:11:25.322  INFO 1988 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 11:11:25.370  INFO 1988 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 11:11:25.503  INFO 1988 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 11:11:26.177  INFO 1988 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:11:26.811  INFO 1988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 11:11:26.848  INFO 1988 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:13:00.280  INFO 2092 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 2092 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 11:13:00.284  INFO 2092 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 11:13:00.349  INFO 2092 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31e5415e: startup date [Fri Sep 15 11:13:00 UTC 2017]; root of context hierarchy
+2017-09-15 11:13:01.744  INFO 2092 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:13:01.760  INFO 2092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 11:13:01.875  INFO 2092 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 11:13:01.876  INFO 2092 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 11:13:01.877  INFO 2092 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 11:13:01.934  INFO 2092 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 11:13:02.095  INFO 2092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 11:13:02.734  INFO 2092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:13:03.405  INFO 2092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 11:13:03.449  INFO 2092 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:13:40.755  INFO 2152 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 2152 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 11:13:40.760  INFO 2152 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 11:13:40.825  INFO 2152 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31e5415e: startup date [Fri Sep 15 11:13:40 UTC 2017]; root of context hierarchy
+2017-09-15 11:13:42.186  INFO 2152 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:13:42.202  INFO 2152 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 11:13:42.327  INFO 2152 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 11:13:42.328  INFO 2152 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 11:13:42.330  INFO 2152 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 11:13:42.391  INFO 2152 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 11:13:42.524  INFO 2152 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 11:13:43.186  INFO 2152 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:13:43.863  INFO 2152 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 11:13:43.907  INFO 2152 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:16:33.127  INFO 2287 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 2287 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 11:16:33.132  INFO 2287 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 11:16:33.189  INFO 2287 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31e5415e: startup date [Fri Sep 15 11:16:33 UTC 2017]; root of context hierarchy
+2017-09-15 11:16:34.619  INFO 2287 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:16:34.642  INFO 2287 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 11:16:34.768  INFO 2287 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 11:16:34.770  INFO 2287 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 11:16:34.772  INFO 2287 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 11:16:34.828  INFO 2287 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 11:16:34.981  INFO 2287 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 11:16:35.597  INFO 2287 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:16:36.295  INFO 2287 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 11:16:36.340  INFO 2287 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:18:23.449  INFO 2384 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 2384 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 11:18:23.454  INFO 2384 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 11:18:23.513  INFO 2384 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31e5415e: startup date [Fri Sep 15 11:18:23 UTC 2017]; root of context hierarchy
+2017-09-15 11:18:24.852  INFO 2384 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:18:24.867  INFO 2384 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 11:18:24.989  INFO 2384 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 11:18:24.991  INFO 2384 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 11:18:24.992  INFO 2384 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 11:18:25.036  INFO 2384 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 11:18:25.162  INFO 2384 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 11:18:25.795  INFO 2384 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:18:26.426  INFO 2384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 11:18:26.466  INFO 2384 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:25:05.426  INFO 2543 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 2543 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 11:25:05.430  INFO 2543 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 11:25:05.513  INFO 2543 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31e5415e: startup date [Fri Sep 15 11:25:05 UTC 2017]; root of context hierarchy
+2017-09-15 11:25:06.898  INFO 2543 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:25:06.917  INFO 2543 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 11:25:07.038  INFO 2543 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 11:25:07.039  INFO 2543 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 11:25:07.040  INFO 2543 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 11:25:07.092  INFO 2543 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 11:25:07.255  INFO 2543 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 11:25:07.902  INFO 2543 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:25:08.560  INFO 2543 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 11:25:08.598  INFO 2543 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:25:55.680  INFO 2543 --- [main] core.september.versiondown.Application   : Started Application in 50.583 seconds (JVM running for 50.951)
+2017-09-15 11:25:55.688  INFO 2543 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@31e5415e: startup date [Fri Sep 15 11:25:05 UTC 2017]; root of context hierarchy
+2017-09-15 11:25:55.695  INFO 2543 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-15 11:25:55.705  INFO 2543 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:29:17.911  INFO 2737 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 2737 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 11:29:17.916  INFO 2737 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 11:29:17.965  INFO 2737 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@37574691: startup date [Fri Sep 15 11:29:17 UTC 2017]; root of context hierarchy
+2017-09-15 11:29:19.137  INFO 2737 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:29:19.152  INFO 2737 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 11:29:19.261  INFO 2737 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 11:29:19.262  INFO 2737 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 11:29:19.264  INFO 2737 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 11:29:19.298  INFO 2737 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 11:29:19.390  INFO 2737 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 11:29:19.902  INFO 2737 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:29:20.381  INFO 2737 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 11:29:20.413  INFO 2737 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:29:44.757  INFO 2737 --- [main] core.september.versiondown.Application   : Started Application in 27.102 seconds (JVM running for 27.383)
+2017-09-15 11:29:44.759  INFO 2737 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@37574691: startup date [Fri Sep 15 11:29:17 UTC 2017]; root of context hierarchy
+2017-09-15 11:29:44.762  INFO 2737 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-15 11:29:44.765  INFO 2737 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:33:57.984  INFO 2842 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 2842 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 11:33:57.992  INFO 2842 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 11:33:58.045  INFO 2842 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@37574691: startup date [Fri Sep 15 11:33:58 UTC 2017]; root of context hierarchy
+2017-09-15 11:33:59.263  INFO 2842 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:33:59.285  INFO 2842 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 11:33:59.334  INFO 2842 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 11:33:59.335  INFO 2842 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 11:33:59.399  INFO 2842 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 11:33:59.437  INFO 2842 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 11:33:59.548  INFO 2842 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 11:34:00.056  INFO 2842 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:34:00.544  INFO 2842 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 11:34:00.579  INFO 2842 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:34:18.825  INFO 2842 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@37574691: startup date [Fri Sep 15 11:33:58 UTC 2017]; root of context hierarchy
+2017-09-15 11:34:18.827  INFO 2842 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-15 11:34:18.828  INFO 2842 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:38:38.794  INFO 3069 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 3069 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 11:38:38.799  INFO 3069 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 11:38:38.877  INFO 3069 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31e5415e: startup date [Fri Sep 15 11:38:38 UTC 2017]; root of context hierarchy
+2017-09-15 11:38:40.300  INFO 3069 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:38:40.316  INFO 3069 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 11:38:40.449  INFO 3069 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 11:38:40.451  INFO 3069 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 11:38:40.453  INFO 3069 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 11:38:40.528  INFO 3069 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 11:38:40.690  INFO 3069 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 11:38:41.378  INFO 3069 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:38:42.031  INFO 3069 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 11:38:42.078  INFO 3069 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:39:43.605  INFO 3156 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 3156 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 11:39:43.609  INFO 3156 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 11:39:43.665  INFO 3156 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@37574691: startup date [Fri Sep 15 11:39:43 UTC 2017]; root of context hierarchy
+2017-09-15 11:39:44.872  INFO 3156 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:39:44.891  INFO 3156 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 11:39:45.003  INFO 3156 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 11:39:45.004  INFO 3156 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 11:39:45.006  INFO 3156 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 11:39:45.049  INFO 3156 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 11:39:45.168  INFO 3156 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 11:39:45.643  INFO 3156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:39:46.122  INFO 3156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 11:39:46.157  INFO 3156 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:40:29.138  INFO 3156 --- [main] core.september.versiondown.Application   : Started Application in 45.788 seconds (JVM running for 46.056)
+2017-09-15 11:40:29.144  INFO 3156 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@37574691: startup date [Fri Sep 15 11:39:43 UTC 2017]; root of context hierarchy
+2017-09-15 11:40:29.145  INFO 3156 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-15 11:40:29.146  INFO 3156 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:41:23.370  INFO 3270 --- [main] core.september.versiondown.Application   : Starting Application on a07bb8b538fd with PID 3270 (/home/developer/git/versioniApp/importer/target/classes started by developer in /home/developer/git/versioniApp/importer)
+2017-09-15 11:41:23.373  INFO 3270 --- [main] core.september.versiondown.Application   : No active profile set, falling back to default profiles: default
+2017-09-15 11:41:23.425  INFO 3270 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@37574691: startup date [Fri Sep 15 11:41:23 UTC 2017]; root of context hierarchy
+2017-09-15 11:41:24.554  INFO 3270 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:41:24.577  INFO 3270 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-15 11:41:24.687  INFO 3270 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-15 11:41:24.689  INFO 3270 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-15 11:41:24.691  INFO 3270 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-15 11:41:24.728  INFO 3270 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-15 11:41:24.838  INFO 3270 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-15 11:41:25.328  INFO 3270 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-15 11:41:25.838  INFO 3270 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-15 11:41:25.877  INFO 3270 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-09-15 11:41:53.443  INFO 3270 --- [main] core.september.versiondown.Application   : Started Application in 30.334 seconds (JVM running for 30.616)
+2017-09-15 11:41:53.444  INFO 3270 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@37574691: startup date [Fri Sep 15 11:41:23 UTC 2017]; root of context hierarchy
+2017-09-15 11:41:53.446  INFO 3270 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-15 11:41:53.447  INFO 3270 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

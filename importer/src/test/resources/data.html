@@ -1,0 +1,663 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:hx="http://purl.org/NET/hinclude">
+<head>
+<title>Traduzione Carme 11, Sezione 1 Nugae, Liber Catullianus</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta content="Consulta qui la traduzione all'italiano di Carme 11, Sezione 1 Nugae dell'opera latina Liber Catullianus, di Catullo" name="description">
+<meta name="Language" content="Italian it">
+<meta name="robots" content="index,follow" /><link href="https://www.skuola.net/versioni-latino/catullo/liber-catullianus/sezione-1-nugae/carme-11" rel="canonical">
+<!--[if IE]>
+<meta name="application-name" content="Skuola.net"/>
+<meta name="msapplication-tooltip" content="Skuola.net - La risorsa definitiva per la scuola e l'università"/>
+<meta name="msapplication-starturl" content="/"/>
+<meta name="msapplication-window" content="width=1024;height=768"/>
+<meta name="msapplication-navbutton-color" content="#0795d5"/>
+<meta name="msapplication-task" content="name=Medie; action-uri=https://www.skuola.net/medie;icon-uri=/skins/delirio/img/pin/icon_ie9.ico"/>
+<meta name="msapplication-task" content="name=Superiori; action-uri=https://www.skuola.net/superiori;icon-uri=/skins/delirio/img/pin/icon_ie9.ico"/>
+<meta name="msapplication-task" content="name=Universit&agrave;; action-uri=https://www.skuola.net/universita;icon-uri=/skins/delirio/img/pin/icon_ie9.ico"/>
+<meta name="msapplication-task" content="name=Appunti; action-uri=https://www.skuola.net/appunti-scuola;icon-uri=/skins/delirio/img/pin/icon_ie9.ico"/>
+<meta name="msapplication-task" content="name=Chiedi alla Community; action-uri=https://www.skuola.net/forum;icon-uri=/skins/delirio/img/pin/icon_ie9.ico"/>
+<![endif]-->
+<base href="https://www.skuola.net">
+<link rel="icon" type="image/png" href="/favicon/favicon32x32.png">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon-precomposed.png">
+<link rel="search" type="application/opensearchdescription+xml" title="Cerca in Skuola.net" href="/plugins/cse/skuola.xml">
+<link rel="alternate" type="application/rss+xml" title="News by Skuola.net" href="/rss.php">
+<link rel="alternate" type="application/rss+xml" title="Forums by Skuola.net" href="/rss.php?c=forums">
+<link rel="alternate" type="application/rss+xml" title="Appunti by Skuola.net" href="/rss.php?c=appunti">
+
+<link href="https://plus.google.com/100736892738797438917" rel="publisher">
+<meta property="fb:app_id" content="122322431136154" />    <meta name="msvalidate.01" content="40F2861BC5A639E558EB56C9CE01362A" />
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/skins/delirio/css/ie7.css" /><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/skins/delirio/css/ie8.css" /><![endif]-->
+<!--[if IE 9]><link rel="stylesheet" type="text/css" href="/skins/delirio/css/ie9.css" /><![endif]-->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js" integrity="sha256-SOuLUArmo4YXtXONKz+uxIGSKneCJG4x0nVcA0pFzV0=" crossorigin="anonymous"></script>
+
+<style>
+    .async-hide {
+        opacity: 0 !important
+    }
+</style>
+<script>
+    (function(a,s,y,n,c,h,i,d,e) {
+        s.className += ' ' + y;
+        h.start = 1 * new Date;
+        h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+        (a[n] = a[n] || []).hide = h;
+        setTimeout(function (){ i(); h.end = null }, c);
+        h.timeout = c;
+    })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {'GTM-NQPVHJW': true});
+</script>
+<script>
+    (function(i,s,o,g,r,a,m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-3732638-2', 'skuola.net');
+    ga('require', 'displayfeatures');
+    ga('require', 'GTM-NQPVHJW');
+    
+            ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="/assets/js/mm-banner-manager.js?20150521"></script>
+
+<script type="text/javascript" src="https://adv.mediamond.it/hpsponsor/skuola/header.js"></script>
+
+<script type="text/javascript">
+var isLogged = false;</script>
+   <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/cotonti.css?20150521" />
+   <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/default.css?20150521" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="/bundles/skuolauniversita/css/style.css?20150521">
+    <link rel="stylesheet" type="text/css" media="screen" href="/bundles/skuolaversioni/css/style.css?20150521">
+    <link rel="author" href="https://plus.google.com/u/0/107192871059492063074/posts" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="/bundles/skuolacommon/js/xss-filters.1.2.7.min.js"></script>
+    <script type="text/javascript" src="/assets/js/default.js?20150521"></script>
+<script type="text/javascript">
+    if($.cookie('x') || $.cookie('tokx')){
+        var x_cookie = ($.cookie('tokx'))?$.cookie('tokx'):$.cookie('x');
+        $(function(){
+            $('input[name=x]').val(x_cookie);
+        });
+    }
+</script>
+
+    <script type="text/javascript" src="/assets/js/versioni.js?20150521"></script>
+    <meta property="og:type" content="article"/>
+    <meta property="og:image" content="https://www.skuola.net/bundles/skuolacotontibridge/img/utente/homeRegistrazione.png?20150521"/>
+    <meta property="og:title" content="Traduzione Carme 11, Sezione 1 Nugae, Liber Catullianus" />
+    <meta property="og:description" content="Consulta qui la traduzione all'italiano di Carme 11, Sezione 1 Nugae dell'opera latina Liber Catullianus, di Catullo"/>
+    <meta property="og:site_name" content="Skuola.net - Tutto per scuola e università: appunti, tesine, dispense e notizie"/>
+    <meta property="og:url" content="https://www.skuola.net/versioni-latino/catullo/liber-catullianus/sezione-1-nugae/carme-11"/>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async="async"></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(["init", {
+    appId: "b9937965-a344-4029-b7c5-706e745acccc",
+    autoRegister: true,
+    subdomainName: 'skuola',
+    httpPermissionRequest: { enable: true },
+    notifyButton: { enable: false },
+    safari_web_id: "web.onesignal.auto.245258f0-6c6a-439f-986f-895149dbff04",
+    text: {
+        'tip.state.unsubscribed': 'Attiva le notifiche',
+        'tip.state.subscribed': 'Hai attivato le notifiche',
+        'tip.state.blocked': 'Hai bloccato le notifiche',
+        'message.prenotify': 'Clicca per attivare le notifiche',
+        'message.action.subscribed': 'Grazie!',
+        'message.action.resubscribed': 'Hai attivato le nostre notifiche :)',
+        'message.action.unsubscribed': 'Non riceverai più notifiche',
+        'dialog.main.title': 'Gestisci le notifiche',
+        'dialog.main.button.subscribe': 'ATTIVA',
+        'dialog.main.button.unsubscribe': 'DISATTIVA',
+        'dialog.blocked.title': 'Sblocca le notifiche',
+        'dialog.blocked.message': 'Segui le istruzioni per attivare le notifiche:'
+    },
+    promptOptions: {
+        actionMessage: 'Ti piacerebbe restare aggiornato sulle ultime notizie di Skuola.net?',
+        acceptButtonText: 'SI, AGGIORNAMI',
+        cancelButtonText: 'Forse dopo'
+    },
+    httpPermissionRequest: {
+        modalTitle: 'Grazie! :)',
+        modalMessage: 'Riceverai le notifiche con le ultime novità. Potrai disattivarle in ogni momento.',
+        modalButtonText: 'CHIUDI'
+    }
+  }]);
+</script>
+</head>
+<body class="skuola-universita">
+
+    <script type="text/javascript">var dataLayer = dataLayer || [];</script>
+    <script type="text/javascript">
+    dataLayer.push({
+        'PageType': 'Homepage',
+        'HashedEmail': '',
+        'siteType' : 'D'
+    });
+</script>
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+        appId      : 122322431136154,
+        xfbml      : true,
+        version    : 'v2.10'
+    });
+
+    var event;
+    var eventType = 'facebook.loaded';
+
+    if (typeof Event === 'function') {
+        event = new Event(eventType);
+    } else {
+        event = document.createEvent('Event');
+        event.initEvent(eventType, true, true);
+    }
+
+    document.dispatchEvent(event);
+};
+// Load the Facebook SDK Asynchronously
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/it_IT/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+
+    return t;
+}(document, "script", "twitter-wjs"));
+</script><!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-G49N2"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-G49N2');</script>
+<!-- End Google Tag Manager --><!-- BEGIN HEADER BAR -->
+    <div id="topbar">
+    <div class="container">
+                                    <a href="/" class="logo">
+                    <img src="/bundles/skuolacommon/img/logo.svg?20150521" alt="skuola.net">
+                </a>
+                    
+        <div class="navigation-scroll">
+                                            <nav id="main-nav">
+    <ul class="top-navigation">
+                    <li class="appunti with-submenu active">
+                <a href="/appunti-scuola-universita/">Appunti</a>                    <button class="dropdown-button"></button>
+                    <div class="submenu">
+                        <ul class="container">
+                                                    <li>
+                                <a href="/appunti-medie/">Appunti Medie</a>
+                            </li>
+                                                    <li>
+                                <a href="/appunti/">Appunti Superiori</a>
+                            </li>
+                                                    <li>
+                                <a href="/appunti-universita/">Appunti Università</a>
+                            </li>
+                                                    <li>
+                                <a href="/temi-saggi-svolti/">Temi &amp; Saggi</a>
+                            </li>
+                                                    <li>
+                                <a href="/versioni-latino/">Versioni Latino</a>
+                            </li>
+                                                    <li>
+                                <a href="/versioni-greco/">Versioni Greco</a>
+                            </li>
+                                                    <li>
+                                <a href="/dante/">Dante</a>
+                            </li>
+                                                    <li>
+                                <a href="/manzoni/">Manzoni</a>
+                            </li>
+                                                    <li>
+                                <a href="/libri/">Recensioni libri</a>
+                            </li>
+                                                </ul>
+                    </div>
+                </li>
+                    <li class="forum ">
+                <a href="/forum/">Forum</a></li>
+                    <li class="trend with-submenu">
+                <a href="/news/">Trend</a>                    <button class="dropdown-button"></button>
+                    <div class="submenu">
+                        <ul class="container">
+                                                    <li>
+                                <a href="/news/fotonotizie/">Lifestyle</a>
+                            </li>
+                                                    <li>
+                                <a href="/news/fun/">LOL</a>
+                            </li>
+                                                    <li>
+                                <a href="/news/social-trend/">Social Trend</a>
+                            </li>
+                                                    <li>
+                                <a href="/news/spettacolo/">Fandom</a>
+                            </li>
+                                                    <li>
+                                <a href="/news/moda-bellezza/">Fashion&amp;Beauty</a>
+                            </li>
+                                                    <li>
+                                <a href="/news/scienza-tecnica/">Geeky</a>
+                            </li>
+                                                    <li>
+                                <a href="/school-love/">Love&amp;Sex</a>
+                            </li>
+                                                    <li>
+                                <a href="/news/motori/">Pit Stop</a>
+                            </li>
+                                                    <li>
+                                <a href="/news/inchiesta/">Inchieste</a>
+                            </li>
+                                                    <li>
+                                <a href="/news/blog/">Blog</a>
+                            </li>
+                                                </ul>
+                    </div>
+                </li>
+                    <li class="scuola with-submenu">
+                <a href="/scuola/">Scuola</a>                    <button class="dropdown-button"></button>
+                    <div class="submenu">
+                        <ul class="container">
+                                                    <li>
+                                <a href="/appunti-medie/">Appunti Medie</a>
+                            </li>
+                                                    <li>
+                                <a href="/appunti/">Appunti Superiori</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.skuola.net/scuola/alternanza-scuola-lavoro/">Scuola Lavoro</a>
+                            </li>
+                                                    <li>
+                                <a href="/esame-terza-media/">Terza Media</a>
+                            </li>
+                                                    <li>
+                                <a href="/prova-invalsi/">Invalsi</a>
+                            </li>
+                                                    <li>
+                                <a href="/scuola/orientamento-superiori/">Orientamento Superiori</a>
+                            </li>
+                                                    <li>
+                                <a href="/orientamento-universitario/">Orientamento Universitario</a>
+                            </li>
+                                                </ul>
+                    </div>
+                </li>
+                    <li class="università with-submenu">
+                <a href="/universita/">Università</a>                    <button class="dropdown-button"></button>
+                    <div class="submenu">
+                        <ul class="container">
+                                                    <li>
+                                <a href="https://www.skuola.net/universita/ricerca">Cerca Appunti</a>
+                            </li>
+                                                    <li>
+                                <a href="/universita/appunti-riassunti">Appunti Esami</a>
+                            </li>
+                                                    <li>
+                                <a href="/universita/atenei">Appunti Atenei</a>
+                            </li>
+                                                    <li>
+                                <a href="/facolta/">Appunti Facoltà</a>
+                            </li>
+                                                    <li>
+                                <a href="/news/notizie-universita/">News università</a>
+                            </li>
+                                                    <li>
+                                <a href="https://stanze.skuola.net/">Affitti per studenti</a>
+                            </li>
+                                                    <li>
+                                <a href="/come-studiare/">Metodo Studio</a>
+                            </li>
+                                                </ul>
+                    </div>
+                </li>
+                    <li class="maturità with-submenu">
+                <a href="https://www.skuola.net/maturita/">Maturità</a>                    <button class="dropdown-button"></button>
+                    <div class="submenu">
+                        <ul class="container">
+                                                    <li>
+                                <a href="https://www.skuola.net/maturita/commissari-maturita/">Commissari Esterni Maturita</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.skuola.net/maturita/date-maturita.html">Date Maturità 2018</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.skuola.net/maturita/tracce-maturita/">Tracce Maturità</a>
+                            </li>
+                                                    <li>
+                                <a href="/maturita/materie-maturita/">Materie Maturità</a>
+                            </li>
+                                                    <li>
+                                <a href="/maturita/percorsi-maturita/">Percorsi Maturità</a>
+                            </li>
+                                                    <li>
+                                <a href="/maturita/tesine/">Tesine</a>
+                            </li>
+                                                </ul>
+                    </div>
+                </li>
+                    <li class="test with-submenu">
+                <a href="/test-ingresso/">Test</a>                    <button class="dropdown-button"></button>
+                    <div class="submenu">
+                        <ul class="container">
+                                                    <li>
+                                <a href="https://www.skuola.net/test-ingresso/medicina-chirurgia/">Test Medicina</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.skuola.net/test-ingresso/ingegneria/">Test Ingegneria</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.skuola.net/test-ingresso/architettura/">Test Architettura</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.skuola.net/test-ingresso/medicina-veterinaria/">Test Veterinaria</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.skuola.net/test-ingresso/scienze-sanitarie/">Test Professioni Sanitarie</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.skuola.net/test-ingresso/scienze-formazione-educazione/">Test Scienze Formazione</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.skuola.net/test-ingresso/test-economia/">Test Economia</a>
+                            </li>
+                                                </ul>
+                    </div>
+                </li>
+                    <li class="tv with-submenu">
+                <a href="/tv/">Tv</a>                    <button class="dropdown-button"></button>
+                    <div class="submenu">
+                        <ul class="container">
+                                                    <li>
+                                <a href="/video/consigli-tutorial/">Tutorial</a>
+                            </li>
+                                                    <li>
+                                <a href="/video/interviste/">Interviste</a>
+                            </li>
+                                                    <li>
+                                <a href="/video/fun-video/">Video LOL</a>
+                            </li>
+                                                    <li>
+                                <a href="/video/video-notizie/">Notizie Video</a>
+                            </li>
+                                                    <li>
+                                <a href="https://goo.gl/3FwDd7">YouTube Skuola.net</a>
+                            </li>
+                                                </ul>
+                    </div>
+                </li>
+                    <li class="lavoro ">
+                <a href="https://www.skuola.net/lavoro/">Lavoro</a></li>
+                    <li class="store ">
+                <a href="https://www.skuola.net/store/?utm_source=skuola&amp;utm_medium=menu&amp;utm_campaign=market&amp;utm_nooverride=1">Store</a></li>
+                    <li class="ripetizioni ">
+                <a href="https://ripetizioni.skuola.net/?utm_source=skuola&amp;utm_medium=navbar&amp;utm_campaign=ripetizioni">Ripetizioni</a></li>
+            </ul>
+</nav>
+                    </div>
+
+        <div class="actions">
+            <div class="button">
+                <a href="/invia-appunto/" class="green-button">Invia Appunti</a>
+            </div>
+            <a id="search-toggle" title="Ricerca" href="https://ricerca.skuola.net/"><i class="fa fa-search"></i></a>
+                                                <a href="/users.php?m=auth" id="user-toggle" class="anonymous"><i class="fa fa-user"></i></a>
+                        <button id="menu-toggle" aria-label="Menù"><i class="fa fa-navicon"></i></button>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="search-wrapper container">
+            <form id="search-box" action="https://ricerca.skuola.net/" method="GET">
+                <input placeholder="Cerca appunti nel sito…" type="search" value="" name="search" id="topbar-search-input" data-search>
+                <input class="submit" type="submit" value="Cerca">
+            </form>
+        </div>
+
+        <div class="user-wrapper container">
+                                                <div id="login-box">
+        <a href="/universita/facebook-oauth" class="facebook-login-btn"><i class="fa fa-facebook"></i> Accedi con Facebook</a>
+        <div class="separator"><span>oppure</span></div>
+        <form method="post" id="signin" action="/service/login">
+            <label for="username">Nome utente</label>
+            <input id="username" name="rusername" value="" title="username" type="text" placeholder="Nome utente">
+
+            <label for="password">Password</label>
+            <input id="password" name="rpassword" value="" title="password" type="password" placeholder="Password">
+
+            <div class="recover-link">
+                <a href="/plug.php?e=passrecover" title="Recupera la password">Password dimenticata?</a>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Accedi">
+            </div>
+        </form>
+
+        <hr>
+
+        <p>Non sei registrato? <a href="/utente/registrazione">Registrati ora</a>.</p>
+    </div>
+                    </div>
+    </div>
+</div><!-- END HEADER BAR -->
+<div>
+        <div id="container">
+                        <div id="content">
+                                    <div id="index">
+                <div id="index_content" class="two-columns">
+                        <div id="versione">
+
+                <div class="box_title">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="https://www.skuola.net/" itemprop="item"><span itemprop="name">Home</span></a>
+                            <meta itemprop="position" content="1" />
+            </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="https://www.skuola.net/superiori" itemprop="item"><span itemprop="name">Superiori</span></a>
+                            <meta itemprop="position" content="2" />
+            </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="https://www.skuola.net/superiori/appunti" itemprop="item"><span itemprop="name">Appunti</span></a>
+                            <meta itemprop="position" content="3" />
+            </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="https://www.skuola.net/superiori/latino" itemprop="item"><span itemprop="name">Latino</span></a>
+                            <meta itemprop="position" content="4" />
+            </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="https://www.skuola.net/versioni-latino/" itemprop="item"><span itemprop="name">Versioni</span></a>
+                            <meta itemprop="position" content="5" />
+            </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="https://www.skuola.net/versioni-latino/catullo" itemprop="item"><span itemprop="name">Catullo</span></a>
+                            <meta itemprop="position" content="6" />
+            </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="https://www.skuola.net/versioni-latino/catullo/liber-catullianus" itemprop="item"><span itemprop="name">Liber Catullianus</span></a>
+                            <meta itemprop="position" content="7" />
+            </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="https://www.skuola.net/versioni-latino/catullo/liber-catullianus/sezione-1-nugae" itemprop="item"><span itemprop="name">Sezione 1 Nugae</span></a>
+                            <meta itemprop="position" content="8" />
+            </li>
+                    </ol>
+    </div>
+<h1 class="article_title title">Traduzione di Carme 11, Sezione 1 Nugae di Catullo</h1>
+
+        
+                    <hx:include src="/service/fragment?_path=slug%3Du9%26extended%3D1%26_format%3Dhtml%26_locale%3Dit%26_controller%3DSkuolaUniversitaBundle%253AUtente%253Abadge&amp;_hash=%2FrJ7HgTHPAkA%2BjMSIlJasXfunPSBIDKTNTshxk6Xf44%3D"></hx:include>
+        
+                    
+<div class="social_bar_box">
+    <ul class="utility_buttons">
+                                <li><a class="icon-stampa" href="https://www.skuola.net/versioni-latino/catullo/liber-catullianus/sezione-1-nugae/carme-11/print" rel="nofollow"><span class="btn-txt btn-stampa"></span></a></li>
+            
+        </ul>
+    <ul>
+                    <li><div class="social-button" data-url="https://www.skuola.net/versioni-latino/catullo/liber-catullianus/sezione-1-nugae/carme-11" data-title="Traduzione Carme 11, Sezione 1 Nugae, Liber Catullianus"></div></li>
+    <script type="text/javascript">
+        $('.social-button').socialize();
+    </script>
+    
+        </ul>
+</div>
+        
+        <div class="testo">
+            <p class="bold">Versione originale in latino</p><br/>
+            Furi et Aureli comites Catulli,<br/>sive in extremos penetrabit Indos,<br/>litus ut longe resonante Eoa<br/>tunditur unda,<br/>sive in Hyrcanos Arabesve molles,<br/>seu Sagas sagittiferosve Parthos,<br/>sive quae septemgeminus colorat<br/>aequora Nilus,<br/>sive trans altas gradietur Alpes,<br/>Caesaris visens monimenta magni,<br/>Gallicum Rhenum horribile aequor<br/>ultimosque Britannos,<br/>omnia haec, quaecumque feret voluntas<br/>caelitum, temptare simul parati,<br/>pauca nuntiate meae puellae<br/>non bona dicta.<br/>cum suis vivat valeatque moechis,<br/>quos simul complexa tenet trecentos,<br/>nullum amans vere, sed identidem omnium<br/>ilia rumpens;<br/>nec meum respectet, ut ante, amorem,<br/>qui illius culpa cecidit velut prati<br/>ultimi flos, praetereunte postquam<br/>tactus aratro est.
+        </div>
+
+        <div class="traduzione">
+            <p class="bold">Traduzione all'italiano</p><br/>
+            <p>Furio e Aurelio, compagni di Catullo,<br/>sia che voglia andare dagli Indi ai confini del mondo,<br/>dove la costa &egrave; battuta dall'onda<br/>orientale lungisonante,<br/>sia dagli Ircani o dagli Arabi effeminati,<br/>sia dai Saci o dai Prti armati di fracce,<br/>sia (presso) le acque che il Nilo<br/>dalle sette foci colora,<br/>Sia che (Catullo) oltrepassi le alte Alpi,<br/>per visitare i luoghi che ricordano le imprese di Cesare,<br/>il Gallico Reno, e i selvaggi<br/>Britanni, i pi&ugrave; selvaggli (fra gli uomini)<br/>pronti ad affrontare con me tutte queste cose<br/>tutte quelle che porter&agrave; da volont&agrave; degli dei<br/>riferite alla mia ragazza queste poche,<br/>amare parole.<br/>Viva e stia bene con i suoi amanti,<br/>che (ella) abbraccia e possiede trecento alla volta<br/>(lei che) nessuno ama davvero, e senza tregua<br/>rompe i fianchi a tutti (lett: di tutti);<br/>e non conti pi&ugrave;, come prima, sul mio amore,<br/>che per colpa sua &egrave; caduto, come un fiore<br/>al margine d'un prato dopo che &egrave; stato toccato<br/>dall'aratro che passava</p>
+        </div>
+    </div>
+                    </div>
+                                    <div id="index_sidebar">
+                        <div id="main_news_sidebar" class="page">
+    <div id="main_news_sidebar_social">
+            <a href="https://ripetizioni.skuola.net/?utm_source=skuola&utm_medium=300x100-sidebar&utm_campaign=ripetizioni"><img src="https://www.skuola.net/img/banner/300x100-trova-ripetizioni-lezioni-online.png" alt="Trova ripetizioni online e lezioni private" title="Trova ripetizioni online e lezioni private"></a>
+
+    </div>
+</div>
+<div class="page">
+    
+</div>
+<div class="banner">
+    <div id="adv-gpt-box-container1">
+        <script src="https://adv.mediamond.it/hpsponsor/skuola/300x250.js" type="text/javascript"></script>
+    </div>
+    <div id="adv-gpt-box-mobile-container1"></div>
+</div>
+<div id="outbrain_snippet"></div>
+<script type="text/javascript">
+(function() {
+    get_outbrain_snippet('https://www.skuola.net/versioni-latino/catullo/liber-catullianus/sezione-1-nugae/carme-11');
+})();
+</script>            <div id="versione_correlati" class="article_ads_app">
+            <div class="box_title">
+                <span><a id="related">Versioni correlate</a></span>
+            </div>
+            <ul>
+                            <li><a href="/versioni-latino/catullo/liber-catullianus/sezione-1-nugae/carme-7"
+    title="Vai alla versione e scopri la traduzione!"
+    >Catullo - Liber Catullianus - Sezione 1 Nugae - Carme 7</a></li>
+                            <li><a href="/versioni-latino/catullo/liber-catullianus/sezione-1-nugae/carme-8"
+    title="Vai alla versione e scopri la traduzione!"
+    >Catullo - Liber Catullianus - Sezione 1 Nugae - Carme 8 - Traduzione 1</a></li>
+                            <li><a href="/versioni-latino/catullo/liber-catullianus/sezione-1-nugae/carme-9"
+    title="Vai alla versione e scopri la traduzione!"
+    >Catullo - Liber Catullianus - Sezione 1 Nugae - Carme 9</a></li>
+                            <li><a href="/versioni-latino/catullo/liber-catullianus/sezione-1-nugae/carme-12"
+    title="Vai alla versione e scopri la traduzione!"
+    >Catullo - Liber Catullianus - Sezione 1 Nugae - Carme 12</a></li>
+                            <li><a href="/versioni-latino/catullo/liber-catullianus/sezione-1-nugae/carme-13"
+    title="Vai alla versione e scopri la traduzione!"
+    >Catullo - Liber Catullianus - Sezione 1 Nugae - Carme 13</a></li>
+                            <li><a href="/versioni-latino/catullo/liber-catullianus/sezione-1-nugae/carme-14"
+    title="Vai alla versione e scopri la traduzione!"
+    >Catullo - Liber Catullianus - Sezione 1 Nugae - Carme 14</a></li>
+                        </ul>
+        </div>
+                        </div>
+                                <div class="clear"></div>
+            </div>
+            <div id="content_footer"></div>
+        </div>
+
+        <footer>
+    <div id="footer">
+        <div id="footer_wrapper">
+            <p class="title">About Skuola.net</p>
+            <ul>
+		<li><a href="https://corporate.skuola.net" rel="nofollow">Chi siamo</a></li>
+                <li><a href="https://corporate.skuola.net/lavora-con-noi/" rel="nofollow">Lavora con noi</a></li>
+                <li><a href="https://corporate.skuola.net/pubblicita/">Pubblicit&agrave;</a></li>
+                <li><a href="https://corporate.skuola.net/contatti/">Contatti</a></li>
+                <li><a href="/store/">Store</a></li>
+                <li><a href="https://ripetizioni.skuola.net">Ripetizioni</a></li>
+                <li><a href="/promo/app/" rel="nofollow">Apps</a></li>
+                <li><a href="https://ricerca.skuola.net/" rel="nofollow">Ricerca</a></li>
+                <li><a href="/tutorial/">Help</a></li>
+                <li><a href="/plug.php?e=memberterms" rel="nofollow">Privacy</a></li>
+            </ul>
+            <div id="social-icons-box">
+                <a id="fb-icon-footer" href="https://www.facebook.com/skuola.net" target="_blank"></a>
+                <a id="twitter-icon-footer" href="https://twitter.com/skuolanet" target="_blank"></a>
+                <a id="googleplus-icon-footer" href="https://plus.google.com/100736892738797438917" target="_blank"></a>
+                <a id="youtube-icon-footer" href="https://goo.gl/3FwDd7" target="_blank"></a>
+                <a id="instagram-icon-footer" href="https://www.instagram.com/skuolanet/" target="_blank"></a>
+                <a id="flipboard-icon-footer" href="https://flipboard.com/@Skuolanet" target="_blank"></a>
+            </div>
+            <div class="copy">
+                <p>
+                    Skuola.net News &egrave; una testata giornalistica iscritta al
+                    Registro degli Operatori della Comunicazione.<br/>
+                    Registrazione: n° 20792 del 23/12/2010<br/>
+                    &copy;2000-2017 Skuola Network s.r.l. Tutti i diritti riservati. - P.I. 10404470014
+                                        <a href="https://www.dmca.com/Protection/Status.aspx?ID=4c27cab9-5a41-487d-9076-d4c530ff3ba7" title="DMCA" target="_blank" rel="nofollow">
+                        <img class="dmca" src ="https://images.dmca.com/Badges/dmca_protected_sml_120s.png?ID=4c27cab9-5a41-487d-9076-d4c530ff3ba7" alt="DMCA.com" />
+                    </a>
+                                    </p>
+            </div>
+            <div class="doodle">
+                <img src="/img/landing/doodle.png?20150521" />
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/footer.js?20150521"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/sk_glyphicons.css?20150521" />
+
+        <div class="tracking_code">
+            <script type="text/javascript" src="https://codicebusiness.shinystat.com/cgi-bin/getcod.cgi?USER=skuola&amp;P=2"></script>
+<noscript>
+<a href="https://www.shinystat.com/it" target="_top">
+<img src="https://www.shinystat.com/cgi-bin/shinystat.cgi?USER=skuola&amp;P=2" alt="" border="0" /></a>
+</noscript>
+        </div>
+
+    </div>
+    </div>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"bfe3f05254","applicationID":"52814816","transactionName":"Y1VRNRcDVxUFBUFbXVofcgIRC1YISzVeR11YUXAOEQ1XEg0kR1tWU1VxFAsGVQNeMFxWV1sKVwgXB00SBQ==","queueTime":0,"applicationTime":102,"atts":"TxJSQ18ZRBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

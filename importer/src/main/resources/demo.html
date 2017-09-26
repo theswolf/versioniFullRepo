@@ -1,0 +1,2382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml"
+	xmlns:hx="http://purl.org/NET/hinclude">
+<head>
+<title>Versioni di Latino</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta
+	content="Versioni di Latino, lista completa delle versioni tradotte dal Latino all'italiano divise per autore e opera. Traduzione disponibile gratuitamente."
+	name="description">
+<meta name="Language" content="Italian it">
+<meta name="robots" content="index,follow" />
+<link href="https://www.skuola.net/versioni-latino/" rel="canonical">
+<!--[if IE]>
+<meta name="application-name" content="Skuola.net"/>
+<meta name="msapplication-tooltip" content="Skuola.net - La risorsa definitiva per la scuola e l'università"/>
+<meta name="msapplication-starturl" content="/"/>
+<meta name="msapplication-window" content="width=1024;height=768"/>
+<meta name="msapplication-navbutton-color" content="#0795d5"/>
+<meta name="msapplication-task" content="name=Medie; action-uri=https://www.skuola.net/medie;icon-uri=/skins/delirio/img/pin/icon_ie9.ico"/>
+<meta name="msapplication-task" content="name=Superiori; action-uri=https://www.skuola.net/superiori;icon-uri=/skins/delirio/img/pin/icon_ie9.ico"/>
+<meta name="msapplication-task" content="name=Universit&agrave;; action-uri=https://www.skuola.net/universita;icon-uri=/skins/delirio/img/pin/icon_ie9.ico"/>
+<meta name="msapplication-task" content="name=Appunti; action-uri=https://www.skuola.net/appunti-scuola;icon-uri=/skins/delirio/img/pin/icon_ie9.ico"/>
+<meta name="msapplication-task" content="name=Chiedi alla Community; action-uri=https://www.skuola.net/forum;icon-uri=/skins/delirio/img/pin/icon_ie9.ico"/>
+<![endif]-->
+<base href="https://www.skuola.net">
+<link rel="icon" type="image/png" href="/favicon/favicon32x32.png">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed"
+	href="/favicon/apple-touch-icon-precomposed.png">
+<link rel="search" type="application/opensearchdescription+xml"
+	title="Cerca in Skuola.net" href="/plugins/cse/skuola.xml">
+<link rel="alternate" type="application/rss+xml"
+	title="News by Skuola.net" href="/rss.php">
+<link rel="alternate" type="application/rss+xml"
+	title="Forums by Skuola.net" href="/rss.php?c=forums">
+<link rel="alternate" type="application/rss+xml"
+	title="Appunti by Skuola.net" href="/rss.php?c=appunti">
+
+<link href="https://plus.google.com/100736892738797438917"
+	rel="publisher">
+<meta property="fb:app_id" content="122322431136154" />
+<meta name="msvalidate.01" content="40F2861BC5A639E558EB56C9CE01362A" />
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/skins/delirio/css/ie7.css" /><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/skins/delirio/css/ie8.css" /><![endif]-->
+<!--[if IE 9]><link rel="stylesheet" type="text/css" href="/skins/delirio/css/ie9.css" /><![endif]-->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"
+	integrity="sha256-SOuLUArmo4YXtXONKz+uxIGSKneCJG4x0nVcA0pFzV0="
+	crossorigin="anonymous"></script>
+
+<style>
+.async-hide {
+	opacity: 0 !important
+}
+</style>
+<script>
+    (function(a,s,y,n,c,h,i,d,e) {
+        s.className += ' ' + y;
+        h.start = 1 * new Date;
+        h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+        (a[n] = a[n] || []).hide = h;
+        setTimeout(function (){ i(); h.end = null }, c);
+        h.timeout = c;
+    })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {'GTM-NQPVHJW': true});
+</script>
+<script>
+    (function(i,s,o,g,r,a,m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-3732638-2', 'skuola.net');
+    ga('require', 'displayfeatures');
+    ga('require', 'GTM-NQPVHJW');
+    
+            ga('send', 'pageview');
+</script>
+<script type="text/javascript"
+	src="/assets/js/mm-banner-manager.js?20150521"></script>
+
+<script type="text/javascript"
+	src="https://adv.mediamond.it/hpsponsor/skuola/header.js"></script>
+
+<script type="text/javascript">
+var isLogged = false;</script>
+<link rel="stylesheet" type="text/css" media="screen"
+	href="/assets/css/cotonti.css?20150521" />
+<link rel="stylesheet" type="text/css" media="screen"
+	href="/assets/css/default.css?20150521" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css"
+	href="/bundles/skuolauniversita/css/style.css?20150521">
+<link rel="stylesheet" type="text/css" media="screen"
+	href="/bundles/skuolaversioni/css/style.css?20150521">
+
+<link rel="stylesheet" type="text/css" media="screen"
+	href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+	integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
+	crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+	src="/bundles/skuolacommon/js/xss-filters.1.2.7.min.js"></script>
+<script type="text/javascript" src="/assets/js/default.js?20150521"></script>
+<script type="text/javascript">
+    if($.cookie('x') || $.cookie('tokx')){
+        var x_cookie = ($.cookie('tokx'))?$.cookie('tokx'):$.cookie('x');
+        $(function(){
+            $('input[name=x]').val(x_cookie);
+        });
+    }
+</script>
+
+<script type="text/javascript" src="/assets/js/versioni.js?20150521"></script>
+<meta property="og:type" content="article" />
+<meta property="og:image"
+	content="https://www.skuola.net/bundles/skuolacotontibridge/img/utente/homeRegistrazione.png?20150521" />
+<meta property="og:title" content="Versioni di Latino" />
+<meta property="og:description"
+	content="Versioni di Latino, lista completa delle versioni tradotte dal Latino all'italiano divise per autore e opera. Traduzione disponibile gratuitamente." />
+<meta property="og:site_name"
+	content="Skuola.net - Tutto per scuola e università: appunti, tesine, dispense e notizie" />
+<meta property="og:url"
+	content="https://www.skuola.net/versioni-latino/" />
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+	async="async"></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(["init", {
+    appId: "b9937965-a344-4029-b7c5-706e745acccc",
+    autoRegister: true,
+    subdomainName: 'skuola',
+    httpPermissionRequest: { enable: true },
+    notifyButton: { enable: false },
+    safari_web_id: "web.onesignal.auto.245258f0-6c6a-439f-986f-895149dbff04",
+    text: {
+        'tip.state.unsubscribed': 'Attiva le notifiche',
+        'tip.state.subscribed': 'Hai attivato le notifiche',
+        'tip.state.blocked': 'Hai bloccato le notifiche',
+        'message.prenotify': 'Clicca per attivare le notifiche',
+        'message.action.subscribed': 'Grazie!',
+        'message.action.resubscribed': 'Hai attivato le nostre notifiche :)',
+        'message.action.unsubscribed': 'Non riceverai più notifiche',
+        'dialog.main.title': 'Gestisci le notifiche',
+        'dialog.main.button.subscribe': 'ATTIVA',
+        'dialog.main.button.unsubscribe': 'DISATTIVA',
+        'dialog.blocked.title': 'Sblocca le notifiche',
+        'dialog.blocked.message': 'Segui le istruzioni per attivare le notifiche:'
+    },
+    promptOptions: {
+        actionMessage: 'Ti piacerebbe restare aggiornato sulle ultime notizie di Skuola.net?',
+        acceptButtonText: 'SI, AGGIORNAMI',
+        cancelButtonText: 'Forse dopo'
+    },
+    httpPermissionRequest: {
+        modalTitle: 'Grazie! :)',
+        modalMessage: 'Riceverai le notifiche con le ultime novità. Potrai disattivarle in ogni momento.',
+        modalButtonText: 'CHIUDI'
+    }
+  }]);
+</script>
+</head>
+<body class="skuola-universita">
+
+	<script type="text/javascript">var dataLayer = dataLayer || [];</script>
+	<script type="text/javascript">
+    dataLayer.push({
+        'PageType': 'Homepage',
+        'HashedEmail': '',
+        'siteType' : 'D'
+    });
+</script>
+	<div id="fb-root"></div>
+	<script>
+window.fbAsyncInit = function() {
+    FB.init({
+        appId      : 122322431136154,
+        xfbml      : true,
+        version    : 'v2.4'
+    });
+
+    var event;
+    var eventType = 'facebook.loaded';
+
+    if (typeof Event === 'function') {
+        event = new Event(eventType);
+    } else {
+        event = document.createEvent('Event');
+        event.initEvent(eventType, true, true);
+    }
+
+    document.dispatchEvent(event);
+};
+// Load the Facebook SDK Asynchronously
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/it_IT/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+	<script>
+window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+
+    return t;
+}(document, "script", "twitter-wjs"));
+</script>
+	<!-- Google Tag Manager -->
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-G49N2"
+			height="0" width="0" style="display: none; visibility: hidden"></iframe>
+	</noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-G49N2');</script>
+	<!-- End Google Tag Manager -->
+	<!-- BEGIN HEADER BAR -->
+	<div id="topbar">
+		<div class="container">
+			<a href="/" class="logo"> <img
+				src="/bundles/skuolacommon/img/logo.svg?20150521" alt="skuola.net">
+			</a>
+
+			<div class="navigation-scroll">
+				<nav id="main-nav">
+				<ul class="top-navigation">
+					<li class="appunti with-submenu active"><a
+						href="/appunti-scuola-universita/">Appunti</a>
+						<button class="dropdown-button"></button>
+						<div class="submenu">
+							<ul class="container">
+								<li><a href="/appunti-medie/">Appunti Medie</a></li>
+								<li><a href="/appunti/">Appunti Superiori</a></li>
+								<li><a href="/appunti-universita/">Appunti Università</a></li>
+								<li><a href="/temi-saggi-svolti/">Temi &amp; Saggi</a></li>
+								<li><a href="/versioni-latino/">Versioni Latino</a></li>
+								<li><a href="/versioni-greco/">Versioni Greco</a></li>
+								<li><a href="/dante/">Dante</a></li>
+								<li><a href="/manzoni/">Manzoni</a></li>
+								<li><a href="/libri/">Recensioni libri</a></li>
+							</ul>
+						</div></li>
+					<li class="forum "><a href="/forum/">Forum</a></li>
+					<li class="trend with-submenu"><a href="/news/">Trend</a>
+						<button class="dropdown-button"></button>
+						<div class="submenu">
+							<ul class="container">
+								<li><a href="/news/fotonotizie/">Lifestyle</a></li>
+								<li><a href="/news/fun/">LOL</a></li>
+								<li><a href="/news/social-trend/">Social Trend</a></li>
+								<li><a href="/news/spettacolo/">Fandom</a></li>
+								<li><a href="/news/moda-bellezza/">Fashion&amp;Beauty</a></li>
+								<li><a href="/news/scienza-tecnica/">Geeky</a></li>
+								<li><a href="/school-love/">Love&amp;Sex</a></li>
+								<li><a href="/news/motori/">Pit Stop</a></li>
+								<li><a href="/news/inchiesta/">Inchieste</a></li>
+								<li><a href="/news/blog/">Blog</a></li>
+							</ul>
+						</div></li>
+					<li class="scuola with-submenu"><a href="/scuola/">Scuola</a>
+						<button class="dropdown-button"></button>
+						<div class="submenu">
+							<ul class="container">
+								<li><a href="/appunti-medie/">Appunti Medie</a></li>
+								<li><a href="/appunti/">Appunti Superiori</a></li>
+								<li><a
+									href="https://www.skuola.net/scuola/alternanza-scuola-lavoro/">Scuola
+										Lavoro</a></li>
+								<li><a href="/esame-terza-media/">Terza Media</a></li>
+								<li><a href="/prova-invalsi/">Invalsi</a></li>
+								<li><a href="/scuola/orientamento-superiori/">Orientamento
+										Superiori</a></li>
+								<li><a href="/orientamento-universitario/">Orientamento
+										Universitario</a></li>
+							</ul>
+						</div></li>
+					<li class="università with-submenu"><a href="/universita/">Università</a>
+						<button class="dropdown-button"></button>
+						<div class="submenu">
+							<ul class="container">
+								<li><a href="https://www.skuola.net/universita/ricerca">Cerca
+										Appunti</a></li>
+								<li><a href="/universita/appunti-riassunti">Appunti
+										Esami</a></li>
+								<li><a href="/universita/atenei">Appunti Atenei</a></li>
+								<li><a href="/facolta/">Appunti Facoltà</a></li>
+								<li><a href="/news/notizie-universita/">News università</a>
+								</li>
+								<li><a href="http://stanze.skuola.net/">Affitti per
+										studenti</a></li>
+								<li><a href="/come-studiare/">Metodo Studio</a></li>
+							</ul>
+						</div></li>
+					<li class="maturità with-submenu"><a
+						href="https://www.skuola.net/maturita/">Maturità</a>
+						<button class="dropdown-button"></button>
+						<div class="submenu">
+							<ul class="container">
+								<li><a
+									href="https://www.skuola.net/maturita/commissari-maturita/">Commissari
+										Esterni Maturita</a></li>
+								<li><a
+									href="https://www.skuola.net/maturita/date-maturita.html">Date
+										Maturità 2018</a></li>
+								<li><a
+									href="https://www.skuola.net/maturita/tracce-maturita/">Tracce
+										Maturità</a></li>
+								<li><a href="/maturita/materie-maturita/">Materie
+										Maturità</a></li>
+								<li><a href="/maturita/percorsi-maturita/">Percorsi
+										Maturità</a></li>
+								<li><a href="/maturita/tesine/">Tesine</a></li>
+							</ul>
+						</div></li>
+					<li class="test with-submenu"><a href="/test-ingresso/">Test</a>
+						<button class="dropdown-button"></button>
+						<div class="submenu">
+							<ul class="container">
+								<li><a
+									href="https://www.skuola.net/test-ingresso/medicina-chirurgia/">Test
+										Medicina</a></li>
+								<li><a
+									href="https://www.skuola.net/test-ingresso/ingegneria/">Test
+										Ingegneria</a></li>
+								<li><a
+									href="https://www.skuola.net/test-ingresso/architettura/">Test
+										Architettura</a></li>
+								<li><a
+									href="https://www.skuola.net/test-ingresso/medicina-veterinaria/">Test
+										Veterinaria</a></li>
+								<li><a
+									href="https://www.skuola.net/test-ingresso/scienze-sanitarie/">Test
+										Professioni Sanitarie</a></li>
+								<li><a
+									href="https://www.skuola.net/test-ingresso/scienze-formazione-educazione/">Test
+										Scienze Formazione</a></li>
+								<li><a
+									href="https://www.skuola.net/test-ingresso/test-economia/">Test
+										Economia</a></li>
+							</ul>
+						</div></li>
+					<li class="tv with-submenu"><a href="/tv/">Tv</a>
+						<button class="dropdown-button"></button>
+						<div class="submenu">
+							<ul class="container">
+								<li><a href="/video/consigli-tutorial/">Tutorial</a></li>
+								<li><a href="/video/interviste/">Interviste</a></li>
+								<li><a href="/video/fun-video/">Video LOL</a></li>
+								<li><a href="/video/video-notizie/">Notizie Video</a></li>
+								<li><a href="https://goo.gl/3FwDd7">YouTube Skuola.net</a>
+								</li>
+							</ul>
+						</div></li>
+					<li class="lavoro "><a href="https://www.skuola.net/lavoro/">Lavoro</a></li>
+					<li class="store "><a
+						href="https://www.skuola.net/store/?utm_source=skuola&amp;utm_medium=menu&amp;utm_campaign=market&amp;utm_nooverride=1">Store</a></li>
+					<li class="ripetizioni "><a
+						href="https://ripetizioni.skuola.net/?utm_source=skuola&amp;utm_medium=navbar&amp;utm_campaign=ripetizioni">Ripetizioni</a></li>
+				</ul>
+				</nav>
+			</div>
+
+			<div class="actions">
+				<div class="button">
+					<a href="/invia-appunto/" class="green-button">Invia Appunti</a>
+				</div>
+				<a id="search-toggle" title="Ricerca"
+					href="https://ricerca.skuola.net/"><i class="fa fa-search"></i></a>
+				<a href="/users.php?m=auth" id="user-toggle" class="anonymous"><i
+					class="fa fa-user"></i></a>
+				<button id="menu-toggle" aria-label="Menù">
+					<i class="fa fa-navicon"></i>
+				</button>
+			</div>
+		</div>
+		<div class="popup">
+			<div class="search-wrapper container">
+				<form id="search-box" action="https://ricerca.skuola.net/"
+					method="GET">
+					<input placeholder="Cerca appunti nel sito…" type="search" value=""
+						name="search" id="topbar-search-input" data-search> <input
+						class="submit" type="submit" value="Cerca">
+				</form>
+			</div>
+
+			<div class="user-wrapper container">
+				<div id="login-box">
+					<a href="/universita/facebook-oauth" class="facebook-login-btn"><i
+						class="fa fa-facebook"></i> Accedi con Facebook</a>
+					<div class="separator">
+						<span>oppure</span>
+					</div>
+					<form method="post" id="signin" action="/service/login">
+						<label for="username">Nome utente</label> <input id="username"
+							name="rusername" value="" title="username" type="text"
+							placeholder="Nome utente"> <label for="password">Password</label>
+						<input id="password" name="rpassword" value="" title="password"
+							type="password" placeholder="Password">
+
+						<div class="recover-link">
+							<a href="/plug.php?e=passrecover" title="Recupera la password">Password
+								dimenticata?</a>
+						</div>
+
+						<div class="submit">
+							<input type="submit" value="Accedi">
+						</div>
+					</form>
+
+					<hr>
+
+					<p>
+						Non sei registrato? <a href="/utente/registrazione">Registrati
+							ora</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END HEADER BAR -->
+	<div>
+		<div id="container">
+			<div id="content">
+				<div id="index">
+					<div id="index_content" class="two-columns">
+						<div class="box_title">
+							<ol class="breadcrumb" itemscope
+								itemtype="https://schema.org/BreadcrumbList">
+								<li itemprop="itemListElement" itemscope
+									itemtype="https://schema.org/ListItem"><a
+									href="https://www.skuola.net/" itemprop="item"><span
+										itemprop="name">Home</span></a>
+									<meta itemprop="position" content="1" /></li>
+								<li itemprop="itemListElement" itemscope
+									itemtype="https://schema.org/ListItem"><a
+									href="https://www.skuola.net/superiori" itemprop="item"><span
+										itemprop="name">Superiori</span></a>
+									<meta itemprop="position" content="2" /></li>
+								<li itemprop="itemListElement" itemscope
+									itemtype="https://schema.org/ListItem"><a
+									href="https://www.skuola.net/superiori/appunti" itemprop="item"><span
+										itemprop="name">Appunti</span></a>
+									<meta itemprop="position" content="3" /></li>
+								<li itemprop="itemListElement" itemscope
+									itemtype="https://schema.org/ListItem"><a
+									href="https://www.skuola.net/superiori/latino" itemprop="item"><span
+										itemprop="name">Latino</span></a>
+									<meta itemprop="position" content="4" /></li>
+								<li itemprop="itemListElement" itemscope
+									itemtype="https://schema.org/ListItem"><span
+									itemprop="name">Versioni</span>
+									<meta itemprop="position" content="5" /></li>
+							</ol>
+						</div>
+						<h1 class="list_title title">Traduzioni dal Latino
+							all'italiano delle versioni dei Grandi Autori Latini.</h1>
+
+						<h2 class="list_description">Consulta le versioni di latino
+							tradotte all’italiano tra migliaia di contenuti per il liceo e il
+							biennio. Trova le principali opere scritte in latino e le loro
+							traduzioni in questa sezione. Clicca sull’autore oppure
+							sull’opera per trovare la versione di latino che cerchi e la
+							traduzione del testo all’italiano: dalle Confessiones di Agostino
+							o De ira di Seneca, ai principali libri scolastici e le opere in
+							latino di Dante.</h2>
+
+						<div class="search forum_search_author">
+							<span class="strong floatleft">Cerca per iniziale
+								dell'autore:</span>
+							<ul class="search_author floatleft">
+								<li><a href="https://www.skuola.net/versioni-latino/#a">A</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#b">B</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#c">C</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#d">D</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#e">E</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#f">F</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#g">G</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#h">H</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#i">I</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#j">J</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#k">K</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#l">L</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#m">M</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#n">N</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#o">O</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#p">P</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#q">Q</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#r">R</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#s">S</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#t">T</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#u">U</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#v">V</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#w">W</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#x">X</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#y">Y</a></li>
+								<li><a href="https://www.skuola.net/versioni-latino/#z">Z</a></li>
+							</ul>
+						</div>
+
+						<style>
+.search.forum_search_author {
+	position: relative;
+	float: left;
+	clear: both;
+	height: 25px;
+	margin: 15px 0px 0px 0px;
+}
+
+.search.forum_search_author>* {
+	height: 25px;
+	line-height: 25px;
+}
+
+.search.forum_search_author span {
+	font-size: 13px;
+}
+
+.search.forum_search_author .search_author {
+	margin: 0px 0px 0px 10px;
+	background-color: #E6F0F9;
+	width: 475px;
+}
+
+.search.forum_search_author .search_author li {
+	float: left;
+	margin: 0px 5px 0px 5px;
+	font-size: 12px;
+}
+
+.folder div.letter-box, .folder div.letter-box a, .folder div.letter-box a:hover
+	{
+	background: #007DC3;
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+	margin: -13px 0px 13px 0px;
+}
+
+.folder div.letter-box a, .folder div.letter-box a:hover {
+	padding: 2px 0px 1px 6px;
+	height: 18px;
+}
+
+#professori .order, #professori .list {
+	padding: 15px 0px 20px 0px;
+}
+</style>
+						<script>
+$(document).ready(function(){
+    $('.folder a.professor').filter(function () {
+        var prev = $(this).parents('li').prev();
+        var current_upper_case_letter = $(this).text().charAt(0).toUpperCase();
+        var previous_upper_case_letter = prev.find('.folder a').text().charAt(0).toUpperCase();
+        return current_upper_case_letter !== previous_upper_case_letter;
+    }).each(function(){
+        var letter = $(this).text().charAt(0);
+        $(this).before('<div class="letter-box"><a name="'+letter.toLowerCase()+'">'+letter+'</a></div>');
+    });
+});
+</script>
+						<div class="search forum_search">
+							<form action="#" id="cercaContenuti">
+								<input type="text"
+									placeholder="Digita le prime parole della versione"
+									name="search_query" class="text text_disappears" data-search
+									data-filter="latino_versioni" /> <input type="submit"
+									value="Cerca" class="submit" name="cerca" />
+							</form>
+						</div>
+
+						<style>
+.search.forum_search {
+	position: relative;
+	float: left;
+	clear: left;
+}
+
+.search.forum_search form {
+	width: 660px !important;
+	margin-right: 0px;
+}
+
+.search.forum_search .text {
+	width: 560px !important;
+	line-height: 25px;
+}
+</style>
+
+						<div class="order list">
+							<div class="view">
+								<span class="label">Ordina risultati per:</span>
+							</div>
+							<div class="view">
+								<span class="order">Nome</span> <a title="In ordine ascendente"
+									class="asc active" rel="nofollow">Ascendente</a> <a
+									title="In ordine discendente" class="desc" rel="nofollow"
+									href="/versioni-latino/?direction=desc">Discendente</a>
+							</div>
+						</div>
+						<div class="items-list list floatleft clearleft autori">
+							<dl id="a" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/agostino"
+												title="Versioni di latino di Agostino d’Ippona (Sant’Agostino) con la traduzione delle Confessiones, una delle note opere dell’autore. E&#039; presente anche il De civitate Dei.
+Agostino fu filosofo, vescovo e teologo latino. Spesso etichettato come il Platone del cristianesimo. La sua produzione letteraria fu molto ricca e eterogenea; realizzò scritti autobiografici, filosofici, apologetici, dogmatici, polemici, morali, esegetici, raccolte di lettere, di sermoni e di opere in poesia. Il suo pensiero venne ripreso sia nell&#039;ambito del cristianesimo sia del protestantesimo.">Agostino</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/agostino/confessiones"
+										title="Versioni di latino con traduzione delle Confessiones, opera autobiografica scritta da Agostino d&#039;Ippona (Sant&#039;Agostino) nel 400, articolata in tredici libri. Al suo interno l&#039;autore narra la sua storia rivolgendosi direttamente a Dio. Il risultato è un testo vocativo che mescola la preghiera, il ringraziamento e la supplica. Le conoscenze delle Sacre Scritture dell&#039;autore sono dimostrate nei vari passaggi dell&#039;opera, identificata come uno dei capolavori della letteratura cristiana. Agostino affronta il tema del legame tra l&#039;uomo e Dio, mostrando il ruolo centrale della divinità nella ricerca della felicità e della verità da parte dell&#039;individuo.">Confessiones</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/agostino/de-civitate-dei"
+										title="Versioni di latino e traduzione dell&#039;opera De civitate dei di Agostino d&#039;Ippona (Sant&#039;Agostino), in cui viene difesa la dottrina cristiana dalle accuse pagane. L&#039;autore per rispondere a tali critiche sceglie di offrire una visione organica della propria religione. Oltre al tema del cristianesimo Sant&#039;Agostino affronta quello della salvezza dell&#039;uomo. Distingue tra due stili di vita, quello che segue il corpo e quello che segue lo spirito. Il secondo si svolge nella città terrena di Caino, Babilonia, e in quella celeste di Abele. Le due realtà coesistono, è l&#039;uomo a scegliere dove schierarsi. Secondo San&#039;Agostino è il giudizio universale che separa definitivamente i giusti dai peccatori.">De
+											Civitate Dei</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/agostino/soliloqui"
+										title="Versioni di latino e traduzione dell&#039;opera Soliloqui, scritta da Agostino d&#039;Ippona, noto anche come Sant&#039;Agostino. Nei Soliloqui Agostino esplicita la finalità del suo lavoro di ricerca, della sua contemplazione filosofica, ovvero conoscere Dio e l&#039;anima. Questi due &quot;fattori&quot; sono legati l&#039;uno all&#039;altro, la ragione e la fede infatti collaborano rafforzandosi a vicenda. Lo stile del componimento risulta essere castigato e il linguaggio adottato puro.">Soliloqui</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Ampelio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/ampelio"
+												title="Versioni di latino con traduzione del Liber Memorialis, un’opera enciclopedica di Lucio Ampelio suddivisa in rubriche, che riporta nozioni di astronomia, geografia. Lo stile di scrittura molto semplice è funzionale all&#039;intento pedagogico del testo. La narrazione risulta essere poco affidabile, in particolar modo per quanto riguarda i contenuti facenti riferimento al periodo repubblicano.">Ampelio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/ampelio/liber-memorialis"
+										title="Versioni di latino e traduzione dell&#039;opera Liber Memorialis di Ampelio, divisa in rubriche che contengono concetti di astronomia, mitologia, geografia e storia. La semplicità dello stile è coerente con l&#039;utilità dell&#039;opera, che doveva essere imparata a memoria dal destinatario. Nella prima parte troviamo la descrizione dei quattro elementi e delle cinque zone della terra. Successivamente Ampelio si dedica allo studio di altri elementi: il fuoco e le stelle; l&#039;aria e i venti; la terra e l&#039;acqua. Nella seconda parte si colloca invece la descrizione dello zodiaco.">Liber
+											Memorialis</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Apuleio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/apuleio"
+												title="Versioni di latino di Lucio Apuleio, filosofo e scrittore in lingua latina. E&#039; presente la traduzione di opere importanti come le celebri Metamorfosi e l’Apologia. Apuleio appartenne alla scuola platonica. Aderì al metaplatonismo, corrente filosofica che riprende le dottrine non scritte di Platone. Il suo stile di scrittura fu un ibrido tra quello arcaico dell&#039;età repubblicana e quello colloquiale e gergale. La sua produzione fu influenzata dalla Seconda Sofistica, di cui fu seguace. La sua opera principale, le Metamorfosi, rappresenta l&#039;unico romanzo in latino, risalente all&#039;epoca romana, pervenutoci integralmente.">Apuleio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/apuleio/apologia"
+										title="Versioni di latino con traduzioni dell&#039;opera Apologia di Lucio Apuleio, articolata in due libri, e che rappresenta la trascrizione di un discorso difensivo. L&#039;opera contiene infatti l&#039;autodifesa dell&#039;autore contro le accuse sulla sua vita privata, in particolar modo sul ricorso alla magia. Le doti oratorie di Apuleio persuadono l&#039;ascoltatore convincendolo circa il suo ricorso esclusivo alla &quot;magia benevola&quot;. Lo stile adottato suscita interesse e stupore nel lettore coinvolgendolo in una narrazione dinamica.">Apologia</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/apuleio/metamorfosi"
+										title="Traduzione delle versioni di latino di Lucio Apuleio contenute nell&#039;opera Metamorfosi o  Asino d&#039;oro, in cui vengono presi in esame temi come quello della metamorfosi.
+Le Metamorfosi di Apuleio è una delle poche testimonianze di romanzo antico in lingua latina. Narra la storia di Lucio che a causa di una serie di vicissitudini viene trasformato in asino, senza perdere però la facoltà di pensiero umana. L&#039;opera costituisce una contaminazione di generi letterari, tra cui epica, biografia, satira, mitologia.">Metamorfosi</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Augusto" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/augusto"
+												title="Versioni di latino dell’opera classica Res Gestae (Monumentum Ancyranum) dell’imperatore e autore romano Gaio Giulio Cesare Ottaviano Augusto. Egli fu promotore dei vecchi valori e dei principi della Repubblica. Governò in un periodo aureo per la storia di Roma che fu di passaggio dalla repubblica al principato. Si occupò anche di cultura incentivando il lavoro di scrittori e poeti, tra i quali Virgilio, Orazio, Ovidio, Lucrezio, Properzio, Catullo, Tibullo, Tito Livio. L&#039;opera Res Gestae costituisce un resoconto dettagliato delle attività svolte nel corso della sua vita per Roma. In esso è riscontrabile una sorta di testamento morale del grande imperatore.">Augusto</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/augusto/res-gestae-monumentum-ancyranum"
+										title="Traduzioni delle versioni di latino Res Gestae (Monumentum Ancyranum) dell&#039;imperatore romano Augusto, con un racconto delle imprese effettuate nella sua carriera politica. Lo stile di scrittura risulta essere immediato, il lessico concreto. Il genere di appartenenza dell&#039;opera è di difficile identificazione. Si tratta di un testamento, ma anche di un testo politico, di un resoconto, di un&#039;autobiografia. Il Res Gestae riporta tutti gli onori riconosciuti dal Senato all&#039;imperatore, e  per volere di Augusto doveva essere inciso su tavole di bronzo da apporre difronte al suo mausoleo.">Res
+											Gestae (Monumentum Ancyranum)</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Aulo Gellio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/aulo-gellio"
+												title="Traduzione delle versioni di latino del celebre scrittore e giurista romano Aulo Gellio che scrisse l’opera Noctes Atticae, raccolta in venti libri quasi del tutto integri.
+In Noctes Atticae l&#039;autore presentò la bellezza dell&#039;Impero negli anni di Antonino Pio. Utilizzò termini eruditi destinando la sua produzione a un pubblico acculturato. Nell&#039;opera fece sfoggio delle sue conoscenze su tematiche eterogenee, quali retorica, medicina, filosofia, storia, archeologia, diritto. Aulo Gellio in modo non esplicito affermò la superiorità della civiltà romana, su quella greca.">Aulo
+												Gellio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/aulo-gellio/noctes-atticae"
+										title="Versioni di latino e traduzione dell&#039;opera Noctes Atticae dell&#039;autore Aulo Gellio, in cui vengono affrontati temi come la critica letteraria, la storia, il diritto, l&#039;archeologia. Gellio raccoglie saperi provenienti da settori disciplinari eterogenei, estratti dalle opere di più di 250 autori. Intraprende un percorso di ricerca nell&#039;universo del sapere umano della fine del II secolo individuando le informazioni più curiose. Tale scelta incide sulla struttura dell&#039;opera che appare molto frammentaria e disorganica. L&#039;autore assume il ruolo di erudito senza abbandonare l&#039;entusiasmo e il tono divertente. Questi elementi rendono l&#039;esposizione semplice e gradevole.">Noctes
+											Atticae</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Autori Vari" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/autori-vari"
+												title="Versioni di latino di vari autori di lingua latina. E&#039; anche presente la traduzione di opere e brani classici.">Autori
+												Vari</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/autori-vari/brani-classici"
+										title="Versioni di latino di vari autori di lingua latina. E&#039; anche presente la traduzione di opere e brani classici.">Brani
+											Classici</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="b" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/bembo"
+												title="Versioni di latino dello scrittore Pietro Bembo, con traduzione del libro unico dei Carmina. Viene presentata la traduzione del canto 3, il Fauno alle Ninfe. Bembo fu un importante cardinale, scrittore e umanista italiano. Nel suo ruolo di grammatico si occupò di regolamentare l&#039;uso della lingua italiana. Nella sua produzione letteraria fu fortemente influenzato da Petrarca e da Boccaccio. Fu un esponente dei ciceroniani, insieme di autori che si prefisse l&#039;obiettivo di restaurare uno stile ispirato alla classicità romana adottando come modelli Cicerone e Virgilio, l&#039;uno per la prosa l&#039;altro per la poesia.">Bembo</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/bembo/carmina"
+										title="Versioni di latino e traduzione dell&#039;opera di Pietro Bembo, i Carmina in cui lo scrittore prende spunto dallo stile del dolce stil novo e dalle opere di Francesco Petrarca.">Carmina</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="c" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/catone"
+												title="Versioni di latino con traduzione di Marco Porcio Catone. Una delle opere scritte dallo scrittore latino si ricordano le Orationes, di cui ci sono pervenuti i Frammenti.
+Catone fu politico, generale e scrittore romano. Scrisse manuali tecnico-pratici per difendere i valori tradizionali e opporsi a quelli ellenizzanti dell&#039;aristocrazia. Si contrappose fortemente alla cultura ellenistica, considerata una minaccia alla sobrietà dei costumi romani. Praticò l&#039;arte Oratoria, strumento indispensabile per chi voleva percorrere il cursus honorum.">Catone</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/catone/orationes-frammenti"
+										title="Versioni di latino e traduzione delle Orationes di Marco Porcio Catone, orazioni che si dividono in orazioni deliberative e orazioni giudiziarie. Le prime hanno come oggetto delle proposte di legge; le seconde sono invece di carattere giudiziario. Catone fu un politico, generale e scrittore romano che pronunciò numerose orazioni. Soltanto di ottanta di esse però ci sono pervenuti dei frammenti.">Orationes
+											(Frammenti)</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Catullo" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/catullo"
+												title="Versioni tradotte di latino dell’importante intellettuale romano Gaio Valerio Catullo, appartenente al gruppo dei poetae novi, che scrisse il noto Liber Catullianus.
+Catullo frequentò ambienti politici, intellettuali e mondani, e ebbe contatti con personaggi influenti dell&#039;epoca, come Quinto Ortensio Ortalo, Gaio Memmio, Cornelio Nepote, e Asinio Pollione. Ebbe contatti ostili con Cesare e Cicerone. Fondò con altri letterati un circolo privato e solidale per stile di vita e tendenze letterarie.">Catullo</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/catullo/liber-catullianus"
+										title="Traduzione delle versioni di latino contenute nell&#039;opera del poeta romano Gaio Valerio Catullo. Tra i temi trattati vi sono l&#039;amore, il matrimonio, la passione. L&#039;opera si compone di 116 carmi in cui l&#039;autore lascia intravedere una parte della sua vita quotidiana. I componimenti sono caratterizzati da spontaneità e da immediatezza espressiva. Queste qualità sono raggiunte grazie a un equilibrato utilizzo del linguaggio colloquiale e di quello letterario. In Liber Catullianus l&#039;autore espone una visione dell&#039;amore in contrasto con la tradizione, secondo cui i legami extraconiugali sono inferiori al matrimonio. L&#039;amore è per Catullo, indipendentemente dal tipo di legame, un patto che comporta lealtà, stima e rispetto. In esso, come nell&#039;amicizia, occorre essere fedeli alla parola data, al patto stabilito.">Liber
+											Catullianus</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Cesare" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/cesare"
+												title="Traduzione delle versioni di latino del De Bello Gallico e del De Bello Civili di Gaio Giulio Cesare, uno  dei personaggi più importanti della storia romana.
+Cesare è considerato tra i più grandi maestri di stile della prosa latina. La sua produzione letteraria è caratterizzata da chiarezza, semplicità, brevità, rigore logico. Fu un militare, console, dittatore, oratore e scrittore romano; ebbe un ruolo cruciale nella transizione dalla repubblica all&#039;impero. Alla fine del 49 a.C. fu dictator di Roma. Cesare utilizzò le sue opere come strumento di diffusione del suo programma politico.">Cesare</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/cesare/de-bello-gallico"
+										title="Traduzione delle versioni di latino dell&#039;opera De Bello Gallico di Caio Giulio Cesare, con analisi delle vicende legate alla conquista della Gallia da parte dei Romani. Cesare sceglie di scrivere in terza persona per conferire un&#039;impronta oggettiva alla narrazione e difendere la propria condotta militare. Inoltre, utilizza il discorso indiretto e ricorre spesso a riferimenti ideologici che possono essere letti come &quot;slogan&quot; a favore della propria politica. Accanto ai contenuti di natura &quot;promozionale&quot;, si trovano quelli di natura più antropologica in cui l&#039;autore narra degli usi e dei costumi delle tribù barbariche.">De
+											Bello Gallico</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cesare/de-bello-civili"
+										title="Versioni di latino con traduzione dell&#039;opera De Bello Civili di Caio Giulio Cesare, con analisi delle vicende storiche dell&#039;antica Roma del biennio 49-48 a. C.">De
+											Bello Civili</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Cicerone" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/cicerone"
+												title="Versioni di latino dell’autore Marco Tullio Cicerone. Vi sono le traduzioni di: Laelius de amicitia, De Divinatione, De Senectute, Cato Maior, De Finibus Bonorum et Malorum. Cicerone fu una delle figure più rilevanti dell&#039;antichità romana. Accanto alla carriera di scrittore e oratore perseguì anche quella politica divenendo console. Durante il consolato sventò la congiura di Catilina e fu proclamato &quot;pater patriae&quot;. Si schierò con Pompeo e dopo la guerra civile ottenne il perdono di Cesare. In seguito a un periodo interamente dedicato alla letteratura e alla filosofia, tornò a occuparsi di politica al fianco di Ottaviano.">Cicerone</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/cicerone/pro-ligario"
+										title="Versioni di latino e traduzione dell&#039;opera Pro Ligario dell&#039;autore Marco Tullio Cicerone, un&#039;orazione in difesa di Quinto Ligario e indirizzata a Cesare dittatore. Il componimento risale al 46 a.C. e corrisponde al discorso tenuto dall&#039;autore davanti Cesare. L&#039;obiettivo è di ottenere il perdono del militare romano esiliato. Cicerone mostra le sue grandi abilità oratorie facendo leva sulla clemenza dell&#039;imperatore, elemento su cui poggia la ricerca di consenso di Cesare.">Pro
+											Ligario</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/laelius-de-amicitia"
+										title="Versioni di latino e traduzioni dell&#039;opera Laelius de amicitia dell&#039;autore Marco Tullio Cicerone, in cui viene presentato un dialogo di natura filosofica. L&#039;opera, dedicata all&#039;amico Tito Pomponio Attico, contiene un vero e proprio elogio dell&#039;amicizia intesa come legame tra soggetti aventi gli stessi ideali politici. Cicerone propone un allargamento del concetto di amicizia, andando oltre la mera nobilitas e aprendo a classi sociali diverse.">Laelius
+											de amicitia</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/de-fato"
+										title="Traduzione delle versioni di latino del De Fato dell&#039;autore Marco Tullio Cicerone, opera di carattere teologico elaborata nel 44 a. C. Il componimento fa parte della produzione filosofica dell&#039;autore. In esso, Cicerone argomenta la posizione stoica sul tema della provvidenza. Lo scrittore avvia un confronto con il politico e storico romano Aulo Irzio su: il destino, il libero arbitrio e la predestinazione. Cicerone oppone all&#039;heimarméne stoico, ovvero la dottrina del destino secondo cui l&#039;uomo è condizionato nella sua libertà dal Fatum e dalla Necessitas, il libero arbitrio. Così facendo l&#039;autore attribuisce potere alla volontà dell&#039;uomo come strumento per raggiungere la libertà.">De
+											Fato</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/de-finibus-bonorum-et-malorum"
+										title="Traduzione delle versioni di latino dell&#039;opera di Marco Tullio Cicerone, De Finibus Bonorum et Malorum, dialogo di carattere filosofico sul sommo bene e sul sommo male. L&#039;opera si articola in cinque libri suddivisi in diadi: il primo e il secondo libro trattano della filosofia epicurea; il terzo e il quarto di quella stoica; il quinto delle dottrine platoncia aristotelica. Il dialogo affronta il tema del bene considerando le differenti correnti filosofiche. In particolare, Cicerone fa riferimento a quella stoica, che definisce il bene come una virtù, e quella epicurea, che lo identifica come un piacere.">De
+											Finibus Bonorum et Malorum</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/de-inventione"
+										title="Versioni di latino con traduzione del De Inventione elaborato da Marco Tullio Cicerone, un trattato rientrante nel genere politico e retorico. Nell&#039;opera l&#039;autore parla di retorica e di orazione individuandone i principi base (inventio, dispositio, elocutio, memoria, actio). Inoltre, narra della connessione tra eloquentia e sapientia. Il primo fattore è per Cicerone fondamentale nel discorso dell&#039;oratore in quanto dà vita alla persuasione e consente il controllo emotivo dell&#039;interlocutore. Questo deve essere collegato alla sapientia dell&#039;uomo in modo tale che lo spettatore riconosca la bontà dell&#039;oratore.">De
+											inventione</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/de-lege-agraria"
+										title="Versioni di latino con traduzione del De lege Agraria di Marco Tullio Cicerone, in cui l&#039;autore si pone contro l&#039;eventuale redistribuzione delle terre di Servilio Rullo. Si tratta di quattro orazioni pronunciate in Senato davanti al popolo, che provano la fiducia della classe equestre nell&#039;oratore.">De
+											lege Agraria</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/de-legibus"
+										title="Traduzione delle versioni di latino del De Legibus di Marco Tullio Cicerone, in cui viene ammessa l&#039;esistenza di una legge universale conforme alla legge divina. Il dialogo, scritto nel 52 a.C., ha come protagonisti Cicerone, Quinto e Attico. I tre personaggi discutono sull&#039;origine delle leggi che, in base alla filosofia stoica adottata dall&#039;autore, deriva dal Diritto naturale. Il dialogo è funzionale a difendere la posizione conservatrice sulle leggi costituzionali, e di conseguenza il potere delle tradizionali classi dirigenti. De Legibus si compone di tre libri: nel primo Cicerone parla del rapporto tra l&#039;eterna giustizia e le transitorie leggi; nel secondo si concentra sulla legislazione religiosa; nel terzo affronta il tema delle competenze delle singole magistrature.">De
+											Legibus</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/de-officis"
+										title="Versioni di latino con traduzione del De Officiis di Marco Tullio Cicerone, articolato in tre libri, e dedicato al figlio dell&#039;autore Marco che si trovava in Grecia. L&#039;opera è stata scritta nel periodo di ripresa dell&#039;attività politica da parte di Cicerone dopo la morte di Cesare. Si tratta di un componimento di carattere politico-filosofico in cui vengono esposti i doveri dell&#039;uomo in qualità di membro dello stato. E&#039; possibile leggere nell&#039;opera un tentativo di delineare una sorta di morale per la classe dirigente romana. Forte è l&#039;influenza della filosofia greca, dello Stoicismo medio in particolare, su quest&#039;opera di Cicerone.">De
+											Officiis</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/de-oratore"
+										title="Traduzione delle versioni di latino dell&#039;opera De Oratore di Marco Tullio Cicerone. Si tratta di un trattato di tipo filosofico in cui si discute di filosofia, oratoria e retorica. L&#039;autore analizza gli aspetti componenti l&#039;arte oratoria e retorica: l&#039;inventio, o l&#039;invenzione; la dispositio, ovvero l&#039;articolazione degli argomenti; l&#039;elocutio, lo stile; la memoria, l&#039;abilità di ricordare; l&#039;actio, la recitazione del discorso. La formazione culturale è per Cicerone un elemento di fondamentale importanza per la riuscita dell&#039;oratore. All&#039;interno del trattato l&#039;autore evidenzia la centralità rivestita dall&#039;actio per i politici che devono sostenere le loro posizioni davanti al Senato.">De
+											Oratore</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/de-republica"
+										title="Versioni di latino tradotte dell&#039;opera De re publica dell&#039;autore Marco Tullio Cicerone, rientrante nel genere del trattato filosofico e diviso in sei libri.
+Il dialogo, scritto tra il 55 a.C. e il 51 a.C., ha come protagonisti Scipione Emiliano e altri amici di Cicerone, fra cui Manio Manilio, Quinto Tuberone, Lucio Furio Filo. I partecipanti al dialogo analizzano le diverse forme di governo e le lo degenerazioni, ad esempio la monarchia in tirannide. In De re publica è rintracciabile la teoria costituzionale di Roma antica, secondo cui esiste un legame tra la morale del mondo politico e i comportamenti individuali.">De
+											Republica</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/cato-maior-de-senectute"
+										title="Versioni di latino con traduzione del Cato Maior de Senectute, opera scritta da Marco Tullio Cicerone in età avanzata e dedicata al suo caro amico Attico. L&#039;opera si articola in un dialogo tra Cicerone, Gaio Lelio Minore e Publio Cornelio Scipione Emiliano. Alla dedica iniziale, seguono le dichiarazioni di meraviglia di Scipione per la serenità con cui Catone affronta l&#039;anzianità. Tale tematica conduce a una discussione sulla morte e sull&#039;immortalità dell&#039;anima. Su quest&#039;ultimo argomento, per bocca di Catone, viene presenta la dottrina pitagorica e platonica sull&#039;anima.">Cato
+											Maior de Senectute</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/de-divinatione"
+										title="Versioni di latino con traduzione del De Divinatione dell&#039;autore Marco Tullio Cicerone, un&#039;opera di tipo filosofico articolata in due libri e scritta nel 44 a. C. La redazione di questo componimento risale al periodo di allontanamento di Cicerone dalla vita politica. 
+Nel primo libro per bocca di Quinto viene presentata la dottrina Stoica e il posizionamento a favore della divinazione. Nel secondo invece Cicerone confuta le teorie esposte dal fratello Quinto. L&#039;autore mostra il suo scetticismo sul tema della divinazione. L&#039;esistenza di tale arte viene però giustificata in quanto mezzo necessario alla tutela dell&#039;equilibrio nello Stato e delle tradizioni.">De
+											Divinatione</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/epistulae-ad-familiares"
+										title="Versioni di latino con traduzione delle Epistulae - Ad Familiares dell&#039;autore Marco Tullio Cicerone che sono inviate a vari personaggi della vita pubblica. Tra questi troviamo destinatari illustri come Gneo Pompeo Magno, Gaio Giulio Cesare e Asinio Pollione, ma anche personaggi legati alla sua vita privata, ad esempio la moglie Terenzia e il liberto Tirone. La corrispondenza privata di Cicerone offre un ritratto completo dell&#039;autore, ma demitizzante. Consente inoltre di avere una rappresentazione dettagliata di Roma nel periodo del tramonto della Repubblica.">Epistulae
+											- Ad familiares</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/epistulae-ad-atticum"
+										title="Versioni di latino con traduzione delle Epistulae - Ad Atticum di Marco Tullio Cicerone e indirizzate all&#039;amico Tito Pomponio Attico tra il 68 e il 44 a. C.
+La raccolta contiene 396 lettere facenti parte delle Epistulae ad familiares. Per compiacere Attico al loro interno introduce brani in greco, mostrando di fatto il suo bilinguismo.">Epistulae
+											- Ad Atticum</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/epistulae-ad-brutum"
+										title="Traduzione delle versioni di latino delle Epistulae ad Brutum, una raccolta di lettere che Marco Tullio Cicerone scrisse all&#039;amico Marco Bruto. Le Epistulae risalgono al periodo in cui il destinatario si trovava in Illiria e in Epiro. A causa della morte di Cicerone, le lettere contenute in questi due libri furono pubblicate nella forma originale, a differenza delle altre che sono state passate in rassegna prima della loro diffusione.">Epistulae
+											- Ad Brutum</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/in-catilinam"
+										title="Versioni di latino e traduzione delle orazioni In Catilinam (Catilinarie) dell&#039;autore Marco Tullio Cicerone che erano state rivolte contro Lucio Catilina.
+I componimenti vennero pronunciati nel 63 a.C. in seguito alla scoperta della congiura. Nella prima orazione Cicerone si rivolge direttamente a Catilina accusandolo di avere complottato contro lo Stato e gli ordinamenti repubblicani. Nella seconda, l&#039;autore mostra il suo entusiasmo per la partenza di Catilina definendola come una vittoria. Nel terzo componimento, Cicerone narra della cattura dei complici che hanno preso parte alla congiura. Infine, nella quarta orazione affronta il tema delle sorti dei colpevoli invitando i senatori a pronunciarsi per il bene di Roma.">In
+											Catilinam</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/in-verrem"
+										title="Versioni di latino e traduzione dell&#039;opera In Verrem ( Verrine) dell&#039;autore Marco Tullio Cicerone a sostegno dell&#039;accusa contro Gaio Licinio Verre, pretore della Sicilia. Delle sette orazioni che compongono l&#039;opera solo due furono pronunciate da Cicerone, poiché l&#039;accusato scelse prematuramente l&#039;esilio. Nella prima l&#039;oratore dimostra l&#039;errore della scelta di Quinto Cecilio Nigro come accusatore, a causa del suo coinvolgimento con Verre. Nella seconda, Cicerone mostra come questo ostacolò le sue indagini in Sicilia tentando di ritardare l&#039;avvio del processo. Nelle ultime cinque la disonestà di Verre viene presentata e analizzata nel dettaglio dall&#039;autore.">In
+											Verrem</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/pro-caelio"
+										title="Versione di latino con traduzione dell&#039;orazione Pro Caelio che l&#039;autore Marco Tullio Cicerone scrisse in difesa dell&#039;amico Celio accusato di violenza. Tra le accuse mosse a Celio troviamo: la partecipazione alla congiura di Catilina, l&#039;abbandono della casa paterna, l&#039;uccisione di Dione di Alessandria, il tentato avvelenamento di Clodia. Cicerone difende l&#039;amico ricorrendo alla scusa della propensione alla trasgressione delle regole, determinata dalla sua giovane età. La narrazione delle vicende di Celio consente all&#039;autore di rappresentare uno spaccato dei nuovi costumi della società romana.">Pro
+											Caelio</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/pro-sestio"
+										title="Traduzione della versione di latino Pro Sestio, orazione che Marco Tullio Cicerone scrisse per difendere il tribuno della plebe Sestio, accusato di avere organizzato delle bande armate. La difesa mossa da Cicerone si basa sulla visione dell&#039;atto illegale come necessario a tutelare le istituzioni minacciate dai Populares. L&#039;orazione, pronunciata nel 56 a.C., è funzionale inoltre a invitare i &quot;possidenti&quot; ad allearsi contro le sovversioni dei ceti popolari per ristabilire l&#039;ordine a Roma.">Pro
+											Sestio</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/post-reditum-in-senatu"
+										title="Traduzione e versioni di latino nell&#039;opera di Marco Tullio Cicerone Post reditum in senatu, in cui l&#039;autore romano si rivolge direttamente al Senato romano. Tale componimento fa parte delle orazioni che Cicerone pronunciò a Roma nel 57 a.C., di ritorno dall&#039;esilio. Le tre orazioni (Post reditum ad senatum, Post reditum ad populum, De domo sua e De haruspicum responso) furono lo strumento adottato da Cicerone per ringraziare l&#039;aristocrazia senatoria e difendere la sua posizione.">Post
+											reditum in senatu</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/pro-flacco"
+										title="Versioni di latino e traduzione dell&#039;orazione Pro Flacco di Marco Tullio Cicerone, in cui quest&#039;ultimo difese Lucio Valerio Flacco accusato di estorsione nel corso della sua carriera politica. Le abilità oratorie di Cicerone portarono all&#039;assoluzione dell&#039;imputato, nonostante si trattasse di una cattiva causa. La presa di posizione dell&#039;autore fu molto probabilmente determinata da una precedente intervento di Flacco in favore dell&#039;oratore nella repressione della congiura di Catilina.">Pro
+											Flacco</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/pro-archia"
+										title="Versioni di latino e traduzione dell&#039;orazione di Marco Tullio Cicerone Pro Archia in cui egli difende Aulo Licinio Archia, il quale è accusato di aver usurpato la cittadinanza italiana. Il poeta di origine greca, si trasferisce a Roma nel 102 a.C. dove entra nel patronato di L. Lucullo. Il senato romano nel 65 a.C. promulga la Lex Papia de Peregrinis, legge che rigetta le richieste di cittadinanza false e stabilisce l&#039;espulsione degli stranieri da Roma. Nel 62 a.C. Cicerone entra nel processo in difesa di Archia dichiarando false le accuse mosse contro di lui.">Pro
+											Archia</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/pro-deiotaro"
+										title="Versioni di latino e traduzione della celebre orazione Pro Deiotaro che fu scritta dall&#039;autore Marco Tullio Cicerone in favore del re Deiotaro. Il sovrano fu tetrarca della Galazia e alleato della Repubblica Romana. Dopo l&#039;accusa di aver progettato un&#039;attentato contro Cesare, venne processato a Roma. Nel 45 a.C. Cicerone pronunciò un&#039;orazione in sua difesa. Tale intervento evitò la condanna al tetrarca.">Pro
+											Deiotaro</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/commentariolum-petitionis"
+										title="Versione di latino e traduzione dell&#039;opera Commentariolum petitionis, attribuita a Marco Tullio Cicerone, ma probabilmente scritta da suo fratello Quinto Tullio Cicerone. Il saggio è scritto in forma epistolare e contiene dei consigli per la carriera politica del fratello Marco Tullio. Il testo risale infatti al periodo della campagna elettorale del 64 a.C. che avrebbe attribuito a Marco Tullio la qualifica di console della Repubblica Romana. Quinto Tullio Cicerone consiglia al fratello di puntare a incrementare quanto più possibile il consenso elettorale, anche se ciò implica puntare più sulla dimensione dell&#039;apparire.">Commentariolum
+											petitionis</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/brutus"
+										title="Traduzione e versioni di latino dell&#039;opera di Marco Tullio Cicerone, Brutus, i cui protagonisti sono lo stesso autore, Marco Giunio Bruto e Tito Pomponio Attico.
+In Brutus si affronta il tema dell&#039;eloquenza greca e romana. Cicerone distingue tra due tipi di oratore: il primo di estrazione atticista predilige uno stile piano, il secondo tende a quello &quot;asiano&quot;, più artificioso. Cicerone critica l&#039;atticismo e evidenzia che l&#039;oratoria, in virtù della sua complessità, raggiunse la perfezione più tardi di altre arti.">Brutus</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/filippiche"
+										title="Versioni di latino e traduzione delle Filippiche, le quattordici orazioni scritte da Marco Tullio Cicerone contro Marco Antonio che prendono come modello di riferimento quelle di Demostene. Da quest&#039;ultimo riprende il tono polemico e l&#039;ardore con cui porta avanti la sue accuse. La campagna denigratoria contro Antonio, all&#039;interno della quale l&#039;opera si colloca, è il risultato dell&#039;opposizione di Cicerone alla sua crescente presa di potere. Tali attacchi vennero puniti con la morte in seguito all&#039;alleanza tra Antonio e Marco Emilio Lepido (secondo triumvirato).">Filippiche</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/de-natura-deorum"
+										title="Versioni di latino con traduzione del De natura Deorum di Marco Tullio Cicerone, un&#039;opera che si articola in tre libri di carattere religioso. Al suo interno l&#039;autore sviluppa un dialogo tra un epicureo, uno stoico e un accademico sulle posizioni dei filosofi sugli dei e sulla Provvidenza. Nel primo libro troviamo l&#039;esposizione della tesi epicurea confutata dall&#039;accademico. Nel secondo viene presentata la posizione stoica. Nell&#039;ultimo libro, l&#039;accademico confuta la teoria stoica ricorrendo al razionalismo e presentando la dottrina religiosa come un mezzo utilizzato dalla politica.">De
+											Natura Deorum</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/tusculanae-disputationes"
+										title="Traduzione delle versioni di latino contenute nell&#039;opera Tusculanae Disputationes, appartenente al genere letterario di tipo filosofico e scritta da Marco Tullio Cicerone. L&#039;intento dell&#039;opera è divulgare la filosofia stoica a Roma. L&#039;opera Tusculanae Disputationes si divide in 5 libri, ognuno dei quali affronta un tema differente e risulta apparentemente autonomo dagli altri. L&#039;elemento di congiunzione è il ritratto del sapiente che si delinea all&#039;interno di tutti i libri. Il sapiente è per l&#039;autore colui che è in grado di mantenere l&#039;equilibrio in ogni situazione.">Tusculanae
+											Disputationes</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/cicerone/epistulae-ad-quintum-fratrem"
+										title="">Epistulae - Ad Quintum fratrem</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Columella" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/columella"
+												title="Versioni di latino dello scrittore Lucio Giunio Moderato Columella. E&#039; presente la traduzione dell’opera De arboribus, in cui il tema portante è l’agricoltura.
+Columella intraprese la carriera da fattore dopo avere concluso quella militare. Nell&#039;opera De re rustica offrì un ricco approfondimento sull&#039;agricoltura romana. In essa l&#039;autore mescolò sapientemente l&#039;approccio scientifico con quello di natura maggiormente pratica. I suoi libri rappresentano una delle principali fonti di conoscenza del settore, tanto da essere un punto di riferimento per la storia delle Scienze Agrarie.">Columella</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/columella/de-arboribus"
+										title="Versioni di latino con traduzione dell&#039;opera De arboribus elaborata da Lucio Giunio Moderato Columella. Il tema portante del testo è la descrizione degli alberi.  
+La sua produzione costituisce un&#039;importante fonte di conoscenza dell&#039;agricoltura romana. Nei suoi libri mescola l&#039;approccio scientifico con consigli pratici.">De
+											arboribus</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Curzio Rufo" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/curzio-rufo"
+												title="Versioni di latino tradotte dello storico romano d’età imperiale Quinto Curzio Rufo, autore dell’opera Historiae Alexandri Magni che racconta le imprese di Alessandro Magno. Il suo stile di scrittura risulta essere scorrevole e ispirato a autori come Tito Livio, Pompeo Trogo, Orazio, Virgilio e Seneca. Si distingue da altri storici per il ricorso alla prosa ritmica, ovvero caratterizzata da una certa musicalità. Con Historiae Alexandri Magri la storiografia latina si apre al romanzo esotico e avventuroso.">Curzio
+												Rufo</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/curzio-rufo/historiae-alexandri-magni"
+										title="Versioni di latino e traduzioni dell&#039;opera Historiae Alexandri Magni scritta dall&#039;autore Quinto Curzio Rufo, con l&#039;elogio della monarchia macedone e del suo re Alessandro Magno. L&#039;autore vede in questo personaggio una figura cardine per la solidità dell&#039;impero. L&#039;esaltazione del suo operato e della sua personalità serve a Curzio Rufo per creare un parallelo con la realtà romana e lodare il princeps per la stabilità che offre a Roma. Historiae Alexandri Magni appartiene al genere del romanzo esotico e avventuroso. Curzio Rufo stimola la fantasia del lettore arricchendo la narrazione di elementi fuori dal comune, estranei alla realtà quotidiana romana.">Historiae
+											Alexandri Magni</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="d" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/dante"
+												title="Versioni con traduzioni del De Vulgari Eloquentia e del De Monarchia dello scrittore fiorentino Dante Alighieri, il celebre autore della Comedìa, nota come Divina Commedia. Dante nacque a Firenze nel 1265, fu poeta, scrittore e politico. Trasformò l&#039;amore per Beatrice in fonte d&#039;ispirazione letteraria e idealizzò l&#039;amata nella figura della &quot;donna-angelo&quot;. Forte fu la sua passione per la politica che sfociò nell&#039;attiva partecipazione agli scontri tra guelfi e ghibellini.
+Dante Alighieri è considerato uno dei padre della lingua italiana. La sua opera più nota, la Divina Commedia, è definita il più grande capolavoro della letteratura italiana e uno dei maggiori di quella mondiale.">Dante</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/dante/de-vulgari-eloquentia"
+										title="Versioni di latino con traduzione dell&#039;opera De Vulgari Eloquentia del poeta fiorentino Dante Alighieri, autore anche della Divina Commedia. Il testo, rimasto incompiuto, è un trattato in latino sulla lingua volgare, destinato all&#039;élite culturale a lui contemporanea. Dante considera il volgare come la lingua naturale che l&#039;uomo apprende senza bisogno di studiare. L&#039;autore narra una storia universale secondo cui in origine tutti parlavano una stessa lingua sacra. Fu dopo la costruzione della Torre di Babele, simbolo della superbia dell&#039;uomo, che Dio creò diverse lingue per confondere la popolazione.">De
+											Vulgari Eloquentia</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/dante/de-monarchia"
+										title="Versioni di latino con traduzione dell&#039;opera De Monarchia dello scrittore Dante Alighieri, in cui viene affrontato il tema del rapporto tra autorità laica e autorità religiosa. Il De Monarchia presenta in modo organico le teorie politiche di Dante. Nel primo libro si affronta il tema della monarchia universale e del suo impatto sul benessere dell&#039;umanità. Nel secondo, si narra dell&#039;abilità dei romani di costruire un Impero basato sulla giustizia e sul diritto, contrapponendolo alla Barbarie. Nel terzo, l&#039;autore si interroga sulla natura del potere dell&#039;Impero chiedendosi se derivi da Dio o dal Papa.">De
+											Monarchia</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="e" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/ennio"
+												title="Versioni di latino del poeta, drammaturgo e scrittore romano Quinto Ennio. E&#039; presente la traduzione di una delle sue opere principali rientrante nel genere epico, gli Annales.
+Ennio fu il primo tra i poeti latini a scrivere in esametri. Nella sua produzione letteraria fu uno &quot;sperimentatore&quot;. Ricorse infatti a molteplici generi letterari, anche poco noti alla Roma a lui contemporanea, e mescolò tonalità auliche con forme più colloquiali. Nelle sue opere riprese temi affrontati da Euripide e da Omero, e si ispirò allo stile di Plauto. Negli Annales narrò anno per anno la storia di Roma, dalle origini fino al 171 a.C.">Ennio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/ennio/annales"
+										title="Versioni di latino e traduzione degli Annales, opera scritta dall&#039;autore Quinto Ennio. E&#039; un poema epico che descrive la storia della città di Roma anno per anno. L&#039;opera, suddivisa in 18 libri, esalta la grandezza del popolo romano raccontandone gli aneddoti fino al 171. L&#039;autore ricorre a una narrazione evocante un&#039;atmosfera eroica e fa uso di arcaismi internazionali, prevalentemente di natura ellenica. Prima della composizione dell&#039;Eneide, l&#039;opera di Ennio era considerato il poema nazionale romano.">Annales</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Eutropio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/eutropio"
+												title="Versioni di latino dello scrittore di età imperiale Flavio Eutropio con traduzione del Breviarum ab Urbe Condita relativo agli eventi che segnarono le vite degli imperatori. Eutropio fu politico, scrittore e retore romano. Lavorò al servizio dell&#039;Imperatore Valente a Costantinopoli dove ricoprì le cariche di segretario e di storico. Fu per volere dell&#039;Imperatore che scrisse l&#039;opera Breviarium ab Urbe Condita, Breviario dalla fondazione di Roma, che narra la storia della città fino al 364. Lo stile narrativo semplice e chiaro rende il testo accessibile a un pubblico molto vasto. 
+.">Eutropio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/eutropio/breviarium"
+										title="Versioni di latino e traduzioni dell&#039;opera Breviarium ab urbe condita dello scrittore Eutropio che descrive la storia romana a partire dalla sua fondazione. L&#039;autore, per volere dell&#039;imperatore Valente, ripercorre gli eventi principali della tradizione romana dalle origini fino alla morte di Gioviano. L&#039;attenzione è focalizzata principalmente sulla politica estera, sulle conquiste che dimostrano il grande potere della città. Il linguaggio e lo stile sono caratterizzati da semplicità e chiarezza. Tali caratteristiche hanno reso il Breviarium ad urbe un testo molto utilizzato nelle scuole per lo studio del latino.">Breviarium</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="f" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/fedro"
+												title="Versioni di latino Di Gaio Giulio Fedro, originario probabilmente della Tracia. Sono presenti le traduzioni di favole celebri come le Fabulae, l’ Appendix Perottina. 
+Fedro fu un celebre autore romano attivo nel I secolo a.C. La sua produzione letteraria fu ispirata al celebre autore di fiabe Esopo. Rispetto alla sua fonte d&#039;ispirazione, Fedro attribuì maggiore dignità letteraria alle favole, riscrivendole in versi senari. Le sue opere erano pensate per divertire il lettore suggerendo saggi consigli.">Fedro</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/fedro/fabulae"
+										title="Traduzione delle versioni di latino nelle Fabulae, opera scritta da Fedro. Tra le favole presentare vi sono Il lupo e l&#039;agnello, Il corvo e la volpe e Il lupo e il cane.
+L&#039;opera è suddivisa in cinque libri e risale al I secolo d.C. L&#039;intento delle favole di Fedro è pedagogico. L&#039;autore infatti ricorre a storie di animali per educare i suoi interlocutori. Ogni narrazione si conclude con una morale che vuole essere da esempio per chi compie gli errori presentati nelle narrazioni nella vita reale. 
+Fedro nel prologo esplicita che la sua fonte d&#039;ispirazione è Esopo.">Fabulae</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/fedro/appendix-perottina"
+										title="Versioni di latino e traduzione della raccolta di favole dell&#039;autore e scrittore romano Fedro, il quale è considerato come uno degli esponenti più importanti del genere. L&#039;opera prende il nome dall&#039;umanista Niccolò Perotto che li raccolse in un&#039;apposita appendice. In essa sono contenuti 32 racconti che si aggiungono ai cinque libri di Fabulae. Tutti le fiabe di Fedro sono finalizzate a divertire il lettore e a suggerirgli saggi consigli.">Appendix
+											Perottina</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Floro" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/floro"
+												title="Versioni di latino Lucio Annio Floro, poeta e retore romano con traduzione dell&#039;opera “ Vergilius orator an poeta” e di Epitome o Epitoma. Nelle sue opere rivestì il ruolo di storico anche se fu forte la vocazione retorica tendente all&#039;elogio più che al racconto. 
+In Epitomae de Tito Livio narrò 700 anni di guerre partendo da Romolo e arrivando ad Augusto. Divise la storia in 4 età corrispondenti a quelle della vita umana: il periodo monarchico ovvero l&#039;infanzia, l&#039;età repubblicana corrispondente all&#039;adolescenza, la nascita dell&#039;impero e l&#039;età Augustea identificate con la maturità, e infine l&#039;età imperiale fino ad Adriano ovvero la vecchiaia.">Floro</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/floro/epitome"
+										title="Versioni di latino e traduzione dell&#039;opera Epitome scritta dallo scrittore Lucio Anneo Floro, in cui viene narrata la storia romana divisa in quattro età.
+Il testo percorre 700 anni di guerre romane suddividendoli in quattro parti, corrispondenti a quattro fasi della vita dell&#039;uomo. La prima è la monarchia ovvero l&#039;infanzia. Seguono l&#039;età repubblicana, o l&#039;adolescenza, e la costruzione dell&#039;impero, o la maturità. Il percorso si conclude con l&#039;età imperiale, fino ad Adriano, rappresentante la vecchiaia dell&#039;uomo. Floro tende a esaltare le origini mediante strategie retoriche aventi finalità moralistiche.">Epitome</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="g" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/giovenale"
+												title="Versioni di latino del poeta e retore romano Decimo Giunio Giovenale, con traduzione di una delle sue opere letterarie più celebri, ovvero le Satire. Giovenale visse all&#039;ombra di uomini potenti. La sua produzione fu caratterizzata dal pessimismo e dal rimpianto dei tempi antichi. L&#039;impianto moralistico delle sue opere ne determinò una forte avversione contro le ingiustizie e un&#039;idealizzazione del passato. Forte è l&#039;impronta misogina in particolar modo diretta alle donne emancipate. Giovenale condanna infatti in maniera diretta tutti i vizi e le virtù dell&#039;universo femminile. L&#039;autore critica anche l&#039;omosessualità definendola come una forma di infamia.">Giovenale</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/giovenale/satire"
+										title="Versioni di latino e traduzione delle Satire dell&#039;autore latino Giovenale che sono sedici e che non ci sono pervenute complete, ma frammentate. La forte indignazione difronte al decadimento della società motiva la nascita di questa opera. La critica è rivolta a tutta la società romana, indipendentemente dall&#039;estrazione sociale e dal genere di appartenenza. Tra queste, la denuncia diretta: ai vizi che animano le attività degli aristocratici; all&#039;indifferenza della plebe; all&#039;emancipazione femminile e all&#039;allontanamento della donna dal ruolo tradizionale.">Satire</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Giustino" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/giustino"
+												title="Versioni di latino dell’autore Marco Giuniano Giustino, di cui  ci sono pervenuti  pochi testi tradotti, come gli Epitomi, il riassunto delle storie Filippiche di Pompeo Trogo. L&#039;opera, risalente al II o III secolo, si compone di 44 libri. In essi l&#039;autore si concentra sulla narrazione di aneddoti e curiosità, lasciando in secondo piano la precisione storica.">Giustino</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/giustino/epitomi"
+										title="Versioni di latino con traduzione dell&#039;opera di carattere storico Epitomi di Marco Giuniano Giustino, vissuto nell&#039;era degli Antonini. Nel componimento lo storico narra le storie Filippiche dello scrittore romano Pompeo Trogo. I 44 libri risalgono al II o III secolo. In essi l&#039;autore non si concentra sulla componente storica, ma predilige la narrazione di aneddoti e di curiosità. Tale scelta comporta una forte imprecisione storica nel racconto degli avvenimenti, spesso presentati in forma disordinata ed errata.">Epitomi</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="i" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/igino"
+												title="Versioni di latino del mitografo romano Igino Astronomo. E’ presente la traduzione del De astronomia o Astronomica e delle Fabulae.
+La prima opera è una raccolta di leggende mitologiche sull&#039;astronomia. Fabulae invece narra 277 fiabe sulla mitologia greca. Igino fa precedere la presentazione dei racconti da un&#039;introduzione in cui presenta la nascita degli dei dal Caos e la successiva guerra di Zeus contro i Titani e i Giganti Centimani.">Igino</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/igino/fabulae"
+										title="Versioni di latino con traduzione delle Fabulae scritte dall&#039;autore Igino Astronomo, che rientrano nel genere delle storie brevi e che sono circa 277. I racconti, scritti nel I secolo a.C., sono preceduti da un&#039;introduzione sulla nascita degli Dei dal Caos e sulla guerra condotta da Zeus contro i Titani e i Giganti Centimani. Tra le favole più famose raccontate da Igino troviamo quelle di Pandora, Prometeo, Fetone,  Marsia, Proserpina, Esculapio, Re Mida, Venere, Dedalo, Minosse, Teseo e il Minotauro.">Fabulae</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="l" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/lattanzio"
+												title="Versioni tradotte di latino dell’autore nato in Africa, Lucio Cecilio Firmiano Lattanzio. Le sue versioni più celebri sono le Divinae Institutiones. Lattanzio fu uno scrittore e retore di fede cristiana formatosi con Arnobio a Sicca Veneria. Diocleziano lo nominò insegnante di retorica, carica che l&#039;autore fu costretto ad abbandonare a causa delle persecuzioni contro i cristiani. Successivamente fu precettore del figlio di Costantino, Crispo.
+Lo stile di scrittura di Lattanzio gli valse il titolo di &quot;Cicerone cristiano&quot;.">Lattanzio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/lattanzio/divinae-institutiones"
+										title="Versioni di latino, con traduzione dell&#039;opera Divinae Institutiones dello scrittore Lattanzio, articolata in sette libri, in cui vengono esposte le dottrine cristiane. Nel periodo compreso tra il 304 e il 313, Lattanzio realizza un&#039;apologia della dottrina cristiana. In essa troviamo una confutazione del paganesimo e l&#039;individuazione di una continuità tra il sapere antico e quello moderno.">Divinae
+											Institutiones</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Lhomond" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/lhomond"
+												title="Versione di latino dell’autore francese Charles François Lhomond. E&#039; presente la traduzione delle versioni del De viris illustribus. Lhomond fu un pedagogo francese del &#039;700 che si dedicò alla scrittura di un trattato sulla storia degli uomini illustri di Roma, da Romolo fino ad Augusto. La struttura dell&#039;opera fu condizionata dai modelli di Nepote, San Gerolamo, Svetonio e Petrarca.">Lhomond</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/lhomond/de-viris-illustribus"
+										title="Versioni di latino e traduzioni dell&#039;opera di Charles François Lhomond, De Viris illustribus, in cui vengono riportate nozioni di grammatica, storia sacra. L&#039;opera scritta nel 1775 si compone di 22 biografie brevi di personaggi romani noti nell&#039;antichità. La storia romana contenuta nel De Viris illustribus parte da Rea Silvia e arriva fino ad Augusto.">De
+											Viris Illustribus</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Libri Scolastici" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/libri-scolastici"
+												title="Libri scolastici con versioni di latino. Tra questi vi sono: Expedite, Latino Laboratorio, Le Ragioni del Latino, Lingua Magistra, Lingua Mater, Littera Litterae.">Libri
+												Scolastici</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/expedite"
+										title="Versioni di latino con traduzione dei volumi uno e due del libro scolastico Expedite scritto dall&#039;autore Nicola Flocchini per le scuole superiori.">Expedite</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/latino-laboratorio"
+										title="Traduzioni e testi delle versioni di latino presenti all&#039;interno del libro scolastico Latino Laboratorio, che viene adottato per esempio nei licei scientifici.">Latino
+											Laboratorio</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/le-ragioni-del-latino"
+										title="Versioni di latino e traduzione contenute nel libro di latino Le Ragioni del Latino scritto dagli autori Adriana Calamaro e Angelo Cardinale per le scuole superiori.">Le
+											Ragioni del Latino</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/lingua-magistra"
+										title="Versioni di latino e traduzione del libro Lingua magistra, adottato nelle scuole superiori, in cui vengono riportati esercizi e testi di lingua latina.">Lingua
+											Magistra</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/lingua-mater"
+										title="Versioni di latino e traduzioni del libro adottato nelle scuole superiori Lingua mater dell&#039;autore Giovanni De Micheli, contenente anche una parte relativa agli esercizi di latino.">Lingua
+											Mater</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/littera-litterae"
+										title="Traduzioni e versioni di latino presenti nel libro di latino adottato nelle scuole superiori Littera Litterae dell&#039;autore Angelo Diotti Mondadori.">Littera
+											Litterae</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/nova-lexis"
+										title="Versioni di latino, traduzioni e grammatica latina del libro di testo Nova Lexis dell&#039;autore Angelo Diotti e che viene adottato nelle scuole superiori.">Nova
+											Lexis</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/nuovo-comprendere-e-tradurre"
+										title="Versioni di latino, traduzioni del libro di testo scolastico Nuovo Comprendere e Tradurre che viene adottato nelle scuole superiori.">Nuovo
+											Comprendere e Tradurre</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/nuovo-expedite"
+										title="Versioni di latino e traduzioni del libro di testo adottato nelle scuole superiori, il Nuovo Expedite, i cui autori sono  Nicola Flocchini, Piera Guidotti Bacci, Marco Moscio.">Nuovo
+											Expedite</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/comiter"
+										title="Libro scolastico adottato nei licei e in altre scuole superiori in cui vi sono numerose versioni di latino e la loro traduzione.">Comiter</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/comprendere-e-tradurre"
+										title="Traduzione e versioni di latino del libro di testo Comprendere e Tradurre, i cui autori sono Nicola Flocchini, Piera Guidotti Bacci,   Marco Moscio.">Comprendere
+											e Tradurre</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/contexere-verba"
+										title="Versioni e traduzioni di latino contenute nel libro scolastico adottato nelle scuole Contexere Verba, che è stato scritto dagli autori Rita Alosi e Piero Pagliani.">Contexere
+											Verba</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/corso-di-latino-lingua-e-civilta"
+										title="Versioni e traduzioni di latino del libro adottato nei licei Corso di Latino. Lingua  e Civiltà dell&#039;autore Gian Biagio Conte.">Corso
+											di Latino. Lingua e Civiltà</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/cotidie-discere-2a-edizione"
+										title="Versioni di latino e traduzioni presenti nel libro scolastico adottato nelle scuole superiori Cotidie Discere, seconda edizione dell&#039;autore Giuseppe De Micheli.">Cotidie
+											Discere 2a edizione</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/cotidie-legere-3a-edizione"
+										title="Versioni e traduzioni del libro di latino tra i più diffusi nei licei, Cotidie Legere, terza edizione della Casa editrice Principato, autore Giuseppe De Micheli.">Cotidie
+											Legere 3a edizione</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/lingua-latina-per-se-illustrata"
+										title="Versioni di latino e traduzioni presenti nel libro che viene adottato soprattutto nei licei, Lingua Latina per se Illustrata dell&#039;autore  Hans H. Orberg">Lingua
+											Latina per se Illustrata</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/la-versione-latina-nel-biennio"
+										title="Traduzione delle versioni di latino che si trovano nel testo scolastico adottato nei licei La Versione Latina nel Biennio degli autori Marco Moscio e Marco Sampietro.">La
+											Versione Latina nel Biennio</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/latino-a-colori"
+										title="Versioni di latino e traduzione del testo scolastico Latino a Colori scritto dall&#039;autore Gian Biagio Conte, adottato nelle scuole superiori.">Latino
+											a Colori</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/latino-di-base"
+										title="Traduzione e versioni di latino contenute nel libro scolastico Latino di Base, di cui è presente il volume unico adottato nelle scuole superiori">Latino
+											di Base</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/lectio-facilior"
+										title="Versioni di latino e traduzione del libro scolastico Lectio Facilior scritto dall&#039;autore Angelo Diotti per la casa editrice Bruno Mondadori, collana scolastica.">Lectio
+											Facilior</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/libenter"
+										title="Traduzioni e versioni di latino che accompagnano anche la grammatica del libro scolastico Libenterdegli autori Silvia Mazzoli e Francesco Sartini, casa editrice Sansoni.">Libenter</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/limpida-vox"
+										title="Traduzioni e versioni di latino del libro scolastico Limpida Vox adottato nei licei e scritto dagli autori Alberto Mariotti e M. Rosario Maisano">Limpida
+											Vox</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/lingua-latina-teoria-esercizi"
+										title="Versioni di latino, con traduzione e esercizi che sono presenti nel libro scolastico adottato nei licei, Lingua Latina Teoria Esercizi.">Lingua
+											Latina Teoria Esercizi</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/lingua-viva"
+										title="Versioni di latino, grammatica latina e traduzione del libro scolastico adottato nei licei, Lingua Viva dell&#039;autore Angelo Diotti.">Lingua
+											Viva</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/navigare"
+										title="Versioni di latino e traduzioni presenti nel libro scolastico Navigare diffuso nelle scuole italiane.">Navigare</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/nova-discere"
+										title="Libro scolastico Nove Discere scritto dall&#039;autrice Claudia Savigliano per la casa editrice Talia, in cui sono presenti numerose versioni di latino, traduzioni">Nove
+											Discere</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/nova-officina"
+										title="Versioni di latino e traduzioni presenti nel libro scolastico adottato nelle scuole superiori, Nova Officina, il cui autrice è Ludovico Griffa.">Nova
+											Officina</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/lectio-brevior"
+										title="Traduzione delle versioni di latino, della sintassi presenti nel libro scolastico Lectio Brevior, scritto dall&#039;autore Ludovico Griffa.">Lectio
+											Brevior</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/nuovo-le-ragioni-del-latino"
+										title="Traduzione delle versioni di latino presenti nel libro scolastico Nuovo Le ragioni del latino. Lezioni, scritto dall&#039;autore Angelo Calamaro, adottato soprattutto nei licei.">Nuovo
+											Le Ragioni del Latino</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/scrinium"
+										title="Versioni di latino con traduzione presenti nel libro scolastico di latino Scrinium degli autori Mauro Serio e Paolo Sacco.">Scrinium</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/sistema-latino"
+										title="Versioni di latino e traduzioni del libro scolastico, adottato nelle scuole superiori, Sistema Latino dell&#039;autrice Rita Alosi per la casa editrice Petrini.">Sistema
+											Latino</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/so-tradurre"
+										title="Traduzioni e versioni di latino del libro scolastico per il biennio dei principali licei, So Tradurre! dell&#039;autore Griffa per la casa editrice Petrini.">So
+											Tradurre!</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/studiamo-il-latino"
+										title="Libro scolastico Studiamo il Latino in cui sono presenti versioni di latino con traduzione e scritto dagli autori De Bernardis e Sorci - G.B. Palumbo &amp; C. Editore.">Studiamo
+											il Latino</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/tandem"
+										title="Versioni di latino, grammatica, esercizi, con traduzione presenti nel libro per le scuole superiori Tandem dell&#039;autrice Irene Scaravelli.">Tandem</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/verte-mecum"
+										title="Versioni di latino e traduzione del libro Verte Mecum, casa editrice Mondadori Bruno Scolastica, adottato nelle scuole superiori, la cui autrice è Emilia Tortorici.">Verte
+											Mecum</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/versioni"
+										title="Versioni di latino varie con traduzione. tra queste vi sono:  De hannibalis interitus, Alessandro Magno - (Curzio Rufo), Aiutati che il cielo ti aiuta e altre.">Versioni
+											Varie</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/latina-lectio"
+										title="Versioni di latino e traduzioni presenti nel libro scolastico molto diffuso nelle scuole superiori, Latina lectio dell&#039;autore Ludovico Griffa.">Latina
+											Lectio</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/nuovo-latina-lectio"
+										title="Versioni di latino con traduzioni presenti nel libro scolastico diffuso nelle scuole superiori, Nuovo Latina Lectio dell&#039;autore Ludovico Griffa.">Nuovo
+											Latina Lectio</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/esperienze-di-traduzione-e-t"
+										title="Versioni di latino con traduzione del libro scolastico ET. Esperienze di traduzione. Versioni latine degli autori Rita Cuccioli Melloni e G. Carlo Giardina.">Esperienze
+											di Traduzione (E. T.)</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/versioni-latine-per-il-triennio"
+										title="Versione di latino con traduzione contenute nel libro
+scolastico Versioni latine per il triennio dell&#039;autrice Emilia Tortorici, adottato soprattutto nei licei.">Versioni
+											Latine per il triennio</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/i-gradi-del-latino"
+										title="Versioni di latino e traduzione del libro scolastico I Gradi del Latino per le scuole superiori e scritto da Cesare Peri e Cristina Costa, per Cappelli Editore.">I
+											Gradi del Latino</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/maiorum-lingua"
+										title="Versioni di latino con traduzione presenti nel libro scolastico adottato nelle scuole superiori e scritto da Nicola Flocchini, Piera Guidotti Bacci e Marco Moscio.">Maiorum
+											Lingua</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/urbs"
+										title="Versioni di latino e traduzioni presenti nel libro scolastico Urbs, adottato nelle scuole superiori dell&#039;autore Mario Pintacuda.">Urbs</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/repertorio-essenziale-di-latino"
+										title="Traduzioni e versioni di latino presenti nel libro scolastico adottato nelle scuole superiori Repertorio essenziale di latino. Vocabolario e regole di base dell&#039;autore Francesco Piazzi.">Repertorio
+											Essenziale di Latino</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/superni-gradus"
+										title="Versioni di latino e traduzioni presenti nel libro scolastico per le scuole superiori Superni Gradus di Adriana Calamaro, Angelo Cardinale.">Superni
+											Gradus</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/cotidie-discere-1a-edizione"
+										title="">Cotidie Discere 1a edizione</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/la-lingua-delle-radici"
+										title="">La Lingua delle Radici</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/libri-scolastici/lingua-nostra"
+										title="Versioni di latino e traduzione del libro Lingua nostra, adottato nelle scuole superiori, in cui vengono riportati esercizi e testi di lingua latina.">Lingua
+											Nostra</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Livio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/livio"
+												title="Versioni di latino con traduzione dell’autore Tito Livio che elaborò una delle più vaste opere storiche latine raccolte in 142 libri nell’Ab Urbe Condita. Tito Livio nacque nel 59 a.C. a Padova.
+La sua produzione fu condizionata da uno spirito conservatore, dal patriottismo, dal senso religioso e morale. Nonostante ciò l&#039;autore comprese lo spirito del suo tempo e ammirò il riformismo imperiale e la pace augustea. Il suo stile fu accusato di &quot;patavinitas&quot;, termine spesso interpretato come critica alla tendenza &quot;provinciale&quot; della sua produzione.">Livio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/livio/ab-urbe-condita"
+										title="Versioni di latino e traduzione dell&#039;opera Ab urbe condita dello storico romano Tito Livio, con la spiegazione della storia della fondazione di Roma.
+La raccolta si compone di 142 libri che narrano la storia romana fino alla morte di Druso (9 a.C.). L&#039;intento di Tito Livio è celebrativo della grandezza di Rome e dell&#039;impero. L&#039;opera alterna lo stile della cronologia storica a quello della narrazione, denunciando la decadenza dei valori dell&#039;origine. I racconti contenuti in Ab urbe condita condizionarono l&#039;oratoria dell&#039;imperatore Claudio, di cui Tito Livio fu educatore.">Ab
+											Urbe Condita</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Lucano" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/lucano"
+												title="Versioni di latino del del poeta Marco Anneo Lucano, con traduzione della sua opera, Pharsalia, rientrante nel genere letterario del poema epico romano. Lucano fu allievo del filosofo Anneo Cornuto e nipote di Seneca.
+Fece parte della corte di Nerone e per sua volontà divenne questore entrando poi nel &quot;collegio degli àuguri&quot;. La gelosia di Nerone nei suoi confronti portò alla rottura e alla congiura di Pisone. Il suo stile poetico fu definito da Quintiliano &quot;ardente e concitato&quot;.">Lucano</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/lucano/bellum-civile-pharsalia"
+										title="Versioni di latino e traduzione del Bellum Civile (Pharsalia) dell&#039;autore Lucano, un poema che descrive la guerra civile tra Giulio Cesare e il Senato, il cui esponente principale è Pompeo Magno. Il titolo &quot;Pharsalia&quot; fa riferimento alla battaglia di Farsalo del 48 a.C. e alla sconfitta di Pompeo da parte di Cesare. Nel poema non è possibile individuare in maniera univoca l&#039;eroe; nessuno dei personaggi presentati da Lucano infatti risulta essere totalmente positivo, fatta eccezione per Catone. Molte furono le critiche mosse dagli intellettuali classici a tale componimento a causa dell&#039;innovazione apportata nell&#039;esposizione dei contenuti, ad esempio venne criticata l&#039;assenza dell&#039;intervento divino nell&#039;agire dell&#039;uomo. Il Bellum Civile venne definito dai critici un racconto di cronaca, che poco aveva a che fare con la produzione poetica.">Bellum
+											Civile (Pharsalia)</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Lucilio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/lucilio"
+												title="Versioni di latino del poeta romano Gaio Lucilio. E&#039; presente la traduzione dell&#039;opera Satire che si articola in trenta libri di cui ci sono pervenuti circa mille frammenti. Lucilio si dedicò esclusivamente al genere della satira, inserendo all&#039;interno dei suoi libri discorsi filosofici e elementi autobiografici. Nella sua produzione letteraria presentò la vita quotidiana di tutti gli strati sociali, allontanandosi dal conformismo letterario contemporaneo e proponendosi di raccontare la verità del quotidiano. Le caratteristiche delle sue Satire sono: soggettivismo, aggressività, varietà tematica, plurilinguismo e ibridazione stilistica.">Lucilio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/lucilio/satire"
+										title="Traduzione e versioni di latino dei trenta libri di Satire scritte dall&#039;autore di lingua latina Gaio Lucilio, di cui ci sono pervenuti circa mille frammenti.">Satire</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Lucrezio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/lucrezio"
+												title="Versioni di latino del poeta e filosofo romano Tito Lucrezio Caro che era seguace della filosofia epicurea. Vi è la traduzione del famoso testo De Rerum Natura.
+Lucrezio fu poeta e filosofo romano epicureo. Non prese mai parte alla vita politica della sua epoca. I suoi ideali erano in contrasto con le ideologie politiche, prevalentemente stoiche, del contesto a lui contemporaneo. Il suo stile di scrittura fu arcaico, elevato e caratterizzato dalla ricercatezza nell&#039;uso delle figure retoriche. Nell&#039;opera De Rerum Natura, Lucrezio Caro incentivò la responsabilità individuale e la consapevolezza della dipendenza dalle passioni umane.">Lucrezio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/lucrezio/de-rerum-natura"
+										title="Traduzione e versioni di latino del De rerum natura, poema di tipo didascalico dell&#039;autore Tito Lucrezio Caro, in cui viene utilizzato un linguaggio ricercato e arcaico.
+L&#039;opera epico-filosofica di Lucrezio Caro si fa portavoce delle teorie epicuree sulla natura e sull&#039;uomo, incentivando la responsabilità personale dell&#039;uomo e la presa di coscienza della sua dipendenza dalle passioni. Il De rerum natura ha una finalità didascalica, è stato infatti scritto dall&#039;autore per il suo alunno Memmio affinché potesse conoscere i principi dell&#039;Epicureismo.">De
+											rerum natura</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="m" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/marziale"
+												title="Traduzione delle versioni di Marco Valerio Marziale, di cui ci è pervenuto il testo dell’Epigrammata, in cui i temi trattati sono la parodia, la satira, la politica e l&#039;erotismo.
+Marziale fu un importante poeta romano, definito spesso come il più importante epigrammista latino. Nelle sue opere affrontò spesso temi di politica dedicandosi anche alle caricature di personaggi noti. Il realismo, il linguaggio diretto e il tono comico-satirico sono le caratteristiche distintive della sua produzione. A Marziale si deve l&#039;affermazione dell&#039;epigramma come genere letterario.">Marziale</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/marziale/epigrammata"
+										title="Versioni di latino con traduzione degli Epigrammata, scritti in occasione dell&#039;inaugurazione dei giochi del Teatro Flavio. L&#039;opera in lingua latina è stata realizzata dallo storico ed epigrammista Marziale. La raccolta è intitolata Liber de Spectaculis e si compone di circa 33 epigrammi in distici elegiaci. Al loro interno Marziale descrive gli spettacoli cui il pubblico ha la possibilità di assistere all&#039;interno del Colosseo, opera voluta dall&#039;imperatore Tito.">Epigrammata</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="n" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/nepote"
+												title="Versioni di latino delle opere del noto storico romano Cornelio Nepote. Traduzioni de: il De excellentibus ducibus exterarum gentium e del De Latinis Historicis. 
+Le opere di Nepote furono fortemente orientate all&#039;erudizione storica e alla biografia. L&#039;intento celebrativo e pedagogico attraversò tutta la sua produzione. I modelli di riferimenti furono storici greci come Tucidide e Polibio. Nello stile tentò di imitare Cicerone, risultando però più lineare, semplice e piano.">Nepote</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/nepote/de-excellentibus-ducibus-exterarum-gentium"
+										title="Traduzione delle versioni di latino dell&#039;opera di Cornelio Nepote, De excellentibus ducibus exterarum gentium, libro facente parte del De viribus illustribus. In esso si narrano le vite di condottieri stranieri, tra cui quelle di Temistocle, Aristide, Pausania, Cimone. L&#039;intento dell&#039;autore è di delineare i modelli di vita di grandi personaggi del passato. Le biografie seguono uno schema di narrazione fisso: la nascita, la famiglia, l&#039;infanzia, l&#039;educazione, i vizi, le virtù e le imprese. Lo stile di Nepote è essenziale, lineare e semplice.">De
+											excellentibus ducibus exterarum gentium</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/nepote/de-latinis-historicis"
+										title="Versione di latino De Latinis Historicis, facente parte dell&#039;opera De viribus illustribus dello scrittore Cornelio Nepote, con traduzione.">De
+											Latinis Historicis</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="o" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/orazio"
+												title="Versioni del poeta romano Quinto Orazio Flacco. Tra le traduzioni si riportano i Carmina (Odi), le  Satire (Sermones), le Epistole, gli  Epodi (Iambi). Orazio fu un poeta romano, considerato uno dei maggiori autori dell&#039;età antica. La sua produzione letteraria fu apprezzata per l&#039;eleganza stilistica e l&#039;ironia, per l&#039;eterogeneità dei temi affrontati e per la pluralità di registri stilistici adottati. Affrontò le vicissitudini politiche e civili dell&#039;epoca dettando i canoni dell&#039;ars vivendi.">Orazio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/orazio/carmina-odi"
+										title="Traduzione delle versioni di latino contenute nell&#039;opera Carmina (Odi) del poeta Orazio, in cui sono presenti circa 103 poesie raccolte in quattro libri. I temi affrontati sono eterogenei: la fugacità della vita e il carpe diem; la propensione al senso della misura e all&#039;equilibrio; i legami tra gli individui, l&#039;amore e l&#039;amicizia; la poesia come mezzo che avvicina al divino; il simposio epicureo; l&#039;erotismo.
+Il modello seguito da Orazio in Carmina è quello della poesia greca di età arcaica.">Carmina
+											(Odi)</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/orazio/satire-sermones"
+										title="Versioni di latino delle Satire (Sermones) del poeta Orazio, dei componimenti poetici che si suddividono in componimenti di tipo narrativo e dialogico. I primi presentano fatti cui l&#039;autore ha partecipato dai quali ha estratto insegnamenti morali e filosofici. Questi risultano essere in linea con la filosofia della vita professata da Orazio, composta da piccoli insegnamenti e valori universali. Nei componimenti dialogici invece prevale un cinismo contrastante con il tono di quelli narrativi.">Satire
+											(Sermones)</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/orazio/epistole"
+										title="Versioni di latino e traduzione della raccolta di Epistole di Quinto Orazio Flacco che sono delle lettere fittizie che trattano questioni di natura letteraria. L&#039;opera è formata da due libri, il primo costituito da venti lettere e il secondo contenente due componimenti, l&#039;uno dedicato ad Augusto, l&#039;altro a  Giulio Floro. Nel primo Orazio affronta il tema dell&#039;evoluzione della letteratura romana. Nel secondo testo, indirizzato a Giulio Floro, parla dei motivi che hanno determinato l&#039;abbandono della poesia da parte dell&#039;autore.">Epistole</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/orazio/epodi-iambi"
+										title="Versioni di latino e traduzione degli Epodi, una raccolta di diciassette poesie scritte dal poeta latino Quinto Orazio Flacco e pubblicate nel corso dell&#039;anno 30. Le composizioni si collocano cronologicamente nel periodo compreso tra la battaglia dei Filippi e quella di Azio, che segna l&#039;affermazione di Augusto. Il tono polemico e il linguaggio aspro dell&#039;opera, risentono della dura condizione economica in cui Orazio si trovò dopo la sconfitta di Filippi. La tendenza espressionistica dei componimenti si integra con quella gnomica, creando un equilibrio tra il pathos e la &quot;saggezza&quot;. I contenuti degli Epodi sono eterogenei: poesie politiche, erotiche, autobiografiche.">Epodi
+											(Iambi)</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Ovidio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/ovidio"
+												title="Traduzioni delle versioni di latino del poeta romano Publio Ovidio Nasone, tra i maggiori elegiaci, e scrittore delle seguenti opere: le Metamorfosi, gli Amores e l’Ars Amatoria. Ovidio nacque nel 23 a.C. a Sulmona, fu un celebre autore romano tra i maggiori rappresentanti dell&#039;elegia latina. Ebbe contatti con il circolo di Messalla Corvino, di estrazione filorepubblicana, e successivamente con quello di Mecenate, filoaugusteo. La sua produzione artistica fu caratterizzata dalla tendenza al galante e al piccante, e dall&#039;indifferenza alla vita politica. Le Metamorfosi sono il suo capolavoro letterario. Nei 15 libri che compongono l&#039;opera affronta il tema della metamorfosi ricorrendo a racconti mitologici.">Ovidio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/ovidio/metamorfosi"
+										title="Versioni di latino con traduzioni delle Metamorfosi, opera dello scrittore romano Publio Ovidio Nasone, in cui si tratta l&#039;argomento della metamorfosi.
+In 12.500 versi Ovidio narra 250 miti greci rielaborandoli in modo critico e creativo. La narrazione si presenta come una sorta di storia universale, inizia con la presentazione del Caos primordiale per arrivare gradualmente a una forma stilistica più organizzata, corrispondente alla Roma Augustea. Alla base di ogni episodio raccontato c&#039;è uno dei 5 istinti che animano il mondo antico amore, ira, invidia, paura e sete di conoscenza.">Metamorfosi</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/ovidio/amores"
+										title="Traduzione delle versioni di latino dell&#039;opera Amores di Publio Ovidio Nasone, in cui il tema trattato è l&#039;amore; sono presenti anche delle poesie d&#039;occasione ed epicedi. La composizione dell&#039;opera risale al periodo compreso tra il 23 a.C. e il 14 a.C. In essa manca la figura femminile che, nella tradizione della poesia d&#039;amore, rappresenta la donna amata dal poeta, la sua musa ispiratrice. Ovidio presenta l&#039;amore come un lusus, un gioco, un passatempo. Da questa scelta derivano: il venir meno del pathos nella presentazione delle storie; il distacco e l&#039;ironia nella narrazione; l&#039;assenza del servitium amoris, ovvero la dedizione totale all&#039;amata.">Amores</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/ovidio/ars-amatoria"
+										title="Versione di latino e traduzione dell&#039;opera dell&#039;autore Publio Ovidio Nasone. Si tratta di un poema di genere didascalico che descrive l&#039;ars amatoria. Ovidio affronta il tema dell&#039;arte dell&#039;erotismo narrando la propria esperienza di vita e eleggendosi praeceptor amoris, professore di erotismo. Nel primo libro che compone l&#039;opera, l&#039;autore vive in prima persona l&#039;esperienza sentimentale. Nel secondo invece assume il ruolo di supervisore della storia tra due amanti. Il tema dell&#039;amore è trattato con cinismo e distacco,e identificato come mero divertimento.">Ars
+											Amatoria</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="p" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/persio" title="">Persio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/persio/satire" title="">Satire</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Petronio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/petronio"
+												title="Versioni di latino dell’autore Tito Petronio Nigro Arbiter, noto con lo pseudonimo di “arbiter elegantiae”. Sono presenti le traduzioni del Satyricon.
+Petronio fu cortigiano, scrittore e politico romano. Durante l&#039;impero di Nerone scrisse il Satyricon, parodia del genere romanzo greco. Nell&#039;opera denunciò i comportamenti lussuriosi e sfrenati della classe agiata evidenziandone la perdita di pudore e di senso civico. Il Satyricon è un’opera composita, possiede elementi sia della Fabula Milesia sia della Satura Menippe. Lo stile si compone di volgare e di aristocratico, risultando in grado di rappresentare in modo realistico il contesto di riferimento.">Petronio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/petronio/satyricon"
+										title="Versioni di latino e traduzione dell&#039;opera Satyricon, scritta in prosimetro dall&#039;autore Petronio Arbitro e di cui ci è pervenuto un testo lacunoso.
+Il Satyricon, come suggerisce il titolo, è un testo comico-satirico di contenuto licenzioso. L&#039;opera è caratterizzata da un forte realismo nella narrazione delle vicissitudini dei protagonisti: Encolpio, Gitone e Ascilto. Il Satyricon è un &quot;pastiche&quot; di generi letterari e di stili di scrittura. L&#039;autore ricorre nella narrazione a un latino che si può definire &quot;popolare&quot; e a un lessico contenente volgarismi.">Satyricon</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Plauto" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/plauto"
+												title="Versioni di latino del commediografo Tito Maccio Plauto. Ispirandosi al modello greco, egli scrisse le seguenti commedie: il  Miles Gloriosus,  l’Amphitruo,  lo Pseudolus. Visse il periodo drammatico delle guerre puniche e fu uno scrittore molto attivo nell&#039;antichità latina. Le sue commedie appartengono al genere teatrale della Palliata, ideato da Livio Andronico. Plauto fu uno sperimentatore nella metrica-musicale della letteratura latina. La sua produzione è ricca di figure retoriche e orientata all&#039;azione.">Plauto</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/plauto/miles-gloriosus"
+										title="Versioni di latino e traduzione dell&#039;opera Miles Gloriosus (Il soldato fanfarone), rientrante nel genere della commedia, del commediografo Plauto. La commedia narra dell&#039;amore tra la giovane cortigiana Filocomasio e il cittadino ateniese Pleusicle ostacolato dal soldato Pirgopolinice, che rapisce la donna per portarla con sé a Efeso. L&#039;opera è la più lunga tra quelle scritte da Plauto, 1437 versi. I temi affrontati sono l&#039;intrigo amoroso e la beffa della servitù, che attua un piano per salvare Filocomasio da Pirgopolinice.">Miles
+											Gloriosus</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/plauto/amphitruo"
+										title="Traduzione delle versioni di latino contenute nell&#039;opera Amphitruo (Anfitrione) del commediografo Plauto e articolata in cinque atti e un prologo. La storia narrata si svolge intorno a un inganno escogitato da Giove ai danni di Anfitrione, re di Tebe. Plauto definisce questo componimento come una &quot;tragicomoedia&quot; che mescola le storie degli uomini con quelle delle divinità. Amphitruo è un esempio di commedia degli equivoci, in cui regna la confusione determinata dalle vicissitudini dei personaggi della storia.">Amphitruo</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/plauto/pseudolus"
+										title="Traduzione delle versioni di latino contenute nella commedia dell&#039;autore Plauto Pseudolus. Questa commedia è stata rappresentata in occasione dei Giochi Megalesi. Nel testo si narra del piano escogitato dallo schiavo Pseudolo per liberare l&#039;amata del suo padrone, Calidoro, promessa sposa a un soldato macedone.
+Plauto raggiunge la comicità ricorrendo al metateatro, a beffe e a giochi di parole. L&#039;autore ha il merito di integrare perfettamente la musica e il canto all&#039;interno delle proprie opere.">Pseudolus</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Plinio il Giovane" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/plinio-il-giovane"
+												title="Versioni di latino dello scrittore e senatore romano Gaio Plinio Cecilio Secondo. Traduzione del libro decimo di una delle sue più note opere, le Epistole. Plinio il Giovane studiò retorica a Roma con Quintiliano e N. Sacerdote. Intraprese la carriera forense e divenne &quot;prefetto dell’erario&quot;e &quot;consul suffectus&quot;, sotto Traiano. La sua opera principale sono le Epistole, una raccolta di 247 lettere scritte fra il 96 e il 113. L&#039;insieme delle lettere costituisce un saggio di cronaca sula vita mondana, intellettuale e civile di Roma.">Plinio
+												il Giovane</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/plinio-il-giovane/epistularum-libri-decem"
+										title="Versioni di latino e traduzione dell&#039;opera Epistularum Libri Decem dell&#039;autore Plinio il Giovane. Si tratta di un rescritto imperiale tra l&#039;imperatore Traiano e l&#039;autore. Questa raccolta costituisce un&#039;importante documentazione, testimonianza dell&#039;amministrazione provinciale in età imperiale. Tra i temi trattati nelle lettere troviamo quello delle inchieste nei confronti dei cristiani. Plinio esprime i suoi dubbi circa tale tematica, pur volendo difendere l&#039;Impero e definendo eccentrici gli atti dei cristiani. L&#039;imperatore Traiano risponde alle sue perplessità invitandolo a procedere nell&#039;azione penale solo nei casi in cui è presente una prova certa.">Epistularum
+											Libri Decem</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Plinio il Vecchio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/plinio-il-vecchio"
+												title="Versioni dell’autore Gaio Plinio Secondo, conosciuto con lo pseudonimo di Plinio il Vecchio. Traduzione del testo latino più importante, il Naturalis Historia. Gaio Plinio Secondo fu uno storico e ammiraglio romano. Il suo stile di scrittura, caratterizzato dal &quot;racconto degli eventi dal vivo&quot;, lo rende un vero e proprio cronista dell&#039;epoca. Plinio il Vecchio considerava la natura come luogo divino che ogni uomo dovrebbe indagare. L&#039;autore aveva una visione oscura dell&#039;umanità considerandola vittima della miseria e della rovina circostanti.
+
+
+
+.">Plinio
+												il Vecchio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/plinio-il-vecchio/naturalis-historia"
+										title="Versioni di latino e traduzione dell&#039;opera Naturalis Historia dell&#039;autore romano Plinio il Vecchio. Il tema portante dell&#039;opera è la storia della natura. Il testo è un&#039;enciclopedia che raccoglie le conoscenze dell&#039;autore sul mondo naturale. La prima parte contiene contenuti sulla cosmologia, la geografia, l&#039;antologia. La seconda sezione riguarda la zoologia e la botanica. La terza invece affronta il tema dei rimedi naturali. L&#039;ultima è dedicata ai minerali e alla metallurgia. Naturalis Historia segue il criterio dell’utilitas iuvandi, vuole essere uno strumento di divulgazione culturale necessario all&#039;uomo nel suo quotidiano.">Naturalis
+											Historia</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Poliziano" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/poliziano"
+												title="Versioni di latino del poeta, umanista e drammaturgo italiano Agnolo Ambrogini, noto con lo pseudonimo di Poliziano, con traduzione della sua celebre opera Elegie.
+Poliziano fu un importante intellettuale del XV secolo. Fece parte del circolo di intellettuali radunato intorno alla figura di Lorenzo il Magnifico, senza mai intraprendere la carriera politica o diplomatica. Nella sua produzione letteraria troviamo opere in latino, greco e volgare. In esse fu portavoce del culto della bellezza tipico del Rinascimento, concepita come armonia tra l&#039;uomo e la natura.">Poliziano</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/poliziano/elegie"
+										title="Versioni di latino e traduzione delle Elegie dello scrittore Agnolo Poliziano, componimento in lingua latina articolata in versi, ossia i distici elegiaci. L&#039;opera si articola intorno al tema della morte di Albiera degli Albizzi, avvenuta nel 1473. Poliziano, membro del circolo di intellettuali radunati intorno alla figura di Mecenate, si ispirò nella sua produzione a grandi nomi della letteratura, come Stazio, Ovidio e Virgilio.">Elegie</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Pontano" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/pontano"
+												title="Versioni di latino con traduzione dell&#039;umanista e politico italiano Giovanni Pontano. Tra le sue opere si annoverano: Versus jambici, il De Amore coniugali, l&#039;Urania. Pontano trascorse gran parte della sua vita al servizio degli Aragonesi. Nella sue produzioni letterarie narrò diversi aspetti della cultura (astrologia, etica, società, retorica, botanica). Affrontò temi eterogenei come la bellezza del reale, la gioia, l&#039;amore, la figura femminile, il legame con la terra d&#039;origine. Pontano fu definito da Sannazzaro come uno dei letterati più produttivi del &#039;400.">Pontano</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/pontano/iambici"
+										title="Versioni di latino e traduzione dell&#039;opera di Giovanni Pontano, gli Iambici.Tra questi si ricordano alcuni componimenti latini, come il Compianto alle rose.">Iambici</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/pontano/de-amore-coniugali"
+										title="Versioni di latino e traduzioni sull&#039;opera, scritta in prosa latina, De Amore coniugali dello scrittore, umanista e politico Giovanni Pontano.">De
+											Amore Coniugali</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/pontano/urania"
+										title="Traduzioni e versioni di latino dell&#039;opera Urania, scritta in lingua latina dallo scrittore, umanista e politico italiano Giovanni Pontano.">Urania</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Properzio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/properzio"
+												title="Traduzione delle versioni di latino del poeta romano Sesto Aurelio Properzio. Il suo scritto furono le Elegie, che introdussero un nuovo genere letterario nel panorama letterario romano. Properzio appartenne al circolo di Mecenate dove entrò a contatto con grandi nomi della letteratura latina, come Virgilio e Ovidio. Nella sua produzione artistica fece ricorso alla mitologia, stratagemma funzionale a presentare la bellezza del passato in contrapposizione alla mediocrità del presente. Il Mito fu lo strumento utilizzato da Properzio per nobilitare il quotidiano e offrire una lezione morale ai suoi interlocutori.">Properzio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/properzio/elegie"
+										title="Versioni di latino con traduzione delle Elegie del poeta romano Sestio Properzio, una raccolta di poesie pubblicate nel I secolo a. C. e  rientranti nel genere elegiaco. Il primo libro si compone di 22 elegie dedicate a Cynthia, la donna amata da Properzio. In esse l&#039;autore affronta il tema dell&#039;amore impossibile per l&#039;amata ricorrendo alla tradizione mitologica. Tali tematiche dominano anche le 34 elegie del secondo libro. Nel terzo invece, accanto all&#039;amore si collocano la politica e l&#039;impegno civile. Nel quarto libro, questi temi prendono il sopravvento sull&#039;amore dando vita a una vera e propria propaganda augustea.">Elegie</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="q" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/quintiliano"
+												title="Versioni di latino tradotte di Marco Fabio Quintiliano, autore che ha realizzato l’Institutio Oratoria, in cui descrive quali sono le principali attività educative del maestro. Quintiliano fu un oratore e retore romano. La sua bravura nell&#039;arte della retorica venne riconosciuta da Vespasiano che nel 78 gli affidò la prima cattedra statale. Nell&#039;Institutio Oratoria, il suo capolavoro, illustrò i principi base della formazione dell&#039;oratore e del futuro uomo politico. Quintiliano voleva superare la decadenza dell&#039;arte oratoria, dovuta alla corruzione dei costumi, per tornare a quella tradizionale, di Cicerone.">Quintiliano</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/quintiliano/institutio-oratoria"
+										title="Versioni di latino e traduzioni dell&#039;opera Institutio Oratoria dell&#039;autore Quintiliano, in cui vengono trattati vari problemi di pedagogia sull&#039;istruzione elementare. Il celebre oratore romano dedica l&#039;opera a Vittorio Marcello. L&#039;intento è creare un testo utile per l&#039;educazione del figlio, e per gli educatori in generale. Il progetto di formazione si configura come un percorso che dall&#039;infanzia accompagna il soggetto all&#039;età adulta e all&#039;acquisizione di buone abilità oratorie. La formazione che Quintiliano si prefigge di raggiungere è culturale, morale, scolastica e intellettuale.">Institutio
+											Oratoria</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="s" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/sallustio"
+												title="Versioni di latino dello storico della letteratura latina Gaio Sallustio Crispo. Vengono riportate le traduzioni del Bellum Catilinae e del Bellum Iugurthinum.
+La produzione artistica di Sallustio fu condizionata dalle tensioni della societas romana che animarono la sua epoca e portarono alla crisi della res pubblica e all&#039;avvento del principato di Ottaviano Augusto. Il suo stile di scrittura è caratterizzato dalla brevitas, la rapidità espressiva, raggiunta tramite il sapiente uso delle figure retoriche, del discorso indiretto, degli infiniti narrativi, di un linguaggio ricco di termini astratti">Sallustio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/sallustio/bellum-catilinae"
+										title="Traduzione delle versioni di latino dell&#039;opera di Gallio Sallustio Crispo, Bellum Catilinae, con descrizione delle vicende di Lucio Sergio Catilina. L&#039;autore narra gli eventi che si articolano intorno alla congiura di Catilina, finalizzata alla creazione di una dittatura populista e antinobiliare a Roma. Nei 61 capitoli di cui si compone l&#039;opera, Sallustio presenta e denuncia la decadenza e la corruzione dei dirigenti romani. La critica ha spesso rimproverato all&#039;autore le inesattezze e le parodie presenti nella composizione che rendono l&#039;opera storicamente poco attendibile.">Bellum
+											Catilinae</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/sallustio/bellum-iugurthinum"
+										title="Versioni di latino e traduzione dell&#039;opera Bellum Iugurthinum dell&#039;autore Gaio Sallustio Crispo. Si tratta di una monografia incompiuta per via della morte di Sallustio. Il tema affrontato è la guerra dei romani, guidati da Gaio Mario, contro Giugurta, re di Numidia. I fatti presentati risalgono al periodo che va dal 111 al 105 a.C. Narrando tale evento, Sallustio denuncia la decadenza morale e sociale di Roma e della sua classe politica che conduce alla nascita dell&#039;Impero.">Bellum
+											Iugurthinum</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="San Girolamo" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/bibbia-vulgata"
+												title="Versioni di latino, con la prima traduzione della Bibbia (Vulgata) da parte dello scrittore e teologo romano Sofronio Eusebio Girolamo, noto come San Girolamo. L&#039;autore fu padre e dottore della Chiesa. Il suo maggiore sforzo letterario, la Vulgata, fu la base per le successive traduzioni della Bibbia.
+La sua intensa attività di traduttore gli valse il &quot;titolo&quot; di santo protettore dei traduttori. I suoi studi sull&#039;antichità invece lo trasformarono nel patrono degli archeologi.">San
+												Girolamo</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/bibbia-vulgata/vangelo-di-luca"
+										title="Versioni di latino e traduzione dell&#039;opera Il Vangelo di Luca di San Girolamo, autore a cui è attribuita anche l&#039;opera nota con il nome di Vulgata. La traduzione di San Girolamo è ancora oggi il testo usato per la messa in latino. La chiarezza del senso dei passi tradotti e il ricorso a un latino corretto, sono gli intenti perseguiti da San Girolamo nel suo lavoro di traduzione.">Vangelo
+											di Luca</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/bibbia-vulgata/vangelo-di-giovanni"
+										title="Versioni di latino e traduzione dell&#039;opera Il Vangelo di Giovanni di San Girolamo, autore a cui è attribuita anche l&#039;opera nota con il nome di Vulgata. Il testo di San Girolamo costituisce la base per le successive traduzioni della Bibbia, ed è ancora oggi usato per la messa in latino. 
+La sua opera risulta essere fedele al senso del testo tradotto, più che alla parola originale. Gli intenti perseguiti sono infatti la chiarezza e la buona latinità nella narrazione.">Vangelo
+											di Giovanni</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/bibbia-vulgata/vangelo-di-matteo"
+										title="Versioni di latino e traduzione dell&#039;opera Il Vangelo di Matteo di San Girolamo, autore a cui è attribuita anche l&#039;opera nota con il nome di Vulgata. San Girolamo è un importante teologo romano cui si deve la traduzione della Bibbia in latino. 
+La chiarezza e la fedeltà al senso originale risultano essere le caratteristiche principali della sua produzione.">Vangelo
+											di Matteo</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Sannazzaro" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/sannazzaro"
+												title="Versioni di latino dello scrittore in lingua volgare e latina Jacopo Sannazaro, con traduzione delle sue opere principali, ovvero le Elegie e gli Epigrammi. Tra i componimenti di Sannazzano si colloca anche l&#039;Arcadia, un&#039;opera in prosa e versi di ambientazione pastorale. In essa si narra la storia del pastore Sincero, rappresentante il poeta stesso, tra i riti e le tradizioni dell&#039;Arcadia Greca. E&#039; dal nome di questo componimento che deriva quello dell&#039;omonima accademia nata a Roma nel &#039;700.">Sannazzaro</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/sannazzaro/elegie"
+										title="Versioni latine e traduzione delle Elegie, opera articolata in tre libri elaborata dall&#039;intellettuale Jacopo Sannazaro. I primi due sono costituiti da undici componimenti, l&#039;ultimo soltanto da tre. Le Elegie di Sannazzaro rappresentano l&#039;espressione maggiore dell&#039;indole malinconica dell&#039;autore. I temi dominanti nei componimenti sono l&#039;amicizia e il presentimento della morte.">Elegie</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/sannazzaro/epigrammi"
+										title="Versioni di latino e traduzione dell&#039;opera Epigrammi scritta dallo scrittore Jacopo Sannazaro, erroneamente nominato anche Sannazzaro. Fu un poeta e umanista italiano, noto per aver pubblicato il prosimetro pastorale l&#039;Arcadia.">Epigrammi</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Seneca" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/seneca"
+												title="Versioni di latino di Lucio Anneo Seneca, con la traduzione di opere come le Epistulae morales ad Lucilium, Consolatio ad Marciam, De Beneficiis, De Brevitate Vitae, De Clementia, De Ira, De Otio. Seneca fu un importante filosofo, poeta, politico e drammaturgo romano. Ebbe un rapporto tumultuoso con la corte imperiale al punto da essere accusato di adulterio dall&#039;imperatore Claudio, istigato dalla moglie Messalina, e esiliato in Corsica. Fu assolto grazie all&#039;intervento di Agrippina, la seconda moglie di Claudio, che gli attribuì la carica di precettore del futuro imperatore Nerone.">Seneca</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/seneca/epistulae-morales-ad-lucilium"
+										title="Versioni di latino con traduzione delle Epistulae morales ad Lucilium dell’autore latino Lucio Anneo Seneca, una raccolta di 124 lettere indirizzate a Lucilio. I contenuti delle lettere sono un mezzo per determinare la crescita morale del lettore. Fungono infatti da strumento pedagogico per l&#039;apprendimento dei principi basilari, cui fa seguito un percorso formativo più complesso e avanzato. Seneca propone un ideale di vita per il Saggio, dedito al raccoglimento e alla crescita interiore. Nelle lettere l&#039;autore, pur proponendosi come portavoce dell&#039;etica aristocratica, condanna il maltrattamento degli schiavi.">Epistulae
+											morales ad Lucilium</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/consolatio-ad-marciam"
+										title="Versioni di latino e traduzione dell&#039;opera Consolatio ad Marciam di Seneca, lettera indirizzata a Marcia, figlia dello storico Cremuzio Cordo, per consolarla per la perdita del figlio. L&#039;evento costituisce l&#039;occasione per Seneca di avviare una riflessione sulla morte, e nello specifico sul suicidio. Il testo risulta essere una celebrazione non esplicita dell&#039;opera di Cremuzio Cordo, disapprovata e distrutta in tutte le sue copie da Tiberio e ripubblicata successivamente dalla figlia di Marcia, durante l&#039;impero di Caligola.">Consolatio
+											ad Marciam</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/de-beneficiis"
+										title="Traduzione delle versioni di latino di Lucio Anneo Seneca dell&#039;opera De Beneficiis, in cui viene descritto il principio coesivo della beneficienza dal punto di vista sociale. Il testo è rivolto a Ebuzio Liberale e fa parte della produzione di carattere etico-politica di Seneca. L&#039;atto di beneficienza è identificato nel componimento come un comportamento consapevole e disinteressato. Tale concezione è il linea con la sua visione degli uomini come un insieme di mattoni che, se coesi, si sostengono l&#039;un l&#039;altro e rendono stabile l&#039;edificio, rappresentante la società.">De
+											Beneficiis</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/de-brevitate-vitae"
+										title="Traduzione delle versioni di latino dell&#039;opera dell&#039;autore Lucio Anneo Seneca, che fa parte dei dialoghi e che descrive la brevità della vita. In questo trattato l&#039;autore esprime la sua disapprovazione per le pratiche sociali romane. Critica le cariche pubbliche, gli obblighi sociali, i divertimenti, ricorrendo a un tono sarcastico. Il testo è indirizzato a Pompeo Paolino, padre della moglie di Seneca, che ricopre una carica pubblica. L&#039;autore invita il destinatario ad abbandonarla per dedicarsi alla vita privata, all&#039;otium, al miglioramento di se stesso, all&#039;arricchimento del suo sapere.">De
+											Brevitate Vitae</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/de-clementia"
+										title="Versioni di latino con traduzione del De Clementia di Lucio Anneo Seneca, in cui vengono elogiate la moderazione e la clemenza dell&#039;imperatore romano Nerone. L&#039;autore ebbe un rapporto stretto con l&#039;imperatore, fu infatti per volere di Agrippina il suo precettore. In De Clementia Seneca legittima il potere di Nerone definendolo di natura divina. Evidenzia però la necessità di esercitarlo senza far sentire il peso di tale gerarchia sul popolo. In questo trattato il filosofo si  avvicina alla dottrina politica stoica che vede nella monarchia la forma di governo migliore.">De
+											Clementia</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/de-ira"
+										title="Traduzione delle versioni di latino contenute nel De Ira di Lucio Anneo Seneca, in cui viene descritto il sentimento negativo dell&#039;ira che è opposto alla ragione. In virtù di tale caratteristica, il celebre poeta avvia una battaglia contro questo sentimento e ne identifica le soluzioni. L&#039;ira va combattuta essendo per Seneca una passione che acceca rendendo l&#039;uomo incontrollabile, e quindi pericoloso.">De
+											Ira</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/de-otio"
+										title="Versioni di latino con traduzione del De otio, l&#039;ottavo libro facente parte dei Dialoghi scritti da Lucio Anneo Seneca, rivolto all&#039;amico Annio Sereno. Seneca compone un dialogo dimostrativo in cui espone la legittimità della sua scelta di chiudere con la vita politica. Tale posizione è il risultato della presa d&#039;atto da parte dell&#039;autore dell&#039;impossibilità di riformare l&#039;impero. L&#039;Otium non è per Seneca da considerare come una scelta da condannare, nonostante il principio stoico secondo cui il sapiente non deve lasciare la vita attiva.">De
+											otio</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/de-tranquillitate-animi"
+										title="Versioni di latino con traduzione dell&#039;opera di Lucio Anneo Seneca, De Tranquillitate Animi in cui l&#039;autore si sofferma sul significato del termine tranquillitas. Tale componimento fa parte della trilogia dedicata a Sereno, composta da: De constantia sapientis, De otio, De tranquillitate animi. Il sapiente, il proficens, è presentato come modello di equilibrio tra la vita attiva e la contemplazione filosofica. Seneca mostra che svolgendo l&#039;attività politica il soggetto si scopre debole. E&#039; necessario quindi essere abili e distinguere le situazioni in cui occorre intervenire nella vita pubblica da quelle in cui bisogna dedicarsi al perfezionamento morale.">De
+											Tranquillitate Animi</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/de-vita-beata"
+										title="Traduzione delle versioni di latino del De Vita Beata, il settimo libro dei Dialoghi di Lucio Anneo Seneca, in cui viene riportata una riflessione sul concetto di de vita beata. In questa opera Seneca presenta la figura dell&#039;uomo politico potente mostrando le contraddizioni tra gli ideali filosofici di cui si fa portavoce e la sua azione concreta. Nella prima parte del dialogo, l&#039;autore affronta il tema della costante ricerca della felicità da parte dell&#039;uomo e della sua tendenza a individuarla in beni apparenti. L&#039;opera è dedicata a Novato Gallione, personaggio politico dalla carriera brillante, nonché fratello maggiore di Seneca.">De
+											Vita Beata</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/epigrammi"
+										title="Traduzione delle versioni di latino degli Epigrammi scritti da Lucio Anneo Seneca. Si tratta di un&#039;opera scritta in versi distici e giunta spuria.">Epigrammi</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/naturales-quaestiones"
+										title="Versioni di latino e traduzione delle Naturales Quaestiones, opera di Lucio Anneo Seneca, in cui vengono fatte delle riflessioni di tipo platonico. Nei sette libri dedicati a Lucillo, Seneca infatti appare più vicino al platonismo che allo stoicismo. L&#039;autore affronta diversi temi, tra questi: le acque terrestri, i venti, i terremoti, le comete. Seneca vuole liberare i suoi contemporanei dalle paure dei fenomeni naturali così da consentirgli di elevarsi alla dimensione divina. La conoscenza è infatti per l&#039;autore un mezzo per ascendere a Dio.">Naturales
+											Quaestiones</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/fedra"
+										title="Versioni di latino e traduzione dell&#039;opera Fedra (in latino Phaedra) dell&#039;autore Lucio Anneo Seneca. L&#039;opera è una tragedia ambientata nella città di Atene.
+Narra dell&#039;amore incestuoso di Fedra per il figliastro Ippolito. Quest&#039;ultimo dopo aver scoperto i tentativi di seduzione da parte della matrigna scappa dalla reggia dando vita alla vendetta di lei, che lo condurrà alla morte">Fedra</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/seneca/de-providentia"
+										title="Versioni di latino e traduzione del primo dei dialoghi scritti dall&#039;autore latino Lucio Annea Seneca, il De Providentia che tratta temi molto vasti. Il tema specifico affrontato dall&#039;autore è l&#039;ordine provvidenziale che porta anche i buoni a subire disavventure. Seneca definisce queste ultime come delle prove mediante le quali gli dei testano la morale dell&#039;uomo. Ne deriva che il saggio, in linea di massima, accetta in modo positivo la provvidenza. Nel caso in cui non dovesse riuscire a gestire le disavventure riservategli, Seneca identifica nel suicidio la via per salvaguardare la propria virtù.">De
+											Providentia</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Svetonio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/svetonio"
+												title="Versioni di latino dell’erudito, antiquario e studioso enciclopedico dell’età imperiale Gaio Svetonio Tranquillo. La sua opera è il De Vita Caesarum, di cui è riportata la traduzione.
+Svetonio fu un esponente di spicco del genere della biografia che diede vita a un&#039;ampia ed eterogenea produzione letteraria. Entrò a far parte della corte ed ebbe dei rapporti molto stretti con gli imperatori Traiano e Adriano. Nell&#039;opera De Vita Caesarum narrò le vite di dodici Imperatori romani, tra cui Cesare, Augusto, Tiberio, Caligola, Claudio, Nerone, Galba, Otone, Vitellio, Vespasiano, Tito, Domiziano.">Svetonio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/svetonio/de-vita-caesarum"
+										title="Versioni di latino e traduzione dell&#039;opera De Vita Caesarum dell&#039;autore romano Svetonio, in cui vengono raccontate le vite degli imperatori romani da Gaio Giulio Cesare a Domiziano. Lo schema di presentazione delle biografie dei personaggi è sempre lo stesso: le origini familiari, la carriera precedente la presa di potere, la vita pubblica e quella privata, gli ultimi giorni. Nella presentazione delle vite dei grandi protagonisti romani, Svetonio sceglie di adottare il punto di vista del Senato romano.">De
+											Vita Caesarum</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="t" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/tacito"
+												title="Traduzione delle versioni di latino di Publio (o Gaio) Cornelio Tacito Agricola. Tra le opere si ricordano gli Annales, Germania, le Historiae.
+Tacito fu uno degli storici più importanti dell&#039;antichità, fu anche oratore e senatore romano. Le sue opere illustrano la storia della impero romano, dalla morte di Augusto fino alla guerra giudaica di Tito. Il suo stile è elevato, solenne, poetico, caratterizzato dalla varatio, dalla asimmetria  e dalla sinteticità. La sua presentazione dei fatti storici risulta essere molto attenta nell&#039;espressione, nel lessico e nell&#039;uso dei registri linguistici. Tra le sue opere maggiori: Dialogus de oratoribus, Historiae, Annales o Ab excessu divi Augusti.">Tacito</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/tacito/agricola"
+										title="Versioni di latino tradotte dell&#039;opera Agricola dello storico romano Tacito, in cui viene descritta la vita di Gneo Giulio Agricola, il governatore della Britannia. Si tratta di un&#039;opera che mescola diversi generi letterari: è politica, ma anche biografica e di laudatio funebris. La narrazione è suddivisa in tre parti: i racconti della gioventù, quelli delle imprese in Britannia e quelli degli ultimi anni di vita di Giulio Agricola. Il protagonista è presentato come un esempio di servitore dello stato integerrimo.
+Tacito oltre a esaltare le gesta di Giulio Agricola, invita alla tolleranza e alla moderazione, elementi assenti nell&#039;epoca domizianea.">Agricola</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/tacito/annales"
+										title="Traduzione delle versioni di latino contenute nell&#039;opera Annales dello storico Tacito, con analisi degli imperi dei quattro imperatori romani succeduti a Cesare Augusto.
+Il componimento di Tacito inizia con la morte di Augusto (risalente al 14), cui segue l&#039;impero di Tiberio, e termina con quello di Nerone (nel 68). L&#039;autore si focalizza sulla storia dei singoli principi dando risalto ai meccanismi dell&#039;impero e alla crescente corruzione. Tacito sceglie di non presentare dei personaggi piatti ma di dare vita a una sorta di introspezione psicologica. Nello stile è percepibile l&#039;influenza delle regole della composizione della tarda Repubblica.">Annales</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/tacito/germania"
+										title="Versioni di latino e traduzione dell&#039;opera Germania di Publio Cornelio Tacito. Il testo rientra nel genere etnografico e descrive le tribù germaniche.
+Germania si contraddistingue dalle opere classiche per la sua originalità. Comprende infatti riferimenti storici e ideologici volti a descrivere i costumi puri delle tribù germaniche in antitesi con quelli corrotti dei romani. La critica alla decadenza morale dei contemporanei, considerati da Tacito come i veri barbari, viene effettuata in modo indiretto. La finalità dell&#039;opera è informativa, serve infatti a far conoscere ai romani le peculiarità delle tribù descritte.">Germania</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/tacito/historiae"
+										title="Traduzione delle versioni di latino presenti nell&#039;opera di genere storico Historiae di Publio Cornelio Tacito, in cui vengono descritti gli eventi degli anni 69 e 70 d.C. Il 69 d.C. è per Tacito un anno di svolta nella storia di Roma, in breve tempo infatti si assiste: alla fine della dinastia Giulio-Claudia; al succedersi di tre imperatori; all&#039;affermarsi della dinastia Flavia. La posizione assunta dall&#039;autore nei libri è a favore del Principatus, considerato come l&#039;unica forma di governo in grado di garantire la stabilità, la fedeltà delle forze militari, la coesione. Il principe è infatti per Tacito la figura chiave che ha il potere di preservare il prestigio di Roma e la pace nell&#039;impero.">Historiae</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Terenzio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/terenzio"
+												title="Versioni di latino con traduzione del commediografo berbero di lingua latina Publio Terenzio Afro che scrisse la celebre opera in lingua latina Adelphoe. Terenzio ebbe un forte legame con la commedia greca. Introdusse il concetto di humanitas (inteso come l&#039;attenzione benevola tra gli individui) proveniente dal Circolo degli Scipioni. La sua produzione perseguiva l&#039;obiettivo di rinnovare la commedia latina attribuendole un intento pedagogico. Fu promotore dei principi dell&#039;umanesimo e affrontò temi di grande impatto sociale; tra questi: l&#039;educazione e i diritti dei giovani; il ruolo della donna; il conflitto generazionale.">Terenzio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/terenzio/adelphoe"
+										title="Versioni di latino e traduzione dell&#039;opera Adelphoe scritta dall&#039;autore latino Publio Terenzio Afro, che prende come modello di riferimento l&#039;opera omonima di Menandro. La prima rappresentazione di quest&#039;opera risale al 160 a.C., nel corso delle celebrazioni funebri di Lucio Emilio Paolo Macedonico. Terenzio differenzia i personaggi in base allo stile di linguaggio adottato, c&#039;è chi ne adotta uno ironico più incalzante e sfrontato e chi uno scherzoso ma garbato. Il modello di comicità seguito da Terenzio è quello degli schemi classici di stampo plautino.">Adelphoe</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Tertulliano" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/tertulliano"
+												title="Versioni di latino dello scrittore romano e apologeta cristiano Quinto Settimio Fiorente Tertulliano che elaborò un testo di tipo religioso, ovvero l’Apologeticum. Tertulliano fu un celebre scrittore romano e apologeta cristiano. Nei suoi scritti utilizzò un linguaggio tecnico e uno stile ricco di figure retoriche così da rendere più incisiva la sua produzione. Elaborò il concetto di &quot;persona&quot; secondo il quale ogni uomo è partecipe della vita umana ma al tempo stesso distinto da essa, in quanto persona unica e inalienabile. In Apologeticum, Tertulliano difende la libertà di coscienza condannando tutte le forme di delitto.">Tertulliano</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/tertulliano/apologeticum"
+										title="Versioni di latino e traduzione dell&#039;opera Apologeticum di Tertulliano, in cui viene difeso il principio della libertà di coscienza, ponendosi contro le varie forme di delitto. L&#039;autore narra delle persecuzioni cristiane definendole senza motivo. Secondo Tertulliano i cristiani non sono colpevoli di nessun crimine, sono perseguitati meramente per la loro fede. Il poeta esalta i valori di queste comunità religiose: la fedeltà, l&#039;amore verso il prossimo, la purezza dello stile di vita. Nella parte finale dell&#039;opera sostiene la superiorità del monoteismo sul politeismo, e l&#039;inutilità delle persecuzioni religiose.">Apologeticum</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Tibullo" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/tibullo"
+												title="Versioni di latino del poeta romano Albio Tibullo che fu uno dei maggiori e principali esponenti del genere elegiaco latino. Traduzione dell&#039;opera le Elegie. Tibullo fu un intellettuale attivo nel circolo intellettuale di Messalla Corvino. Le fonti d&#039;ispirazione dello scrittore furono la tradizione ellenistica, l’epigramma greco, i lirici greci, il neoterismo. La sua produzione letteraria fu particolarmente influenzata da autori come Virgilio, Catullo e Properzio. I temi principali delle sue opere furono l&#039;amore come fonte di sofferenza e la contrapposizione ai valori dominanti nella società contemporanea.">Tibullo</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/tibullo/elegie"
+										title="Versioni di latino sull&#039;opera Elegie dello scrittore romano Tibullo, articolata in due libri che trattano temi come l&#039;amore, la condanna della guerra e della violenza. Lo stile di scrittura adottato è definito da Quintiliano chiaro ed elegante. I toni dei componimenti variano in base ai temi affrontati passando dalla dolcezza, alla malinconia, alla rabbia. Nelle elegie di Tibullo manca lo sfoggio delle conoscenze mitologiche, presente in componimenti di altri intellettuali. Il lessico appare infatti semplice e limitato, privo di arcaismi.">Elegie</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="v" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/valerio-massimo"
+												title="Versioni di latino dello storico romano Valerio Massimo. E&#039; presente la traduzione dell&#039;importante opera Facta et dicta memorabilia, suddivisa in libri. Tale manuale fu scritto dopo l&#039;esperienza in Asia con il proconsole Sesto Pompeo. In esso Valerio Massimo raccolse fatti e aneddoti di carattere retorico-morale, prevalentemente tratti dalla storia romana. Ai retori, destinatari dell&#039;opera, l&#039;autore scelse di presentare i comportamenti virtuosi delle personalità del passato in modo tale che ispirassero la loro attività.">Valerio
+												Massimo</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/valerio-massimo/facta-et-dicta-memorabilia"
+										title="Versioni di latino e traduzione dell&#039;opera Facta e dicta memorabilia (Fatti e detti memorabili), scritta dallo scrittore romano Valerio Massimo. Il componimento è costituito da nove libri in cui si presentano esempi di comportamenti positivi e negativi di personaggi noti. Valerio Massimo elogia la tradizione repubblicana e critica tutti coloro che hanno seminato discordia. Inoltre, esalta la superiorità materiale e morale di Roma sulle popolazioni straniere.">Facta
+											et dicta memorabilia</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Velleio Patercolo" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/velleio-patercolo"
+												title="Versioni di latino dello storico romano Marco Velleio Patercolo, con traduzione delle Historiae romanae, testo dedicato a Marco Vinicio che era console nel 30 a. C. L&#039;autore ricoprì importanti cariche militari e politiche. Con la sua opera si propose di scrivere una storia universale. Historiae romanae si compone di due libri: nel primo Velleio Patercolo narrò la storia di Roma dall&#039;origine fino al 146 a.C., nel secondo arrivò a raccontare gli avvenimenti fino al 30 d.C. L&#039;autore scelse di raccontare in modo più approfondito gli avvenimenti vicini nel tempo rispetto a quelli più lontani.">Velleio
+												Patercolo</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/velleio-patercolo/historiae-romanae"
+										title="Traduzione delle versioni di latino dell&#039;opera Historiae Romanae dell&#039;autore latino Velleio Patercolo dedicata alla figura di Marco Vinicio console.
+L&#039;intento dell&#039;opera è offrire un compendio di storia universale in cui l&#039;autore si concentra particolarmente sugli eventi più vicini alla sua epoca. Historiae Romanae è stato scritto intorno al 30 d.C., anno in cui ricorreva il cinquantesimo anniversario della sottomissione dei Parti. Il testo è costruito per avere un&#039;utilità pratica, vuole essere infatti un&#039;opera di consultazione.">Historiae
+											Romanae</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Virgilio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/virgilio"
+												title="Versioni di latino dell’autore Publio Virgilio Marone che elaborò  opere note, di cui è presente la traduzione delle Bucoliche (Eclogae), dell’Eneide, delle Georgiche (Georgicon). Virgilio ebbe nel corso della sua vita contatti con politici e letterati, come Cornelio Gallo, Alfeno Varo e Asinio Pollione. Si oppose al consumarsi delle istituzioni repubblicane e fu sensibile ai temi della pace e dell&#039;ordine che vedeva rappresentati nella figura di Ottaviano, il restauratore della romanità. Nella sua produzione letteraria ricorse a un linguaggio semplice ed equilibrato, ma comunque raffinato e colto.">Virgilio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/virgilio/bucoliche-eclogae"
+										title="Versioni di latino con traduzione dell&#039;opera le Bucoliche scritte dal poeta Virgilio. Sono dieci egloghe in cui viene utilizzato il verso dell&#039;esametro. L&#039;opera, pubblicata nel 38 a.C., è di genere bucolico. Virgilio compone le Bucoliche in un periodo molto difficile della storia di Roma, quello della drammatica guerre civile del primo secolo a.C. I temi affrontati sono: il paesaggio Arcadico, presentato all&#039;interno del testo come idilliaco e ideale; il rimpianto del &quot;mondo perduto&quot;, in contrasto con le difficoltà portate dal progresso; il ritorno alle origini, all&#039;età dell&#039;oro.">Bucoliche
+											(Eclogae)</a> <span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/virgilio/eneide-aeneis"
+										title="Versioni di latino con traduzione dell&#039;opera latina del poeta romano Virgilio, in cui vengono narrate le vicende di Enea, giunto in Italia.
+L&#039;intento dell&#039;opera è di esaltare le origini della gens Iulia e legare alla tradizione quelle della stirpe romana. Tale caratteristica rende l&#039;Eneide un &quot;canto&quot; della grandezza di Roma. Nei primi sei libri dell&#039;opera si narra il viaggio di Enea verso l&#039;Italia, nei restanti sei la guerra dei Troiani contro i Rutuli, i Latini e le popolazioni italiche. L&#039;Eneide è scritta in esametri dattillici, caratteristica che conferisce gradevolezza all&#039;ascolto dell&#039;opera.">Eneide</a>
+										<span>|</span>
+									</small> <small class="small_text"> <a
+										href="/versioni-latino/virgilio/georgiche-georgicon"
+										title="Versioni di latino e traduzione dell&#039;opera Georgiche (Georgicon) dell&#039;autore Publio Virgllio Marone, articolata in quattro libri e dedicata alla vita nei campi. I temi affrontati al loro interno sono: il lavoro nei campi, l’arboricoltura, l’allevamento del bestiame e l’apicoltura. Virgilio si rivolge ai piccoli proprietari terrieri, ai veterani possidenti di terre, proponendoli come simbolo della pace e della serenità dell&#039;età augustea. Il lavoro nei campi è presentato come custode delle virtù civili dell&#039;uomo, e la natura come alleato in grado di offrire uno stile di vita sano e virtuoso.">Georgiche
+											(Georgicon)</a>
+									</small>
+								</dd>
+							</dl>
+							<dl id="Vitruvio" class="list_box">
+								<dt>
+									<div class="folder">
+										<h3>
+											<a href="/versioni-latino/vitruvio"
+												title="Versioni di latino con traduzione dell’architetto e scrittore Marco Vitruvio Pollione, che aveva eseguito studi e esercitato l’attività di scrittore e teorico, testimoniata dall&#039;opera De Architectura. Vitruvio è considerato il più famoso teorico dell&#039;architettura. Il De Architectura fu scritto tra il 29 e il 23 a.C, periodo in cui Augusto progettò modifiche nell&#039;edilizia pubblica. L&#039;opera influenzò in maniera limitata i contemporanei dell&#039;autore, ma fu letta con interesse da personaggi importanti come Petrarca e Boccaccio. L&#039;interesse per il trattato di Vitruvio crebbe a partire dal XV secolo.">Vitruvio</a>
+										</h3>
+									</div>
+								</dt>
+								<dd class="versioni_description">
+
+									<small class="small_text"> <a
+										href="/versioni-latino/vitruvio/de-architectura"
+										title="Versioni di latino e traduzioni dell&#039;opera De Architectura dell&#039;autore Marco Vitruvio Pollione, con descrive bene l&#039;attività dell&#039;architettura. L&#039;opera costituisce un&#039;importante fonte di conoscenza circa le tecniche di costruzione degli antichi romani. Il testo è stato scritto dal famoso teorico dell&#039;architettura intorno al 15 a.C., quando Augusto iniziò a progettare un rinnovamento del settore edilizio. Il De Architectura è l&#039;unico documento sul tema conservato integro dall&#039;antichità, ed è stato il testo teorico fondamentale per il settore fino al XIX secolo.">De
+											Architectura</a>
+									</small>
+								</dd>
+							</dl>
+						</div>
+						<div class="index_box clear relevant">
+							<div class="box_title">
+								<span>Skuola.net consiglia</span>
+							</div>
+							<p>I pi&ugrave; visti:</p>
+							<ul class="mostViewed">
+								<li class=rightDivisor><a
+									href="/versioni-latino/orazio/satire-sermones/libro-2/il-topo-di-campagna-e-il-topo-di-citta-vv-79-117-satira-6"
+									title="Vai alla versione e scopri la traduzione!">Orazio,
+										Satire (Sermones), Libro 2, Satira 6 - Il topo di campagna e
+										il topo di città vv. 79 - 117</a></li>
+								<li class=rightDivisor><a
+									href="/versioni-latino/autori-vari/brani-classici/orazio/odi-1-11-ode-carpe-diem"
+									title="Vai alla versione e scopri la traduzione!">Orazio,
+										Ode Carpe diem - (Odi, 1. 11)</a></li>
+								<li class=rightDivisor><a
+									href="/versioni-latino/autori-vari/brani-classici/catullo/carme-101-carme-in-morte-del-fratello"
+									title="Vai alla versione e scopri la traduzione!">Catullo,
+										Carme In morte del fratello - (Carme 101)</a></li>
+								<li class=rightDivisor><a
+									href="/versioni-latino/autori-vari/brani-classici/catullo/carme-5-carme-vivamus-mea-lesbia"
+									title="Vai alla versione e scopri la traduzione!">Catullo,
+										Carme Vivamus mea Lesbia - (Carme 5)</a></li>
+								<li><a
+									href="/versioni-latino/cesare/de-bello-gallico/libro-1/la-gallia-paragrafo-1"
+									title="Vai alla versione e scopri la traduzione!">Cesare,
+										De Bello Gallico, Libro 1, Paragrafo 1 - La Gallia</a></li>
+							</ul>
+							<p>In evidenza:</p>
+							<ul class="proposed">
+								<li class=rightDivisor><a
+									href="/versioni-latino/libri-scolastici/versioni/varie/versione-i-romani-e-il-tempo"
+									title="Vai alla versione e scopri la traduzione!">I Romani
+										e il tempo - Versioni Varie</a></li>
+								<li class=rightDivisor><a
+									href="/versioni-latino/svetonio/de-vita-caesarum/libro-3/paragrafo-9"
+									title="Vai alla versione e scopri la traduzione!">Svetonio,
+										De Vita Caesarum, Libro 3 (Tiberius), Paragrafo 9</a></li>
+								<li class=rightDivisor><a
+									href="/versioni-latino/svetonio/de-vita-caesarum/libro-3/paragrafo-51"
+									title="Vai alla versione e scopri la traduzione!">Svetonio,
+										De Vita Caesarum, Libro 3 (Tiberius), Paragrafo 51</a></li>
+								<li class=rightDivisor><a
+									href="/versioni-latino/tacito/annales/libro-1/paragrafo-56"
+									title="Vai alla versione e scopri la traduzione!">Tacito,
+										Annales, Libro 1, Paragrafo 56</a></li>
+								<li><a
+									href="/versioni-latino/virgilio/georgiche-georgicon/libro-2/versi-458-540"
+									title="Vai alla versione e scopri la traduzione!">Virgilio,
+										Georgiche (Georgicon), Libro 2, Versi 458-540</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="index_sidebar">
+						<div id="main_news_sidebar" class="page">
+							<div id="main_news_sidebar_social">
+								<a
+									href="https://ripetizioni.skuola.net/?utm_source=skuola&utm_medium=300x100-sidebar&utm_campaign=ripetizioni"><img
+									src="https://www.skuola.net/img/banner/300x100-trova-ripetizioni-lezioni-online.png"
+									alt="Trova ripetizioni online e lezioni private"
+									title="Trova ripetizioni online e lezioni private"></a>
+
+							</div>
+						</div>
+						<div class="page"></div>
+						<div class="banner">
+							<div id="adv-gpt-box-container1">
+								<script
+									src="https://adv.mediamond.it/hpsponsor/skuola/300x250.js"
+									type="text/javascript"></script>
+							</div>
+							<div id="adv-gpt-box-mobile-container1"></div>
+						</div>
+						<div id="outbrain_snippet"></div>
+						<script type="text/javascript">
+(function() {
+    get_outbrain_snippet('https://www.skuola.net/versioni-latino/');
+})();
+</script>
+						<div class="social_alternate_box">
+							<a href="/forum/"> <img
+								src="/skins/delirio/img/alternate/communityQualita.png"
+								alt="Community Qualita" />
+							</a>
+						</div>
+
+						<div class="adv_box">
+							<div id="adv-gpt-promobox-container1"></div>
+							<script
+								src="https://adv.mediamond.it/hpsponsor/skuola/promobox.js"
+								type="text/javascript"></script>
+							<div id="adv-gpt-promobox-mobile-container1"></div>
+						</div>
+
+						<div class="tv_box index_box">
+							<div class="box_title">
+								<span><a href="/tv/">Skuola | Tv</a></span>
+							</div>
+							<p>
+								Segui la Tv dello studente! <a href="/tv/">Vedi tutti i
+									video</a>
+							</p>
+							<div id="tv_box_wrapper">
+								<a href="/page.php?id=161157"><img
+									src="https://i.ytimg.com/vi/Ypg3uTPnjVo/0.jpg"
+									alt="Maturità 2017: la correzione della Seconda prova" /></a> <a
+									href="/page.php?id=161157" class="play">Play</a>
+								<div>
+									<a href="/page.php?id=161157"><span>Maturità 2017:
+											la correzione della Seconda prova</span></a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="adv_box">
+							<div id="adv-gpt-promobox-container2"></div>
+							<div id="adv-gpt-promobox-mobile-container2"></div>
+						</div>
+
+						<div class="adv_box">
+							<div id="adv-gpt-promobox-container3"></div>
+							<div id="adv-gpt-promobox-mobile-container3"></div>
+						</div>
+
+						<div class="adv_box">
+							<div id="adv-gpt-promobox-container4"></div>
+							<div id="adv-gpt-promobox-mobile-container4"></div>
+						</div>
+
+						<div class="sidebar_banner" id="following_banner">
+							<a
+								href="https://www.skuola.net/promo/app/?utm_source=skuola&utm_medium=banner-sidebar&utm_campaign=app"
+								class="app-sidebar" title="Scarica le app di Skuola"> <img
+								src="/skins/delirio/img/sidebar/appSidebar.png?2"
+								alt="Scarica le app di Skuola" />
+							</a>
+
+							<script type="text/javascript">
+    //<![CDATA[
+    $(window).on("load", function(){
+        var following_banner=$("#following_banner");
+        var following_banner_relative_div=$('#container');
+        var following_banner_position=following_banner.offset();
+        var following_banner_y_origin=following_banner_position.top;
+        var following_banner_margin_top=parseInt(following_banner.css('margin-top'))+$('#header_bar').height(); //new old: $('#header').offset().top;
+        var following_banner_trigger_y=(following_banner_y_origin-following_banner_margin_top);
+        var last_content_div = $('.index_box.special');
+        var last_content_follow_height = 1 ;
+        var prev_div = following_banner.prev();
+        var prev_div_height = prev_div.height() + parseInt(prev_div.css('margin-bottom'));
+        var prev_div_y_origin = prev_div.offset().top;
+
+        var following_banner_y_end;
+        var following_banner_trigger_from_bottom;
+        var following_banner_parent = following_banner.parent();
+
+        var following_banner_parent_height = following_banner_parent.height();
+
+        following_banner_parent.css('height', following_banner_parent_height);
+
+        $(window).scroll(function(){
+            var index_content_height = $('#index_content').height();
+
+            if (prev_div_height != prev_div.height() + parseInt(prev_div.css('margin-bottom')) || prev_div_y_origin != prev_div.offset().top){
+                following_banner_parent.css('height', 'auto');
+                if (following_banner_parent_height != following_banner_parent.height()){
+                    following_banner_parent.css('height', following_banner_parent.height());
+                    if(index_content_height < following_banner_parent_height) return;
+                }
+                following_banner_y_origin = parseInt(following_banner_y_origin + (prev_div.height() + parseInt(prev_div.css('margin-bottom')) - prev_div_height) + (prev_div.offset().top - prev_div_y_origin));
+                prev_div_height = prev_div.height() + parseInt(prev_div.css('margin-bottom'));
+                prev_div_y_origin = prev_div.offset().top;
+                following_banner_trigger_y=(following_banner_y_origin-following_banner_margin_top);
+            }
+            if (!last_content_div.length || (last_content_div.offset().top + last_content_div.height() + parseInt(last_content_div.css('margin-top')) < following_banner_parent.offset().top+following_banner_parent.height())){
+                last_content_div = $('#footer');
+                last_content_follow_height = 0 ;
+            }
+
+            following_banner_y_end = last_content_div.offset().top + last_content_follow_height*(last_content_div.height() + parseInt(last_content_div.css('margin-top')));
+            following_banner_trigger_from_bottom = following_banner_relative_div.offset().top + following_banner_relative_div.height() - following_banner_y_end;
+
+            if(index_content_height < following_banner_parent_height) return;
+
+            if($(window).scrollTop() + following_banner.height() + parseInt(following_banner.css('margin-top')) + $('#header_bar').height()>= following_banner_y_end){
+                if(following_banner.css('position')!='absolute'){
+                    following_banner.css({
+                        'position' : 'absolute',
+                        'top' : 'auto',
+                        'bottom' : following_banner_trigger_from_bottom
+                    });
+                }
+            } else if($(window).scrollTop()>=following_banner_trigger_y && (following_banner.css('position')=='relative' || following_banner.css('position')=='absolute')){
+                following_banner.css({
+                    'height' : following_banner.height(),
+                    'position' : 'fixed',
+                    'top' : (following_banner_margin_top-parseInt(following_banner.css('margin-top')))+'px',
+                    'z-index' : '10000'
+                });
+            }
+
+            if($(window).scrollTop()<following_banner_trigger_y && following_banner.css('position')!='relative' && following_banner.css('position')!='absolute'){
+                following_banner.css({
+                    'position' : 'relative',
+                    'top' : 'auto',
+                    'bottom' : 'auto'
+                });
+            }
+        });
+
+    });
+    //]]>
+</script>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div id="content_footer"></div>
+			</div>
+
+			<footer>
+			<div id="footer">
+				<div id="footer_wrapper">
+					<p class="title">About Skuola.net</p>
+					<ul>
+						<li><a href="https://corporate.skuola.net" rel="nofollow">Chi
+								siamo</a></li>
+						<li><a href="https://corporate.skuola.net/lavora-con-noi/"
+							rel="nofollow">Lavora con noi</a></li>
+						<li><a href="https://corporate.skuola.net/pubblicita/">Pubblicit&agrave;</a></li>
+						<li><a href="https://corporate.skuola.net/contatti/">Contatti</a></li>
+						<li><a href="/store/">Store</a></li>
+						<li><a href="https://ripetizioni.skuola.net">Ripetizioni</a></li>
+						<li><a href="/promo/app/" rel="nofollow">Apps</a></li>
+						<li><a href="https://ricerca.skuola.net/" rel="nofollow">Ricerca</a></li>
+						<li><a href="/tutorial/">Help</a></li>
+						<li><a href="/plug.php?e=memberterms" rel="nofollow">Privacy</a></li>
+					</ul>
+					<div id="social-icons-box">
+						<a id="fb-icon-footer" href="https://www.facebook.com/skuola.net"
+							target="_blank"></a> <a id="twitter-icon-footer"
+							href="https://twitter.com/skuolanet" target="_blank"></a> <a
+							id="googleplus-icon-footer"
+							href="https://plus.google.com/100736892738797438917"
+							target="_blank"></a> <a id="youtube-icon-footer"
+							href="https://goo.gl/3FwDd7" target="_blank"></a> <a
+							id="instagram-icon-footer"
+							href="https://www.instagram.com/skuolanet/" target="_blank"></a>
+						<a id="flipboard-icon-footer"
+							href="https://flipboard.com/@Skuolanet" target="_blank"></a>
+					</div>
+					<div class="copy">
+						<p>
+							Skuola.net News &egrave; una testata giornalistica iscritta al
+							Registro degli Operatori della Comunicazione.<br />
+							Registrazione: n° 20792 del 23/12/2010<br /> &copy;2000-2017
+							Skuola Network s.r.l. Tutti i diritti riservati. - P.I.
+							10404470014 <a
+								href="https://www.dmca.com/Protection/Status.aspx?ID=4c27cab9-5a41-487d-9076-d4c530ff3ba7"
+								title="DMCA" target="_blank" rel="nofollow"> <img
+								class="dmca"
+								src="https://images.dmca.com/Badges/dmca_protected_sml_120s.png?ID=4c27cab9-5a41-487d-9076-d4c530ff3ba7"
+								alt="DMCA.com" />
+							</a>
+						</p>
+					</div>
+					<div class="doodle">
+						<img src="/img/landing/doodle.png?20150521" />
+					</div>
+				</div>
+			</div>
+			</footer>
+
+			<script type="text/javascript" src="/assets/js/footer.js?20150521"></script>
+			<link rel="stylesheet"
+				href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" type="text/css" media="screen"
+				href="/assets/css/sk_glyphicons.css?20150521" />
+
+			<div class="tracking_code">
+				<script type="text/javascript"
+					src="https://codicebusiness.shinystat.com/cgi-bin/getcod.cgi?USER=skuola&amp;P=2"></script>
+				<noscript>
+					<a href="https://www.shinystat.com/it" target="_top"> <img
+						src="https://www.shinystat.com/cgi-bin/shinystat.cgi?USER=skuola&amp;P=2"
+						alt="" border="0" /></a>
+				</noscript>
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"bfe3f05254","applicationID":"52814812","transactionName":"Y1VRNRcDVxUFBUFbXVofcgIRC1YISzVeR11YUXAOEQ1XEg0kR1tWU1VxFAsGVQNeNlRVW1pRCQ0EEU0wDQJQXUE=","queueTime":0,"applicationTime":905,"atts":"TxJSQ18ZRBs=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+</body>
+</html>

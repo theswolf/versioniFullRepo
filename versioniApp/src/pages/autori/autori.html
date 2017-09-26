@@ -1,0 +1,22 @@
+<ion-content has-footer>
+    <ion-list >
+        <ion-item *ngFor="let author of data.author; let i = index" (click)="versionForAuthor(author)" >
+          <ion-avatar item-start>
+            <div class="space">
+                <ion-fab mini>
+                    <button ion-fab  [innerHtml]="authorFormat(author)" [color]="bindColor(i)" ></button>
+                  </ion-fab>
+            </div>
+           
+
+          </ion-avatar>
+          <h2>{{author.name}}</h2>
+          <p>{{author.description}}</p>
+        </ion-item>
+      </ion-list>
+</ion-content>
+<ion-footer>
+  <version-footer [pageName]="pageName"></version-footer>
+</ion-footer>
+
+

@@ -1,0 +1,34 @@
+<!--
+  Generated template for the VersioniPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <h2>{{author.name}}</h2>
+    </ion-card-header>
+    <ion-card-content>
+      {{author.description}}
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+      <ion-item *ngFor="let version of data.version; let i = index" (click)="traduzioniPerVersione(version)">
+        <ion-avatar item-start>
+            <div class="space">
+                <ion-fab mini>
+                    <button ion-fab  [innerHtml]="i+1" [color]="bindColor(i)" ></button>
+                  </ion-fab>
+            </div>
+        </ion-avatar>
+        <h2>{{version.titolo}}</h2>
+        <p>{{version.descrizione}}</p>
+      </ion-item>
+    </ion-list>
+  
+</ion-content>
+<ion-footer>
+    <version-footer [pageName]="pageName"></version-footer>
+  </ion-footer>
