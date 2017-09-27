@@ -25,29 +25,37 @@ export class Traduzione {
     this.trad = navParams.get("trad");
   }
 
+  share() {
+    let message="Ho trovato questa versione '"+this.version.titolo+" ( "+this.author.name+" ) con l'app Versioni Di Latino";
+    let image="assets/images/icon.png"
+    this.social.share(message, "Scaricala anche tu", image, "https://www.google.com");
+  }
+
   shareBy(prov:string){
     var share;
-   let message="Ho trovato questa versione '"+this.version.titolo+" ( "+this.author.name+" ) con l'app Versioni Di Latino";
-   let image="/assets/images/icon.png";
-   let url="";
+   let message="Ho trovato questa versione '"+this.version.titolo+" ( "+this.author.name+" )' con l'app Versioni Di Latino";
+   let image="assets/images/icon.png";
+   let url="https://play.google.com/store/apps/details?id=core.september.versioni&hl=it";
     switch (prov) {
         case 'fb':
-        share = this.social.shareViaFacebook
+        this.social.shareViaFacebook(message,null,url).then(function(res){
+          console.log(res);
+        });
         break;
         case 'tw':
-        share = this.social.shareViaTwitter
+        this.social.shareViaTwitter(message,null,url).then(function(res){
+          console.log(res);
+        });
         break;
         case 'wh':
-        share = this.social.shareViaWhatsApp
+        this.social.shareViaWhatsApp(message,null,url).then(function(res){
+          console.log(res);
+        });
         break;
-        case 'em':
-        share = this.social.shareViaEmail
-        break;
-    
+            
       default:
         break;
     }
-    share(message,image,url);
   }
 
  

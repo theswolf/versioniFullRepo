@@ -14,11 +14,11 @@ import 'rxjs/add/operator/map';
 export class DataStore {
 
   keys:Object = {
-    "autori":"/assets/data/autori.json",
-    "autoriversioni":"/assets/data/autoriversioni.json",
-    "versioni":"/assets/data/versioni.json",
-    "traduzioni":"/assets/data/traduzioni.json",
-    "versionitraduzione":"/assets/data/versionitraduzione.json",
+    "autori":"assets/data/autori.json",
+    "autoriversioni":"assets/data/autoriversioni.json",
+    "versioni":"assets/data/versioni.json",
+    "traduzioni":"assets/data/traduzioni.json",
+    "versionitraduzione":"assets/data/versionitraduzione.json",
   };
 
   constructor(public http: Http,public events: Events) {

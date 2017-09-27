@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpModule } from '@angular/http';
 
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
 
 
 
@@ -59,6 +60,7 @@ import { DataStore } from '../providers/data-store/data-store';
     StatusBar,
     SplashScreen,
     SocialSharing,
+    AdMobFree,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DataStore
   ]
