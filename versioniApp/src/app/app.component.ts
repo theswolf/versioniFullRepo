@@ -12,8 +12,9 @@ import { Events } from 'ionic-angular';
 import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
 
 
+
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
@@ -22,7 +23,11 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,public toastCtrl: ToastController,public events: Events,private admobFree: AdMobFree) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen
+    ,public toastCtrl: ToastController,public events: Events
+
+
+  ) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -43,30 +48,19 @@ export class MyApp {
     toast.present();
   }
 
+
+
   initializeApp() {
     var that = this;
+   
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
+      console.log("platform init");
       this.statusBar.styleDefault();
       this.splashScreen.hide();
 
-      const bannerConfig: AdMobFreeBannerConfig = {
-        // add your config here
-        // for the sake of this example we will just use the test config
-        id:" ca-app-pub-0131970786644605/7012880271"
-       };
-       that.admobFree.banner.config(bannerConfig);
-       
-       that.admobFree.banner.prepare()
-         .then(() => {
-           console.log("Banner should be visible");
-           that.admobFree.banner.show();
-           // banner Ad is ready
-           // if we set autoShow to false, then we will need to call the show method here
-         })
-         .catch(e => console.log(e));
-
+    
 
 
       this.events.subscribe('api:error', message => {

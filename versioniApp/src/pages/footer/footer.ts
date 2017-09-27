@@ -1,6 +1,7 @@
 import { Component,Input } from '@angular/core';
 
 
+
 /**
  * Generated class for the FooterPage page.
  *
@@ -13,14 +14,15 @@ import { Component,Input } from '@angular/core';
   selector: 'version-footer',
   templateUrl: 'footer.html',
 })
-export class Footer {
+export class Footer  {
 
   @Input() pageName: string;
-  constructor() {
+  constructor( ) {
    
   }
 
-  
+
+
   
  
 
